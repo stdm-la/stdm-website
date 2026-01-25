@@ -49,7 +49,8 @@ const Footer = () => {
           </ul>
           <p className="text-tertiary-content flex flex-col self-end text-right text-xs md:text-center">
             <span>© {new Date().getFullYear()} — Copyright</span>
-            <span>All Rights reserved</span>
+            <span>All Rights reserved. STDM is a commercial brand of
+            SIS Technologies Digital Marketing S.R.L.</span>
           </p>
         </div>
 
@@ -58,9 +59,9 @@ const Footer = () => {
             <div className="flex flex-col">
               <h5 className="text-neutral mb-4 text-lg font-medium">Contact Us</h5>
               <a
-                href="mailto:oscar.stdm@gmail.com"
+                href="mailto:contact@stdm-la.com"
                 className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
-                oscar.stdm@gmail.com
+                contact@stdm-la.com
               </a>
               <a
                 href="tel:+506 85174990"

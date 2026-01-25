@@ -18,9 +18,9 @@ const ContactSection = () => {
         <div className="space-y-2">
           <p className="text-neutral text-lg font-bold">Contact Information</p>
           <a
-            href="mailto:oscar.stdm@gmail.com"
+            href="mailto:contact@stdm-la.com"
             className="text-neutral hover:text-accent flex items-center gap-1 font-light transition-colors duration-300">
-            <MsgIcon /> oscar.stdm@gmail.com
+            <MsgIcon /> contact@stdm-la.com
           </a>
           <a
             href="tel:+506 85174990"

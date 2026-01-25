@@ -7,7 +7,7 @@ import Ellipse from './Ellipse'
 
 const Hero = () => {
   const ellipseRef = useRotatingAnimation()
-  const role = useRoleSwitcher({ roles: ['NEXT.js/NEST.js DEVELOPER', 'BLOCKCHAIN DEVELOPER', 'JAVA DEVELOPER', 'PHP DEVELOPER'] })
+  const role = useRoleSwitcher({ roles: ['NEXT.js/NEST.js DEVELOPMENT', 'BLOCKCHAIN DEVELOPMENT', 'JAVA DEVELOPMENT', 'PHP DEVELOPMENT'] })
 
   return (
     <section className="bg-primary bg-small-glow bg-small-glow-position md:bg-large-glow-position lg:bg-large-glow min-h-[calc(dvh-4rem)] bg-no-repeat">
@@ -24,16 +24,16 @@ const Hero = () => {
 
           <div className="mt-6 flex flex-wrap gap-6">
             <a
-              href=""
-              aria-label="Connect with me"
+              href="#contact"
+              aria-label="Contact us"
               className="bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]">
-              Hire Me
+              Contact Us
             </a>
             <a
               href="https://www.linkedin.com/in/oscaraleman"
-              aria-label="View LinkedIn Profile"
+              aria-label="View our LinkedIn"
               className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm">
-              LinkedIn Profile
+              Our LinkedIn
             </a>
           </div>
         </div>
@@ -45,7 +45,7 @@ const Hero = () => {
               fill={true}
               priority={true}
               sizes="(min-width: 1024px) 25.75rem, (min-width: 768px) 20rem, (min-width: 640px) 15rem, 14rem"
-              alt="STDM - Full Stack Digital Agency"
+              alt="SIS Technologies Digital Models - Full Stack Development Company"
               className="object-contain p-7"
             />
             <Ellipse
