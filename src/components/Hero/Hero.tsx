@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pt-12 pb-10 md:grid-cols-2 lg:p-4">
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
           <h1>
-            <span className="text-neutral mb-2 block text-3xl font-bold">Hi - We are STDM Digital Agency</span>
+            <span className="text-neutral mb-2 block text-3xl font-bold">Hi - We are SIS Technologies Digital Models</span>
             <span className="text-accent block text-[1.75rem] font-bold">{role}</span>
           </h1>
 

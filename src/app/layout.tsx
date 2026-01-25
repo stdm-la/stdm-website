@@ -29,7 +29,7 @@ export const metadata: Metadata = {
           title,
           description,
           url: siteUrl,
-          siteName: 'STDM Digital Agency Portfolio',
+          siteName: 'SIS Technologies Digital Models Portfolio',
           type: 'website',
         },
       }
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         openGraph: {
           title,
           description,
-          siteName: 'STDM Digital Agency Portfolio',
+          siteName: 'SIS Technologies Digital Models Portfolio',
           type: 'website',
         },
       }),
