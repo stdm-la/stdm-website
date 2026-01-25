@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "contact": "Contáctanos"
+  },
+  "hero": {
+    "greeting": "Hola - Somos SIS Technologies Digital Models",
+    "tagline": "Creando soluciones innovadoras para resolver problemas del mundo real",
+    "contactUs": "Contáctanos",
+    "ourLinkedIn": "Nuestro LinkedIn",
+    "roles": {
+      "nextNest": "DESARROLLO NEXT.js/NEST.js",
+      "blockchain": "DESARROLLO BLOCKCHAIN",
+      "java": "DESARROLLO JAVA",
+      "php": "DESARROLLO PHP"
+    }
+  },
+  "contact": {
+    "letsTalk": "Hablemos",
+    "wedLoveToHelp": "Nos encantaría ayudarte",
+    "contactInformation": "Información de Contacto"
+  },
+  "footer": {
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "testimonials": "Testimonios",
+    "blogs": "Blogs",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "contactUs": "Contáctanos",
+    "location": "Ubicación",
+    "languages": "Idiomas",
+    "moreAboutUs": "Más sobre nosotros",
+    "copyright": "Derechos de autor",
+    "allRightsReserved": "Todos los derechos reservados. STDM es una marca comercial de SIS Technologies Digital Marketing S.R.L.",
+    "description": "El primer servicio de análisis integral gratuito para el sitio, diseñado para trabajar con empresas de diversos niveles y segmentos comerciales."
+  },
+  "metadata": {
+    "title": "SIS Technologies Digital Models | Empresa de Desarrollo Web en Costa Rica",
+    "description": "Empresa de desarrollo web full-stack experta en Costa Rica. Construimos sitios web responsivos y fáciles de usar con React, NextJS y NodeJS. Hagamos realidad tu visión. ¡Contáctanos hoy!",
+    "siteName": "Portafolio SIS Technologies Digital Models"
+  },
+  "sections": {
+    "projects": "Proyectos",
+    "testimonials": "Testimonios",
+    "testimonialsSubtitle": "No solo confíes en nuestra palabra - mira lo que los usuarios reales de nuestro servicio tienen que decir sobre su experiencia.",
+    "services": "Servicios / Ofertas:",
+    "servicesSubtitle": "Ofrecemos una amplia gama de servicios para asegurar que tengas el mejor código escrito y te mantengas a la vanguardia en la competencia."
+  }
+}

@@ -5,6 +5,7 @@ import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/Navbar/Navbar'
 import ThemeMenu from '@/components/Theme/ThemeMenu'
 import ScrollButtons from '@/components/UI/ScrollButtons'
+import { LanguageProvider } from '@/contexts/LanguageContext'
 import { Fira_Code } from 'next/font/google'
 
 const firaCode = Fira_Code({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
@@ -57,13 +58,15 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark">
       <body className={`${firaCode.className}`}>
-        <header className="sticky top-0 z-[1000]">
-          <Navbar />
-        </header>
-        {children}
-        <ThemeMenu />
-        <ScrollButtons />
-        <Footer />
+        <LanguageProvider>
+          <header className="sticky top-0 z-[1000]">
+            <Navbar />
+          </header>
+          {children}
+          <ThemeMenu />
+          <ScrollButtons />
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   )

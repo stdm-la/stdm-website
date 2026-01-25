@@ -1,0 +1,11 @@
+{
+  "priority": 3,
+  "title": "Proyecto Epsilon",
+  "shortDescription": "Una colección de desafíos de programación atractivos diseñados para ayudar a los desarrolladores a mejorar sus habilidades en ReactJS escribiendo lógica de negocio funcional. Tu tarea es hacerlo funcional escribiendo lógica de negocio, para mejorar tus habilidades de frontend",
+  "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656971294/waitlist-template_qr4l9k.png",
+  "type": "Gratis 🔥",
+  "livePreview": "https://example.com/epsilon",
+  "githubLink": "https://github.com/example/ReactJS-Coding-Challenges",
+  "githubStars": "40 Estrellas",
+  "numberOfSales": "138 Ventas"
+}

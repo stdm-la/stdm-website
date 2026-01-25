@@ -1,6 +1,7 @@
 'use client'
 
 import { Testimonial } from '@/lib/types'
+import { useTranslation } from '@/hooks/useTranslation'
 import { useState } from 'react'
 import SectionHeading from '../SectionHeading/SectionHeading'
 import TestimonialCard from './TestimonialCard'
@@ -11,12 +12,13 @@ interface TestimonialSectionProps {
 
 const TestimonialSection: React.FC<TestimonialSectionProps> = ({ testimonials }) => {
   const [activeCard, setActiveCard] = useState(0)
+  const { t } = useTranslation()
 
   return (
     <section id="testimonials">
       <SectionHeading
-        title="Testimonials"
-        subtitle="Don't just take our word for it - see what actual users of our service have to say about their experience."
+        title={t('sections.testimonials')}
+        subtitle={t('sections.testimonialsSubtitle')}
       />
 
       <div className="hide-scrollbar my-8 flex gap-8 overflow-x-auto">

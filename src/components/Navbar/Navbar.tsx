@@ -3,31 +3,33 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { useTranslation } from '@/hooks/useTranslation'
 import { BurgerIcon, CloseIcon } from '../../utils/icons'
 import Logo from './Logo'
-
-const navItems = [
-  {
-    label: 'Home',
-    href: '/',
-  },
-  {
-    label: 'Projects',
-    href: '/#projects',
-  },
-  {
-    label: 'Services',
-    href: '/#services',
-  },
-  {
-    label: 'Contact Us',
-    href: '/#contact',
-  },
-]
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false)
   const pathname = usePathname()
+  const { t } = useTranslation()
+
+  const navItems = [
+    {
+      label: t('nav.home'),
+      href: '/',
+    },
+    {
+      label: t('nav.projects'),
+      href: '/#projects',
+    },
+    {
+      label: t('nav.services'),
+      href: '/#services',
+    },
+    {
+      label: t('nav.contact'),
+      href: '/#contact',
+    },
+  ]
 
   const toggleMenu = () => {
     setIsVisible(!isVisible)

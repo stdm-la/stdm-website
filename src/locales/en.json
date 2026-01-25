@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "greeting": "Hi - We are SIS Technologies Digital Models",
+    "tagline": "Crafting innovative solutions to solve real-world problems",
+    "contactUs": "Contact Us",
+    "ourLinkedIn": "Our LinkedIn",
+    "roles": {
+      "nextNest": "NEXT.js/NEST.js DEVELOPMENT",
+      "blockchain": "BLOCKCHAIN DEVELOPMENT",
+      "java": "JAVA DEVELOPMENT",
+      "php": "PHP DEVELOPMENT"
+    }
+  },
+  "contact": {
+    "letsTalk": "Let's Talk",
+    "wedLoveToHelp": "We'd love to help",
+    "contactInformation": "Contact Information"
+  },
+  "footer": {
+    "about": "About",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "blogs": "Blogs",
+    "services": "Services",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "location": "Location",
+    "languages": "Languages",
+    "moreAboutUs": "More about us",
+    "copyright": "Copyright",
+    "allRightsReserved": "All Rights reserved. STDM is a commercial brand of SIS Technologies Digital Marketing S.R.L.",
+    "description": "The first free end-to-end analytics service for the site, designed to work with enterprises of various levels and business segments."
+  },
+  "metadata": {
+    "title": "SIS Technologies Digital Models | Web Development Company in Costa Rica",
+    "description": "Skilled full-stack web development company in Costa Rica. We build responsive, user-friendly websites with React, NextJS, and NodeJS. Let's bring your vision to life. Contact us today!",
+    "siteName": "SIS Technologies Digital Models Portfolio"
+  },
+  "sections": {
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "testimonialsSubtitle": "Don't just take our word for it - see what actual users of our service have to say about their experience.",
+    "services": "Services / Offers:",
+    "servicesSubtitle": "We offer a wide range of services to ensure you have the best written code and stay ahead in the competition."
+  }
+}

@@ -1,39 +1,49 @@
 'use client'
 import useRoleSwitcher from '@/hooks/useRoleSwitcher'
 import useRotatingAnimation from '@/hooks/useRotatingAnimation'
+import { useTranslation } from '@/hooks/useTranslation'
 import Image from 'next/image'
 import { HeroImage } from '../../utils/images'
 import Ellipse from './Ellipse'
 
 const Hero = () => {
   const ellipseRef = useRotatingAnimation()
-  const role = useRoleSwitcher({ roles: ['NEXT.js/NEST.js DEVELOPMENT', 'BLOCKCHAIN DEVELOPMENT', 'JAVA DEVELOPMENT', 'PHP DEVELOPMENT'] })
+  const { t } = useTranslation()
+  
+  const roles = [
+    t('hero.roles.nextNest'),
+    t('hero.roles.blockchain'),
+    t('hero.roles.java'),
+    t('hero.roles.php'),
+  ]
+  
+  const role = useRoleSwitcher({ roles })
 
   return (
     <section className="bg-primary bg-small-glow bg-small-glow-position md:bg-large-glow-position lg:bg-large-glow min-h-[calc(dvh-4rem)] bg-no-repeat">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pt-12 pb-10 md:grid-cols-2 lg:p-4">
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
           <h1>
-            <span className="text-neutral mb-2 block text-3xl font-bold">Hi - We are SIS Technologies Digital Models</span>
+            <span className="text-neutral mb-2 block text-3xl font-bold">{t('hero.greeting')}</span>
             <span className="text-accent block text-[1.75rem] font-bold">{role}</span>
           </h1>
 
           <h2 className="text-neutral mt-3">
-            Crafting innovative solutions to solve real-world problems
+            {t('hero.tagline')}
           </h2>
 
           <div className="mt-6 flex flex-wrap gap-6">
             <a
               href="#contact"
-              aria-label="Contact us"
+              aria-label={t('hero.contactUs')}
               className="bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]">
-              Contact Us
+              {t('hero.contactUs')}
             </a>
             <a
               href="https://www.linkedin.com/in/oscaraleman"
-              aria-label="View our LinkedIn"
+              aria-label={t('hero.ourLinkedIn')}
               className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm">
-              Our LinkedIn
+              {t('hero.ourLinkedIn')}
             </a>
           </div>
         </div>

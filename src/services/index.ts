@@ -9,9 +9,9 @@ const readProjectFile = async (filePath: string): Promise<Project> => {
 }
 
 // Function to get all projects
-const getAllProjects = async (): Promise<Project[]> => {
+const getAllProjects = async (language: string = 'en'): Promise<Project[]> => {
   try {
-    const projectsPath = path.join(process.cwd(), '/content/projects')
+    const projectsPath = path.join(process.cwd(), `/content/${language}/projects`)
     const projectsName = await fs.readdir(projectsPath)
 
     const projects = await Promise.all(
@@ -33,9 +33,9 @@ const getAllProjects = async (): Promise<Project[]> => {
   }
 }
 
-const getAllTestimonials = async (): Promise<Testimonial[]> => {
+const getAllTestimonials = async (language: string = 'en'): Promise<Testimonial[]> => {
   try {
-    const testimonialsPath = path.join(process.cwd(), '/content/testimonials')
+    const testimonialsPath = path.join(process.cwd(), `/content/${language}/testimonials`)
     const testimonialsName = await fs.readdir(testimonialsPath)
 
     const testimonials = await Promise.all(

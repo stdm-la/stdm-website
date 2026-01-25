@@ -1,8 +1,17 @@
-import { footerLinks, languages } from '@/appData'
+'use client'
+
 import { socials } from '@/appData/personal'
+import { useLanguage } from '@/contexts/LanguageContext'
+import { useTranslation } from '@/hooks/useTranslation'
 import Logo from '../Navbar/Logo'
 
 const Footer = () => {
+  const { language, setLanguage } = useLanguage()
+  const { t } = useTranslation()
+  
+  const handleLanguageChange = (lang: 'en' | 'es') => {
+    setLanguage(lang)
+  }
   return (
     <footer className="bg-secondary relative flex min-h-[560px] flex-col justify-between gap-20 overflow-hidden px-4 py-14 md:p-14">
       <div className="relative z-20 grid grid-cols-1 items-start gap-20 md:grid-cols-2 md:gap-12">
@@ -12,25 +21,46 @@ const Footer = () => {
             <span className="text-neutral text-lg font-medium">Logoipsum</span>
           </h5>
           <p className="text-tertiary-content">
-            The first free end-to-end analytics service for the site, designed to work with
-            enterprises of various levels and business segments.
+            {t('footer.description')}
           </p>
           <a
             href="#"
             className="text-neutral mt-4 inline-flex items-center gap-2 text-xs hover:underline">
-            More about us <span className="bg-neutral inline-block size-[10px] rounded-full" />
+            {t('footer.moreAboutUs')} <span className="bg-neutral inline-block size-[10px] rounded-full" />
           </a>
         </div>
 
         <div className="flex flex-wrap gap-8">
-          {footerLinks.map((link) => (
-            <a
-              href={link.href}
-              key={link.href}
-              className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
-              {link.title}.
-            </a>
-          ))}
+          <a
+            href="#"
+            className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
+            {t('footer.about')}.
+          </a>
+          <a
+            href="#projects"
+            className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
+            {t('footer.projects')}.
+          </a>
+          <a
+            href="#testimonials"
+            className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
+            {t('footer.testimonials')}.
+          </a>
+          <a
+            href="#blogs"
+            className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
+            {t('footer.blogs')}.
+          </a>
+          <a
+            href="#services"
+            className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
+            {t('footer.services')}.
+          </a>
+          <a
+            href="#contact"
+            className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
+            {t('footer.contact')}.
+          </a>
         </div>
       </div>
 
@@ -48,9 +78,8 @@ const Footer = () => {
             ))}
           </ul>
           <p className="text-tertiary-content flex flex-col self-end text-right text-xs md:text-center">
-            <span>© {new Date().getFullYear()} — Copyright</span>
-            <span>All Rights reserved. STDM is a commercial brand of
-            SIS Technologies Digital Marketing S.R.L.</span>
+            <span>© {new Date().getFullYear()} — {t('footer.copyright')}</span>
+            <span>{t('footer.allRightsReserved')}</span>
           </p>
         </div>
 
@@ -71,7 +100,7 @@ const Footer = () => {
             </div>
             <div>
               <div>
-                <h5 className="text-neutral mb-4 text-lg font-medium">Location</h5>
+                <h5 className="text-neutral mb-4 text-lg font-medium">{t('footer.location')}</h5>
                 <address className="text-tertiary-content flex flex-col text-sm font-light">
                   <span>Costa Rica, San Jose</span>
                   <span>Moravia, Jardines</span>
@@ -81,15 +110,22 @@ const Footer = () => {
           </div>
 
           <div className="md:self-end mr-15">
-            <p className="text-neutral mb-8 text-sm md:text-right">Languages</p>
+            <p className="text-neutral mb-8 text-sm md:text-right">{t('footer.languages')}</p>
             <div className="flex gap-8 md:gap-4 lg:gap-8">
-              {languages.map((language, idx) => (
-                <span
-                  key={language}
-                  className={idx === 0 ? 'text-neutral' : 'text-tertiary-content'}>
-                  {language}
-                </span>
-              ))}
+              <button
+                onClick={() => handleLanguageChange('en')}
+                className={`transition-colors duration-300 hover:text-neutral ${
+                  language === 'en' ? 'text-neutral cursor-default' : 'text-tertiary-content cursor-pointer'
+                }`}>
+                En
+              </button>
+              <button
+                onClick={() => handleLanguageChange('es')}
+                className={`transition-colors duration-300 hover:text-neutral ${
+                  language === 'es' ? 'text-neutral cursor-default' : 'text-tertiary-content cursor-pointer'
+                }`}>
+                Es
+              </button>
             </div>
           </div>
         </div>

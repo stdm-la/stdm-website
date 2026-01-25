@@ -1,3 +1,4 @@
+import { cookies } from 'next/headers'
 import { skillList } from '@/appData'
 import ContactSection from '@/components/Contact/ContactSection'
 import Hero from '@/components/Hero/Hero'
@@ -8,8 +9,10 @@ import TestimonialSection from '@/components/Testimonials/TestimonialSection'
 import { getAllProjects, getAllTestimonials } from '@/services'
 
 export default async function Home() {
-  const projects = await getAllProjects()
-  const testimonials = await getAllTestimonials()
+  const cookieStore = await cookies()
+  const language = (cookieStore.get('language')?.value || 'en') as 'en' | 'es'
+  const projects = await getAllProjects(language)
+  const testimonials = await getAllTestimonials(language)
 
   return (
     <main>
