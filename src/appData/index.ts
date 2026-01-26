@@ -10,6 +10,8 @@ import {
   TailwindCSS,
   TypescriptIcon,
   JavaIcon,
+  AwsIcon,
+  SpringbootIcon,
 } from '../utils/icons'
 
 // Project Data
@@ -131,8 +133,16 @@ export const skillList = [
     icon: NestjsIcon,
   },
   {
-    name: 'Java Spring',
+    name: 'Java',
     icon: JavaIcon,
+  },
+  {
+    name: 'SpringBoot',
+    icon: SpringbootIcon,
+  },
+  {
+    name: 'AWS',
+    icon: AwsIcon,
   },
   {
     name: 'Socket.io',

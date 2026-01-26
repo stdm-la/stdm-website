@@ -14,6 +14,8 @@ import TailwindCSS from '../assets/icons/tailwind-css.svg'
 import Timer from '../assets/icons/timer.svg'
 import TypescriptIcon from '../assets/icons/typescript.svg'
 import JavaIcon from '../assets/icons/java.png'
+import AwsIcon from '../assets/icons/aws.svg'
+import SpringbootIcon from '../assets/icons/springboot.svg'
 
 const PreviewIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
@@ -354,6 +356,7 @@ const MoonIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
 export {
   ArrowLeftIcon,
   ArrowRightIcon,
+  AwsIcon,
   BurgerIcon,
   CheckIcon,
   ChevronRightIcon,
@@ -376,6 +379,7 @@ export {
   PreviewIcon,
   ReactIcon,
   SocketIcon,
+  SpringbootIcon,
   Star,
   StarIcon,
   SunIcon,

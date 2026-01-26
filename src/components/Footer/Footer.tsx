@@ -8,7 +8,7 @@ import Logo from '../Navbar/Logo'
 const Footer = () => {
   const { language, setLanguage } = useLanguage()
   const { t } = useTranslation()
-  
+
   const handleLanguageChange = (lang: 'en' | 'es') => {
     setLanguage(lang)
   }
@@ -18,7 +18,7 @@ const Footer = () => {
         <div>
           <h5 className="mb-8 flex items-center gap-2">
             <Logo width={30} height={24} />
-            <span className="text-neutral text-lg font-medium">Logoipsum</span>
+            <span className="text-neutral text-lg font-medium">STDM</span>
           </h5>
           <p className="text-tertiary-content">
             {t('footer.description')}
@@ -103,7 +103,7 @@ const Footer = () => {
                 <h5 className="text-neutral mb-4 text-lg font-medium">{t('footer.location')}</h5>
                 <address className="text-tertiary-content flex flex-col text-sm font-light">
                   <span>Costa Rica, San Jose</span>
-                  <span>Moravia, Jardines</span>
+                  <span>Goicoechea, San Francisco</span>
                 </address>
               </div>
             </div>

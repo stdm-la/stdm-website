@@ -9,14 +9,14 @@ import Ellipse from './Ellipse'
 const Hero = () => {
   const ellipseRef = useRotatingAnimation()
   const { t } = useTranslation()
-  
+
   const roles = [
     t('hero.roles.nextNest'),
     t('hero.roles.blockchain'),
     t('hero.roles.java'),
     t('hero.roles.php'),
   ]
-  
+
   const role = useRoleSwitcher({ roles })
 
   return (
@@ -40,7 +40,7 @@ const Hero = () => {
               {t('hero.contactUs')}
             </a>
             <a
-              href="https://www.linkedin.com/in/oscaraleman"
+              href="https://www.linkedin.com/company/stdm-la/"
               aria-label={t('hero.ourLinkedIn')}
               className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm">
               {t('hero.ourLinkedIn')}

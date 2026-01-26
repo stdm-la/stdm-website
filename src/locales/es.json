@@ -20,7 +20,26 @@
   "contact": {
     "letsTalk": "Hablemos",
     "wedLoveToHelp": "Nos encantaría ayudarte",
-    "contactInformation": "Información de Contacto"
+    "contactInformation": "Información de Contacto",
+    "form": {
+      "fullName": "Nombre completo",
+      "fullNamePlaceholder": "Tu nombre aquí",
+      "email": "Dirección de correo",
+      "emailPlaceholder": "Tu dirección de correo aquí",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Tu asunto aquí",
+      "message": "Mensaje",
+      "messagePlaceholder": "Tu mensaje aquí",
+      "submit": "Enviar",
+      "submitting": "Enviando...",
+      "success": "¡Gracias por tu envío!",
+      "error": "¡Ups! Hubo un problema al enviar tu formulario",
+      "validation": {
+        "nameRequired": "Por favor proporciona tu nombre.",
+        "emailRequired": "Por favor proporciona tu dirección de correo.",
+        "messageRequired": "Por favor proporciona un mensaje."
+      }
+    }
   },
   "footer": {
     "about": "Acerca de",

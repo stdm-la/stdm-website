@@ -39,8 +39,19 @@ Create a `.env.local` file in the root directory and configure the following var
 
 ```bash
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-CONTACT_FORM_ACTION_URL=your_form_action_url
 ```
+
+**For AWS SES Contact Form (Production):**
+
+Set these in AWS Amplify Console → App settings → Environment variables:
+
+```bash
+CONTACT_FORM_RECIPIENT_EMAIL=your-email@example.com
+CONTACT_FORM_FROM_EMAIL=noreply@yourdomain.com
+AWS_REGION=us-east-1
+```
+
+See `AWS_SETUP.md` for detailed setup instructions.
 
 ### Running the Development Server
 

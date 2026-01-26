@@ -20,7 +20,26 @@
   "contact": {
     "letsTalk": "Let's Talk",
     "wedLoveToHelp": "We'd love to help",
-    "contactInformation": "Contact Information"
+    "contactInformation": "Contact Information",
+    "form": {
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Your name here",
+      "email": "Email address",
+      "emailPlaceholder": "Your email address here",
+      "subject": "Subject",
+      "subjectPlaceholder": "Your subject here",
+      "message": "Message",
+      "messagePlaceholder": "Your message here",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "success": "Thanks for your submission!",
+      "error": "Oops! There was a problem submitting your form",
+      "validation": {
+        "nameRequired": "Please provide your name.",
+        "emailRequired": "Please provide your email address.",
+        "messageRequired": "Please provide a message."
+      }
+    }
   },
   "footer": {
     "about": "About",
