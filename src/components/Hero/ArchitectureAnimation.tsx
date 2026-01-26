@@ -1,9 +1,10 @@
 'use client'
 import { useEffect, useState } from 'react'
+import { ReactElement } from 'react'
 
 interface ArchitectureModel {
   name: string
-  svg: JSX.Element
+  svg: ReactElement
 }
 
 const ArchitectureAnimation = () => {
