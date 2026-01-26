@@ -2,9 +2,8 @@
 import useRoleSwitcher from '@/hooks/useRoleSwitcher'
 import useRotatingAnimation from '@/hooks/useRotatingAnimation'
 import { useTranslation } from '@/hooks/useTranslation'
-import Image from 'next/image'
-import { HeroImage } from '../../utils/images'
 import Ellipse from './Ellipse'
+import ArchitectureAnimation from './ArchitectureAnimation'
 
 const Hero = () => {
   const ellipseRef = useRotatingAnimation()
@@ -50,14 +49,9 @@ const Hero = () => {
 
         <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]">
           <div className="text-accent relative size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
-            <Image
-              src={HeroImage}
-              fill={true}
-              priority={true}
-              sizes="(min-width: 1024px) 25.75rem, (min-width: 768px) 20rem, (min-width: 640px) 15rem, 14rem"
-              alt="SIS Technologies Digital Models - Full Stack Development Company"
-              className="object-contain p-7"
-            />
+            <div className="absolute inset-0 p-7">
+              <ArchitectureAnimation />
+            </div>
             <Ellipse
               ref={ellipseRef}
               className="absolute top-0 left-0 size-56 transition-transform duration-500 ease-out sm:size-60 md:size-[20rem] lg:size-[25.75rem]"
