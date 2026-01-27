@@ -17,7 +17,7 @@ import {
 import oscarImage from '../assets/images/team/oscar.jpeg'
 import dianaImage from '../assets/images/team/diana.jpg'
 import christopherImage from '../assets/images/team/christopher.jpeg'
-import alexImage from '../assets/images/team/alex.png'
+import hoImage from '../assets/images/team/ho.png'
 import martinImage from '../assets/images/team/martin.png'
 import thaisImage from '../assets/images/team/thais.jpeg'
 import sebastianImage from '../assets/images/team/sebastian.jpeg'
@@ -141,9 +141,9 @@ export const teamData = [
     order: 4,
   },
   {
-    name: 'Alex Han',
+    name: 'Ho Bai',
     role: 'Full Stack Software Engineer',
-    image: alexImage,
+    image: hoImage,
     linkedIn: 'https://www.linkedin.com/in/alex-han/',
     order: 5,
   },
