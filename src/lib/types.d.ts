@@ -28,3 +28,11 @@ export interface Testimonial {
   stars: number
   createdAt: string
 }
+
+export interface TeamMember {
+  name: string
+  role: string
+  image: string | { src: string; height?: number; width?: number }
+  linkedIn?: string
+  order?: number
+}

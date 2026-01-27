@@ -14,6 +14,14 @@ import {
   SpringbootIcon,
 } from '../utils/icons'
 
+import oscarImage from '../assets/images/team/oscar.jpeg'
+import dianaImage from '../assets/images/team/diana.jpg'
+import christopherImage from '../assets/images/team/christopher.jpeg'
+import alexImage from '../assets/images/team/alex.png'
+import martinImage from '../assets/images/team/martin.png'
+import thaisImage from '../assets/images/team/thais.jpeg'
+import sebastianImage from '../assets/images/team/sebastian.jpeg'
+
 // Project Data
 export const projects = [
   {
@@ -102,6 +110,76 @@ export const serviceData = [
   },
 ]
 
+// Team Data
+export const teamData = [
+  {
+    name: 'Óscar Alemán',
+    role: 'CEO & CTO',
+    image: oscarImage,
+    linkedIn: 'https://www.linkedin.com/in/oscaraleman/',
+    order: 1,
+  },
+  {
+    name: 'Diana Picado',
+    role: 'CFO',
+    image: dianaImage,
+    linkedIn: 'https://www.linkedin.com/',
+    order: 2,
+  },
+  {
+    name: 'Christopher Valerio',
+    role: 'Technical Lead & Solution Architect',
+    image: christopherImage,
+    linkedIn: 'https://www.linkedin.com/in/christopher-valerio/',
+    order: 3,
+  },
+  {
+    name: 'Martin Tham',
+    role: 'AI/ML Engineer',
+    image: martinImage,
+    linkedIn: 'https://www.linkedin.com/in/martin-tham/',
+    order: 4,
+  },
+  {
+    name: 'Alex Han',
+    role: 'Full Stack Software Engineer',
+    image: alexImage,
+    linkedIn: 'https://www.linkedin.com/in/alex-han/',
+    order: 5,
+  },
+  {
+    name: 'Thais Rodríguez',
+    role: 'UI/UX Designer',
+    image:
+      thaisImage,
+    linkedIn: 'https://www.linkedin.com/in/thaís-rodríguez-lópez/',
+    order: 6,
+  },
+  {
+    name: 'Sebastian Alemán',
+    role: 'Graphic Designer',
+    image: sebastianImage,
+    linkedIn: 'https://www.linkedin.com/in/sebastian-aleman/',
+    order: 7,
+  },
+  {
+    name: 'Laura Castillo',
+    role: 'QA Engineer',
+    image:
+      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop',
+    linkedIn: 'https://www.linkedin.com/',
+    order: 8,
+  },
+  {
+    name: 'Natalia Vargas',
+    role: 'Project Manager',
+    image:
+      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop',
+    linkedIn: 'https://www.linkedin.com/',
+    order: 9,
+  },
+]
+
 // Skill List
 export const skillList = [
   {
@@ -153,6 +231,7 @@ export const skillList = [
 export const footerLinks = [
   { title: 'About', href: '#' },
   { title: 'Projects', href: '#projects' },
+  { title: 'Team', href: '#team' },
   { title: 'Testimonials', href: '#testimonials' },
   {
     title: 'Blogs',

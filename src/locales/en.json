@@ -3,6 +3,7 @@
     "home": "Home",
     "projects": "Projects",
     "services": "Services",
+    "team": "Team",
     "contact": "Contact Us"
   },
   "hero": {
@@ -44,6 +45,7 @@
   "footer": {
     "about": "About",
     "projects": "Projects",
+    "team": "Team",
     "testimonials": "Testimonials",
     "blogs": "Blogs",
     "services": "Services",
@@ -66,6 +68,8 @@
     "testimonials": "Testimonials",
     "testimonialsSubtitle": "Don't just take our word for it - see what actual users of our service have to say about their experience.",
     "services": "Services / Offers:",
-    "servicesSubtitle": "We offer a wide range of services to ensure you have the best written code and stay ahead in the competition."
+    "servicesSubtitle": "We offer a wide range of services to ensure you have the best written code and stay ahead in the competition.",
+    "team": "Our Team",
+    "teamSubtitle": "Meet the people behind SIS Technologies Digital Models. We're a team of engineers and designers dedicated to building solutions that matter."
   }
 }

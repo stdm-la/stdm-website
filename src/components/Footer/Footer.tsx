@@ -42,6 +42,11 @@ const Footer = () => {
             {t('footer.projects')}.
           </a>
           <a
+            href="#team"
+            className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
+            {t('footer.team')}.
+          </a>
+          <a
             href="#testimonials"
             className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
             {t('footer.testimonials')}.

@@ -26,6 +26,10 @@ const Navbar = () => {
       href: '/#services',
     },
     {
+      label: t('nav.team'),
+      href: '/#team',
+    },
+    {
       label: t('nav.contact'),
       href: '/#contact',
     },
