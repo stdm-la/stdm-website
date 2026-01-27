@@ -32,7 +32,7 @@ export interface Testimonial {
 export interface TeamMember {
   name: string
   role: string
-  image: string | { src: string; height?: number; width?: number }
+  image: string | { src: string; height: number; width: number }
   linkedIn?: string
   order?: number
 }
