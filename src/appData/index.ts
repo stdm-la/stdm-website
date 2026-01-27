@@ -15,7 +15,7 @@ import {
 } from '../utils/icons'
 
 import oscarImage from '../assets/images/team/oscar.jpeg'
-import dianaImage from '../assets/images/team/diana.jpg'
+import dianaImage from '../assets/images/team/diana.jpeg'
 import christopherImage from '../assets/images/team/christopher.jpeg'
 import hoImage from '../assets/images/team/ho.png'
 import martinImage from '../assets/images/team/martin.png'

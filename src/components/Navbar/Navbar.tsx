@@ -40,7 +40,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-primary border-border h-16 overflow-hidden border-b">
+    <nav className="bg-primary h-16 overflow-hidden">
       <div className="mx-auto flex h-full w-dvw max-w-[1200px] items-center justify-between px-4 py-1">
         {isVisible ? (
           <div className="text-primary-content md:hidden">
@@ -71,7 +71,7 @@ const Navbar = () => {
             <li
               key={href}
               onClick={() => setIsVisible(false)}
-              className="border-border flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-base md:first:border-s md:last:ml-auto md:last:border-none md:last:px-0 lg:px-8">
+              className="flex items-center px-4 text-2xl md:text-base md:last:ml-auto md:last:px-0 lg:px-8">
               <Link
                 href={href}
                 className={`text-primary-content hover:text-neutral w-full py-7 transition-all duration-150 md:py-0 ${pathname === href ? 'text-neutral cursor-text' : ''}`}>
