@@ -1,5 +1,6 @@
 // Data for portfolio
 import {
+  AiIcon,
   ExpressjsIcon,
   JavaScriptIcon,
   NestjsIcon,
@@ -107,6 +108,21 @@ export const serviceData = [
     icon: TailwindCSS,
     title: 'Tailwind CSS Styling',
     shortDescription: 'Designing beautiful and responsive interfaces with Tailwind CSS.',
+  },
+  {
+    icon: AiIcon,
+    title: 'AI & Machine Learning',
+    shortDescription: 'Integrating intelligent solutions with AI, ML models, and automation to enhance your products.',
+  },
+  {
+    icon: JavaIcon,
+    title: 'Java Development',
+    shortDescription: 'Building enterprise-grade applications with Java, Spring Boot, and modern JVM technologies.',
+  },
+  {
+    icon: AwsIcon,
+    title: 'AWS & Cloud Development',
+    shortDescription: 'Designing and deploying scalable, secure cloud solutions on Amazon Web Services.',
   },
 ]
 

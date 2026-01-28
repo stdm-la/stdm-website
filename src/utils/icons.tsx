@@ -16,6 +16,7 @@ import TypescriptIcon from '../assets/icons/typescript.svg'
 import JavaIcon from '../assets/icons/java.png'
 import AwsIcon from '../assets/icons/aws.svg'
 import SpringbootIcon from '../assets/icons/springboot.svg'
+import AiIcon from '../assets/icons/ai.svg'
 
 const PreviewIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
@@ -356,6 +357,7 @@ const MoonIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
 export {
   ArrowLeftIcon,
   ArrowRightIcon,
+  AiIcon,
   AwsIcon,
   BurgerIcon,
   CheckIcon,
