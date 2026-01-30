@@ -1,5 +1,6 @@
 'use client'
 
+import { useRouter } from 'next/navigation'
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
 
 type Language = 'en' | 'es'
@@ -13,6 +14,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
+  const router = useRouter()
   const [language, setLanguageState] = useState<Language>('en')
   const [translations, setTranslations] = useState<Record<string, unknown>>({})
 
@@ -47,11 +49,12 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLanguageState(lang)
     if (typeof window !== 'undefined') {
       localStorage.setItem('language', lang)
-      // Set cookie for server-side access
+      // Set cookie for server-side access (so Server Components see the new language)
       document.cookie = `language=${lang}; path=/; max-age=31536000` // 1 year
       loadTranslations(lang)
-      // Update HTML lang attribute
       document.documentElement.lang = lang
+      // Re-run Server Components so testimonials & projects load for the new language
+      router.refresh()
     }
   }
 
