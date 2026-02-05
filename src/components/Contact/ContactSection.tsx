@@ -16,7 +16,7 @@ const ContactSection = () => {
           <h3 className="text-neutral text-3xl font-bold">{t('contact.letsTalk')}</h3>
           <h4 className="text-accent text-2xl font-bold md:text-3xl">{t('contact.wedLoveToHelp')}</h4>
           <p className="text-neutral mt-8">
-            {t('hero.tagline')}
+            {t('sections.howWeWork.tagline')}
           </p>
         </div>
 

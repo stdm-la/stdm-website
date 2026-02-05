@@ -1,75 +1,87 @@
 {
   "nav": {
     "home": "Inicio",
-    "projects": "Proyectos",
-    "services": "Servicios",
-    "team": "Equipo",
-    "contact": "Contáctanos"
+    "solutions": {
+      "label": "Soluciones",
+      "ngos": "Soluciones digitales para ONGs",
+      "smbs": "Soluciones digitales para PYMES",
+      "poc": "Prueba de concepto y desarrollo MVP"
+    },
+    "howWeWork": "Cómo trabajamos",
+    "about": "Sobre STDM",
+    "contact": "Contacto"
   },
   "hero": {
-    "greeting": "Hola - Somos SIS Technologies Digital Models",
-    "tagline": "Creando soluciones innovadoras para resolver problemas del mundo real",
-    "contactUs": "Contáctanos",
-    "ourLinkedIn": "Nuestro LinkedIn",
-    "roles": {
-      "nextNest": "DESARROLLO NEXT.js/NEST.js",
-      "blockchain": "DESARROLLO BLOCKCHAIN",
-      "java": "DESARROLLO JAVA",
-      "php": "DESARROLLO PHP"
-    }
+    "headline": "Construimos modelos digitales que ayudan a las organizaciones a crecer y operar mejor.",
+    "subheadline": "En STDM (SIS Technologies Digital Models), diseñamos y desarrollamos soluciones digitales prácticas para ONGs y pequeñas y medianas empresas — desde prueba de concepto hasta productos escalables.",
+    "primaryCta": "Hablemos de tu proyecto",
+    "secondaryCta": "Conoce cómo trabajamos"
   },
   "contact": {
     "letsTalk": "Hablemos",
     "wedLoveToHelp": "Nos encantaría ayudarte",
-    "contactInformation": "Información de Contacto",
+    "contactInformation": "Información de contacto",
     "form": {
       "fullName": "Nombre completo",
       "fullNamePlaceholder": "Tu nombre aquí",
-      "email": "Dirección de correo",
-      "emailPlaceholder": "Tu dirección de correo aquí",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Tu correo aquí",
       "subject": "Asunto",
       "subjectPlaceholder": "Tu asunto aquí",
       "message": "Mensaje",
       "messagePlaceholder": "Tu mensaje aquí",
       "submit": "Enviar",
       "submitting": "Enviando...",
-      "success": "¡Gracias por tu envío!",
-      "error": "¡Ups! Hubo un problema al enviar tu formulario",
+      "success": "¡Gracias por tu mensaje!",
+      "error": "Hubo un problema al enviar. Intenta de nuevo.",
       "validation": {
         "nameRequired": "Por favor proporciona tu nombre.",
-        "emailRequired": "Por favor proporciona tu dirección de correo.",
+        "emailRequired": "Por favor proporciona tu correo.",
         "messageRequired": "Por favor proporciona un mensaje."
       }
     }
   },
   "footer": {
-    "about": "Acerca de",
-    "projects": "Proyectos",
-    "team": "Equipo",
-    "testimonials": "Testimonios",
-    "blogs": "Blogs",
-    "services": "Servicios",
+    "legalName": "SIS Technologies Digital Marketing S.R.L.",
     "contact": "Contacto",
-    "contactUs": "Contáctanos",
-    "location": "Ubicación",
     "languages": "Idiomas",
-    "moreAboutUs": "Más sobre nosotros",
     "copyright": "Derechos de autor",
-    "allRightsReserved": "Todos los derechos reservados. STDM es una marca comercial de SIS Technologies Digital Marketing S.R.L.",
-    "description": "El primer servicio de análisis integral gratuito para el sitio, diseñado para trabajar con empresas de diversos niveles y segmentos comerciales."
+    "allRightsReserved": "Todos los derechos reservados. STDM es una marca comercial de SIS Technologies Digital Marketing S.R.L."
   },
   "metadata": {
-    "title": "SIS Technologies Digital Models | Empresa de Desarrollo Web en Costa Rica",
-    "description": "Empresa de desarrollo web full-stack experta en Costa Rica. Construimos sitios web responsivos y fáciles de usar con React, NextJS y NodeJS. Hagamos realidad tu visión. ¡Contáctanos hoy!",
-    "siteName": "Portafolio SIS Technologies Digital Models"
+    "title": "STDM | Soluciones digitales para ONGs y PYMES",
+    "description": "Construimos modelos digitales que ayudan a las organizaciones a crecer. Soluciones digitales prácticas para ONGs y PYMES — desde prueba de concepto hasta productos escalables.",
+    "siteName": "SIS Technologies Digital Models"
   },
   "sections": {
-    "projects": "Proyectos",
-    "testimonials": "Testimonios",
-    "testimonialsSubtitle": "No solo confíes en nuestra palabra - mira lo que los usuarios reales de nuestro servicio tienen que decir sobre su experiencia.",
-    "services": "Servicios / Ofertas:",
-    "servicesSubtitle": "Ofrecemos una amplia gama de servicios para asegurar que tengas el mejor código escrito y te mantengas a la vanguardia en la competencia.",
+    "whatWeBuild": {
+      "title": "Soluciones digitales con impacto real",
+      "subtitle": "Ayudamos a las organizaciones a pasar de ideas a productos digitales funcionales mediante:",
+      "focus": "Nos enfocamos en claridad, velocidad y valor a largo plazo."
+    },
+    "whoWeHelp": {
+      "title": "Con quién trabajamos",
+      "ngos": {
+        "title": "Para ONGs",
+        "description": "Ayudamos a organizaciones con misión a fortalecer su presencia digital, comunicar con claridad e involucrar a sus seguidores mediante plataformas profesionales y fáciles de gestionar."
+      },
+      "smbs": {
+        "title": "Para PYMES",
+        "description": "Ayudamos a las empresas a convertir sus sitios web y aplicaciones en herramientas que generan leads, mejoran operaciones y apoyan el crecimiento."
+      }
+    },
+    "howWeWork": {
+      "title": "Cómo trabajamos",
+      "subtitle": "Un proceso claro y práctico.",
+      "step1": "Entender tus objetivos y limitaciones",
+      "step2": "Diseñar un modelo digital claro",
+      "step3": "Construir una solución funcional (POC o MVP)",
+      "step4": "Iterar y escalar cuando sea necesario",
+      "tagline": "Sin complejidad innecesaria. Sin sobreingeniería."
+    },
     "team": "Nuestro equipo",
-    "teamSubtitle": "Conoce a las personas detrás de SIS Technologies Digital Models. Somos un equipo de ingenieros y diseñadores dedicados a construir soluciones que importan."
+    "teamSubtitle": "Las personas detrás de STDM.",
+    "testimonials": "Testimonios",
+    "testimonialsSubtitle": "No solo confíes en nuestra palabra — mira lo que dicen nuestros clientes."
   }
 }

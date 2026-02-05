@@ -10,10 +10,10 @@ import { Fira_Code } from 'next/font/google'
 
 const firaCode = Fira_Code({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
-const title = 'SIS Technologies Digital Models | Web Development Company in Costa Rica'
+const title = 'STDM | Digital Solutions for NGOs & SMBs'
 
 const description =
-  "Skilled full-stack web development company in Costa Rica. We build responsive, user-friendly websites with React, NextJS, and NodeJS. Let's bring your vision to life. Contact us today!"
+  "We build digital models that help organizations grow. Practical digital solutions for NGOs and small-to-medium businesses — from proof of concept to scalable products."
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 const metadataBase = siteUrl ? new URL(siteUrl) : undefined
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
           title,
           description,
           url: siteUrl,
-          siteName: 'SIS Technologies Digital Models Portfolio',
+          siteName: 'SIS Technologies Digital Models',
           type: 'website',
         },
       }
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         openGraph: {
           title,
           description,
-          siteName: 'SIS Technologies Digital Models Portfolio',
+          siteName: 'SIS Technologies Digital Models',
           type: 'website',
         },
       }),
@@ -56,8 +56,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" data-theme="dark">
-      <body className={`${firaCode.className}`}>
+    <html lang="en" data-theme="dark" suppressHydrationWarning>
+      <body className={`${firaCode.className}`} suppressHydrationWarning>
         <LanguageProvider>
           <header className="sticky top-0 z-[1000]">
             <Navbar />
