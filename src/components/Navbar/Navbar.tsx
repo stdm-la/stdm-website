@@ -18,10 +18,6 @@ const Navbar = () => {
       href: '/',
     },
     {
-      label: t('nav.projects'),
-      href: '/#projects',
-    },
-    {
       label: t('nav.services'),
       href: '/#services',
     },
