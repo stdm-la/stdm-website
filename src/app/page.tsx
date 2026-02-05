@@ -1,11 +1,12 @@
 import { cookies } from 'next/headers'
-import { skillList, teamData } from '@/appData'
+import { teamData } from '@/appData'
 import ContactSection from '@/components/Contact/ContactSection'
 import Hero from '@/components/Hero/Hero'
-import ServiceSection from '@/components/Services/ServiceSection'
-import Skills from '@/components/Skills/Skills'
+import HowWeWorkSection from '@/components/HowWeWork/HowWeWorkSection'
 import TeamSection from '@/components/Team/TeamSection'
 import TestimonialSection from '@/components/Testimonials/TestimonialSection'
+import WhatWeBuildSection from '@/components/WhatWeBuild/WhatWeBuildSection'
+import WhoWeHelpSection from '@/components/WhoWeHelp/WhoWeHelpSection'
 import { getAllTestimonials } from '@/services'
 
 export default async function Home() {
@@ -16,9 +17,10 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-      <Skills skills={skillList} />
       <div className="mx-auto my-8 max-w-[1200px] px-4 md:my-[3.75rem]">
-        <ServiceSection />
+        <WhatWeBuildSection />
+        <WhoWeHelpSection />
+        <HowWeWorkSection />
         <TeamSection team={teamData} />
         <TestimonialSection testimonials={testimonials} />
         <ContactSection />
