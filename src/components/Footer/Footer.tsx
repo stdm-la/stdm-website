@@ -1,17 +1,11 @@
 'use client'
 
 import { socials } from '@/appData/personal'
-import { useLanguage } from '@/contexts/LanguageContext'
 import { useTranslation } from '@/hooks/useTranslation'
 import Logo from '../Navbar/Logo'
 
 const Footer = () => {
-  const { language, setLanguage } = useLanguage()
   const { t } = useTranslation()
-
-  const handleLanguageChange = (lang: 'en' | 'es') => {
-    setLanguage(lang)
-  }
 
   return (
     <footer className="bg-secondary relative flex min-h-[400px] flex-col justify-between gap-16 overflow-hidden px-4 py-14 md:p-14">
@@ -48,26 +42,6 @@ const Footer = () => {
                 </a>
               ))}
             </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-4">
-          <p className="text-neutral text-sm font-medium">{t('footer.languages')}</p>
-          <div className="flex gap-6">
-            <button
-              onClick={() => handleLanguageChange('en')}
-              className={`transition-colors duration-300 ${
-                language === 'en' ? 'text-neutral cursor-default' : 'text-tertiary-content hover:text-neutral cursor-pointer'
-              }`}>
-              En
-            </button>
-            <button
-              onClick={() => handleLanguageChange('es')}
-              className={`transition-colors duration-300 ${
-                language === 'es' ? 'text-neutral cursor-default' : 'text-tertiary-content hover:text-neutral cursor-pointer'
-              }`}>
-              Es
-            </button>
           </div>
         </div>
       </div>
