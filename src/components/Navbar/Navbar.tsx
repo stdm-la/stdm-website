@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useCallback, useState } from 'react'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { useTranslation } from '@/hooks/useTranslation'
 import useOutsideClick from '@/hooks/useOutsideClick'
 import { BurgerIcon, ChevronRightIcon, CloseIcon } from '../../utils/icons'
@@ -13,6 +14,7 @@ const Navbar = () => {
   const [solutionsOpen, setSolutionsOpen] = useState(false)
   const pathname = usePathname()
   const { t } = useTranslation()
+  const { language, setLanguage } = useLanguage()
 
   const solutionsItems = [
     { label: t('nav.solutions.ngos'), href: '/#solutions' },
@@ -92,11 +94,37 @@ const Navbar = () => {
               className="flex items-center border-b px-4 text-2xl md:border-0 md:text-base md:last:ml-auto md:last:px-0 lg:px-8">
               <Link
                 href={href}
-                className={`text-primary-content hover:text-neutral w-full cursor-pointer py-7 transition-all duration-150 md:py-0 ${pathname === href ? 'text-neutral' : ''}`}>
+                className={`text-primary-content hover:text-neutral w-full cursor-pointer whitespace-nowrap py-7 transition-all duration-150 md:py-0 ${pathname === href ? 'text-neutral' : ''}`}>
                 {label}
               </Link>
             </li>
           ))}
+          <li className="flex items-center border-b px-4 py-7 md:border-0 md:py-0 lg:pl-4">
+            <div className="flex gap-4">
+              <button
+                type="button"
+                onClick={() => {
+                  setLanguage('en')
+                  setIsVisible(false)
+                }}
+                className={`text-sm transition-colors duration-300 ${
+                  language === 'en' ? 'text-neutral cursor-default font-medium' : 'text-tertiary-content hover:text-neutral cursor-pointer'
+                }`}>
+                En
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setLanguage('es')
+                  setIsVisible(false)
+                }}
+                className={`text-sm transition-colors duration-300 ${
+                  language === 'es' ? 'text-neutral cursor-default font-medium' : 'text-tertiary-content hover:text-neutral cursor-pointer'
+                }`}>
+                Es
+              </button>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>

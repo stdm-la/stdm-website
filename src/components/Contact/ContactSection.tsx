@@ -28,7 +28,7 @@ const ContactSection = () => {
             <MsgIcon /> contact@stdm-la.com
           </a>
           <a
-            href="tel:+506 85174990"
+            href="tel:+50685174990"
             className="text-neutral hover:text-accent flex items-center gap-1 font-light transition-colors duration-300">
             <PhoneIcon /> +506 85174990
           </a>

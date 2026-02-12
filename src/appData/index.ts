@@ -46,7 +46,7 @@ export const teamData = [
     name: 'Diana Picado',
     role: 'CFO',
     image: dianaImage,
-    linkedIn: 'https://www.linkedin.com/',
+    linkedIn: 'https://www.linkedin.com/in/dianapicado/',
     order: 2,
   },
   {
@@ -72,7 +72,7 @@ export const teamData = [
   },
   {
     name: 'Thais Rodríguez',
-    role: 'UI/UX Designer',
+    role: 'Senior Software Engineer & UI/UX Designer',
     image:
       thaisImage,
     linkedIn: 'https://www.linkedin.com/in/thaís-rodríguez-lópez/',
@@ -82,7 +82,7 @@ export const teamData = [
     name: 'Sebastian Alemán',
     role: 'Graphic Designer',
     image: sebastianImage,
-    linkedIn: 'https://www.linkedin.com/in/sebastian-aleman/',
+    linkedIn: 'https://www.linkedin.com/in/sebasti%C3%A1n-alem%C3%A1n-99149a277/',
     order: 7,
   },
   {

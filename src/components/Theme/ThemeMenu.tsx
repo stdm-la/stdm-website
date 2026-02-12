@@ -4,12 +4,12 @@ import { MoonIcon, SunIcon } from '@/utils/icons'
 import { useEffect, useState } from 'react'
 
 const ThemeMenu = () => {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem('theme')
-      const initialTheme = stored ?? 'dark'
+      const initialTheme = stored ?? 'light'
       setTheme(initialTheme)
       document.documentElement.setAttribute('data-theme', initialTheme)
     }
