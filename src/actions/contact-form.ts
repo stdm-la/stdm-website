@@ -1,5 +1,7 @@
 'use server'
 
+import { headers } from 'next/headers';
+
 const action = async (_: { success: boolean; message: string } | null, formData: FormData) => {
   try {
     const name = formData.get('name')
@@ -38,7 +40,7 @@ const action = async (_: { success: boolean; message: string } | null, formData:
     const subject = formData.get('subject') || ''
 
     // Get the API route URL (works in both dev and production)
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/api/contact'
+    // const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/api/contact'
 
     // Prepare JSON payload
     const payload = {
@@ -47,6 +49,11 @@ const action = async (_: { success: boolean; message: string } | null, formData:
       subject: typeof subject === 'string' ? subject.trim() : '',
       message: message.trim(),
     }
+
+    const headersList = await headers();
+    const host = headersList.get('host') || 'localhost:3000';
+    const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http';
+    const apiUrl = `${protocol}://${host}/api/contact`;
 
     // Call the API route
     const res = await fetch(apiUrl, {
