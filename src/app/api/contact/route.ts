@@ -49,7 +49,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Get recipient email from environment variable
-    const recipientEmail = process.env.CONTACT_FORM_RECIPIENT_EMAIL
+    // const recipientEmail = process.env.CONTACT_FORM_RECIPIENT_EMAIL
+    const recipientEmail = "racso1aleman@gmail.com"
     if (!recipientEmail) {
       console.error('CONTACT_FORM_RECIPIENT_EMAIL is not configured')
       return NextResponse.json(
