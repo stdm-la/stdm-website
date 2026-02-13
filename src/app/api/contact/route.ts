@@ -3,13 +3,13 @@ import { NextRequest, NextResponse } from 'next/server'
 
 // Initialize SES client
 const sesClient = new SESClient({
-  region: process.env.AWS_REGION || 'us-east-1',
-  // credentials: process.env.AWS_ACCESS_KEY_ID
-  //   ? {
-  //       accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  //       secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || '',
-  //     }
-  //   : undefined, // If no credentials provided, use IAM role (for Amplify)
+  region: process.env.STDM_REGION || 'us-east-1',
+  credentials: process.env.STDM_ACCESS_KEY_ID
+    ? {
+        accessKeyId: process.env.STDM_ACCESS_KEY_ID,
+        secretAccessKey: process.env.STDM_SECRET_ACCESS_KEY || '',
+      }
+    : undefined, // If no credentials provided, use IAM role (for Amplify)
 })
 
 export async function POST(request: NextRequest) {
