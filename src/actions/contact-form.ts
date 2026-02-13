@@ -50,10 +50,16 @@ const action = async (_: { success: boolean; message: string } | null, formData:
       message: message.trim(),
     }
 
-    const headersList = await headers();
-    const host = headersList.get('host') || 'localhost:3000';
-    const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http';
-    const apiUrl = `${protocol}://${host}/api/contact`;
+    // Build absolute API URL (required for server actions)
+    let apiUrl: string
+    if (process.env.NEXT_PUBLIC_SITE_URL) {
+      apiUrl = `${process.env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, '')}/api/contact`
+    } else {
+      const headersList = await headers()
+      const host = headersList.get('host') || 'localhost:3000'
+      const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http'
+      apiUrl = `${protocol}://${host}/api/contact`
+    }
 
     // Call the API route
     const res = await fetch(apiUrl, {
