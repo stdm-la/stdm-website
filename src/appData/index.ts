@@ -8,6 +8,7 @@ import hoImage from '../assets/images/team/ho.png'
 import martinImage from '../assets/images/team/martin.png'
 import thaisImage from '../assets/images/team/thais.jpeg'
 import sebastianImage from '../assets/images/team/sebastian.jpeg'
+import juanImage from '../assets/images/team/juan.jpeg'
 
 // What We Build (outcome-focused, for homepage)
 export const whatWeBuildData = [
@@ -86,11 +87,10 @@ export const teamData = [
     order: 7,
   },
   {
-    name: 'Laura Castillo',
+    name: 'Juan Marín',
     role: 'QA Engineer',
-    image:
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop',
-    linkedIn: 'https://www.linkedin.com/',
+    image: juanImage,
+    linkedIn: 'https://www.linkedin.com/in/juan-camilo-marín-bayer-364420186',
     order: 8,
   },
   {
