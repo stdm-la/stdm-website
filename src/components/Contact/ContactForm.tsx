@@ -20,8 +20,8 @@ const HUBSPOT_FORM_BY_LANGUAGE = {
 
 /**
  * HubSpot is the active CRM for inbound leads.
- * Optional `source` / `interest` query params (on /#contact?…) are surfaced for attribution
- * and stored in sessionStorage so the form context survives language refresh.
+ * Optional `source` / `interest` query params (on /#contact?…) are surfaced for attribution.
+ * Context follows the URL only — generic `/#contact` clears any previous CTA attribution.
  */
 const ContactForm = () => {
   const { language } = useLanguage()
@@ -33,28 +33,28 @@ const ContactForm = () => {
   useEffect(() => {
     if (typeof window === 'undefined') return
 
-    const fromHash = window.location.hash.includes('?')
-      ? new URLSearchParams(window.location.hash.split('?')[1])
-      : null
-    const fromSearch = new URLSearchParams(window.location.search)
+    const syncLeadAttribution = () => {
+      const fromHash = window.location.hash.includes('?')
+        ? new URLSearchParams(window.location.hash.split('?')[1])
+        : null
+      const fromSearch = new URLSearchParams(window.location.search)
 
-    const nextInterest =
-      fromHash?.get('interest') ||
-      fromSearch.get('interest') ||
-      sessionStorage.getItem('stdm_lead_interest')
-    const nextSource =
-      fromHash?.get('source') ||
-      fromSearch.get('source') ||
-      sessionStorage.getItem('stdm_lead_source')
+      const nextInterest = fromHash?.get('interest') || fromSearch.get('interest') || null
+      const nextSource = fromHash?.get('source') || fromSearch.get('source') || null
 
-    if (nextInterest) {
-      sessionStorage.setItem('stdm_lead_interest', nextInterest)
+      // Drop any legacy session keys so generic /#contact never rehydrates an old CTA.
+      if (!nextInterest && !nextSource) {
+        sessionStorage.removeItem('stdm_lead_interest')
+        sessionStorage.removeItem('stdm_lead_source')
+      }
+
       setInterest(nextInterest)
-    }
-    if (nextSource) {
-      sessionStorage.setItem('stdm_lead_source', nextSource)
       setSource(nextSource)
     }
+
+    syncLeadAttribution()
+    window.addEventListener('hashchange', syncLeadAttribution)
+    return () => window.removeEventListener('hashchange', syncLeadAttribution)
   }, [])
 
   return (
