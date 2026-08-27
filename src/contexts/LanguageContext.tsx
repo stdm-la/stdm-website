@@ -33,14 +33,29 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const loadTranslations = async (lang: Language) => {
     try {
-      const translationsModule = await import(`../locales/${lang}.json`)
-      setTranslations(translationsModule.default || translationsModule)
+      const { deepMergeTranslations } = await import('../lib/mergeTranslations')
+      const [baseModule, sprint4Module] = await Promise.all([
+        import(`../locales/${lang}.json`),
+        import(`../locales/${lang}-sprint4.json`),
+      ])
+      const base = (baseModule.default || baseModule) as Record<string, unknown>
+      const sprint4 = (sprint4Module.default || sprint4Module) as Record<string, unknown>
+      setTranslations(deepMergeTranslations(base, sprint4))
     } catch (error) {
       console.error(`Failed to load translations for ${lang}:`, error)
       // Fallback to English if translation fails
       if (lang !== 'en') {
-        const enTranslations = await import('../locales/en.json')
-        setTranslations(enTranslations.default || enTranslations)
+        const { deepMergeTranslations } = await import('../lib/mergeTranslations')
+        const [enBase, enSprint4] = await Promise.all([
+          import('../locales/en.json'),
+          import('../locales/en-sprint4.json'),
+        ])
+        setTranslations(
+          deepMergeTranslations(
+            (enBase.default || enBase) as Record<string, unknown>,
+            (enSprint4.default || enSprint4) as Record<string, unknown>,
+          ),
+        )
       }
     }
   }

@@ -1,8 +1,9 @@
 {
-  "name": "Paul Arias",
-  "title": "CTO",
-  "feedback": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum eget auctor justo. Nullam sit amet nunc nec purus tincidunt aliquam. Nullam sit amet nunc nec purus tincidunt aliquam.",
-  "image": "https://i.pravatar.cc/150?img=1",
-  "stars": 4,
-  "createdAt": "2025-01-01"
+  "name": "Guillermo Montealegre",
+  "title": "Director of Online Strategy",
+  "company": "MediaLab",
+  "feedback": "Working with STDM has been a positive experience. Their team combines technical knowledge, effective communication and commitment to develop solutions aligned with the needs of each project.",
+  "image": "/images/testimonials/guillermo.jpeg",
+  "stars": 5,
+  "createdAt": "2026-08-25"
 }

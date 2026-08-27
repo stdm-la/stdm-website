@@ -37,7 +37,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ testimonials })
         {testimonials.map((_, idx) => (
           <div
             key={idx}
-            className={`${idx === activeCard ? 'bg-accent size-[12px]' : 'size-[10px] bg-white/50'} rounded-full`}
+            className={`${idx === activeCard ? 'bg-brand-gradient shadow-brand-glow size-[12px]' : 'size-[10px] bg-white/30'} rounded-full`}
           />
         ))}
       </div>

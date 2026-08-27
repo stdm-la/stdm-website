@@ -1,0 +1,390 @@
+{
+  "leads": {
+    "ctaTitle": "Ready to talk about your project?",
+    "ctaDescription": "Request a consultation or message us on WhatsApp. Our team will help you choose the right solution.",
+    "whatsappCta": "Contact via WhatsApp",
+    "whatsappDefaultMessage": "Hi STDM, I would like to request a consultation about your technology, digital and advertising solutions.",
+    "whatsappInterestMessage": "Hi STDM, I am interested in: {interest}. Can we schedule a consultation?",
+    "contextLabel": "Inquiry about",
+    "sourceLabel": "Lead source"
+  },
+  "pages": {
+    "catalog": {
+      "productsTitle": "Product lines",
+      "productsSubtitle": "Request a quote for the equipment that fits your operation. We supply, install and support.",
+      "inquiryNote": "Available upon request — installation and training included in turnkey projects.",
+      "otherCategories": "Explore other equipment categories",
+      "ctaTitle": "Need equipment or a full turnkey solution?",
+      "ctaDescription": "Tell us your use case and we will recommend the right configuration, installation and support plan.",
+      "categories": {
+        "largeFormatPrinters": {
+          "title": "Large Format Printers",
+          "description": "Professional large format printing systems for signage, vehicle wraps, banners and high-volume production in Costa Rica.",
+          "products": {
+            "solventPrinter": {
+              "title": "Solvent Printers",
+              "description": "Durable outdoor printing for banners, billboards and long-lasting graphics."
+            },
+            "uvPrinter": {
+              "title": "UV Printers",
+              "description": "Direct-to-substrate UV printing for rigid materials, displays and specialty applications."
+            },
+            "ecoSolventPrinter": {
+              "title": "Eco-Solvent Printers",
+              "description": "Low-odor production printers for indoor and outdoor graphics with strong color quality."
+            },
+            "plotterCutter": {
+              "title": "Plotters & Cutters",
+              "description": "Precision cutting for vinyl, labels and finishing workflows paired with your print line."
+            }
+          }
+        },
+        "cncEquipment": {
+          "title": "CNC Equipment",
+          "description": "CNC cutting and engraving solutions for signage fabrication, displays and custom materials.",
+          "products": {
+            "cncRouter": {
+              "title": "CNC Routers",
+              "description": "Multi-material routers for acrylic, wood, foam, aluminum composite and sign substrates."
+            },
+            "laserCnc": {
+              "title": "Laser CNC",
+              "description": "Laser cutting and engraving for precision detailing and specialty finishing."
+            },
+            "plasmaCutter": {
+              "title": "Plasma Cutting Systems",
+              "description": "Metal cutting capabilities for industrial and custom fabrication projects."
+            }
+          }
+        },
+        "digitalDisplays": {
+          "title": "Digital Displays",
+          "description": "Commercial digital screens for retail, corporate, hospitality and public environments.",
+          "products": {
+            "indoorLcd": {
+              "title": "Indoor LCD Displays",
+              "description": "High-brightness commercial LCD panels for lobbies, stores and meeting spaces."
+            },
+            "outdoorLed": {
+              "title": "Outdoor LED Screens",
+              "description": "Weather-rated LED solutions for façades, plazas and high-visibility outdoor brand presence."
+            },
+            "videoWall": {
+              "title": "Video Walls",
+              "description": "Modular video wall configurations for impactful large-scale visual experiences."
+            },
+            "windowDisplay": {
+              "title": "Window & High-Brightness Displays",
+              "description": "Displays engineered for storefronts and bright ambient light conditions."
+            }
+          }
+        },
+        "interactiveDisplays": {
+          "title": "Interactive Displays",
+          "description": "Touch-enabled and interactive screens for kiosks, collaboration and customer engagement.",
+          "products": {
+            "touchScreen": {
+              "title": "Touch Screens",
+              "description": "Multi-touch commercial displays for presentations, wayfinding and interactive content."
+            },
+            "interactiveKiosk": {
+              "title": "Interactive Kiosks",
+              "description": "Self-service and information kiosks for retail, hospitality and public venues."
+            },
+            "collaborationDisplay": {
+              "title": "Collaboration Displays",
+              "description": "Meeting-room interactive boards for teams, training rooms and corporate spaces."
+            }
+          }
+        },
+        "digitalSignageEquipment": {
+          "title": "Digital Signage Equipment",
+          "description": "Complete digital signage stacks including players, mounts and content management.",
+          "products": {
+            "mediaPlayer": {
+              "title": "Media Players",
+              "description": "Reliable media players for scheduled content playback across single or networked screens."
+            },
+            "signageSoftware": {
+              "title": "Signage Software",
+              "description": "Content management platforms to schedule, publish and monitor digital signage networks."
+            },
+            "mountingKits": {
+              "title": "Mounting & Hardware Kits",
+              "description": "Professional mounts, enclosures and installation hardware for safe deployments."
+            },
+            "completeKit": {
+              "title": "Turnkey Signage Kits",
+              "description": "Bundled screen, player, software and installation packages ready for go-live."
+            }
+          }
+        }
+      },
+      "viewCatalog": "View product catalog"
+    },
+    "seoLandings": {
+      "badge": "Local solutions",
+      "relatedCta": "View full service page",
+      "softwareDevelopment": {
+        "headline": "Software Development in Costa Rica",
+        "subheadline": "Custom web platforms, mobile apps and business software built for companies that need reliable digital products.",
+        "whyTitle": "Why choose STDM for software development?",
+        "whyBody": "We combine product thinking with solid engineering so your software supports real operations — not just a demo. From MVP to scalable platforms, we deliver with clarity and accountability.",
+        "benefit1Title": "Business-first delivery",
+        "benefit1Body": "We start from your workflows and goals, then design software that teams actually use.",
+        "benefit2Title": "Modern web & mobile stacks",
+        "benefit2Body": "Scalable architectures ready for growth, integrations and long-term maintenance.",
+        "benefit3Title": "Local partnership",
+        "benefit3Body": "Work with a Costa Rica-based team that understands regional business realities.",
+        "benefit4Title": "Path to more value",
+        "benefit4Body": "Software often connects to cloud, marketing and operational tooling — we help you integrate.",
+        "ctaTitle": "Need custom software for your company?",
+        "ctaDescription": "Request a consultation and tell us what you want to build or improve.",
+        "metadata": {
+          "title": "Software Development Costa Rica | STDM",
+          "description": "Custom software development in Costa Rica: web platforms, mobile apps and business software."
+        }
+      },
+      "cloudSolutions": {
+        "headline": "Cloud Solutions in Costa Rica",
+        "subheadline": "Cloud migration, architecture and managed environments so your business can operate securely and scale with confidence.",
+        "whyTitle": "Cloud that supports your operations",
+        "whyBody": "STDM helps companies move workloads to the cloud, modernize infrastructure and keep environments reliable — with practical guidance, not unnecessary complexity.",
+        "benefit1Title": "Migration with a plan",
+        "benefit1Body": "Assess, prioritize and migrate systems with clear milestones and risk control.",
+        "benefit2Title": "Secure foundations",
+        "benefit2Body": "Identity, networking and backup practices aligned with business continuity.",
+        "benefit3Title": "Cost-aware architecture",
+        "benefit3Body": "Design for performance and growth without overprovisioning.",
+        "benefit4Title": "Ongoing support",
+        "benefit4Body": "Installation, configuration and technical support when you need a partner after go-live.",
+        "ctaTitle": "Planning a cloud project?",
+        "ctaDescription": "Talk to a specialist about migration, architecture or managed cloud support.",
+        "metadata": {
+          "title": "Cloud Solutions Costa Rica | STDM",
+          "description": "Cloud migration, architecture and managed cloud solutions for businesses in Costa Rica."
+        }
+      },
+      "itConsulting": {
+        "headline": "IT Consulting in Costa Rica",
+        "subheadline": "Strategic technology advisory that aligns IT investments with business goals, operations and growth.",
+        "whyTitle": "Clear decisions for technology investments",
+        "whyBody": "Whether you are modernizing systems, evaluating vendors or defining a roadmap, we help leadership and technical teams move with confidence.",
+        "benefit1Title": "Roadmaps that stick",
+        "benefit1Body": "Prioritized initiatives based on impact, feasibility and budget reality.",
+        "benefit2Title": "Vendor & architecture guidance",
+        "benefit2Body": "Independent recommendations across software, cloud, infrastructure and digital channels.",
+        "benefit3Title": "Risk reduction",
+        "benefit3Body": "Identify gaps in security, continuity and operational readiness early.",
+        "benefit4Title": "Execution partner",
+        "benefit4Body": "We can stay involved to implement what we recommend.",
+        "ctaTitle": "Need an IT advisor?",
+        "ctaDescription": "Request a consultation to review your current stack and next priorities.",
+        "metadata": {
+          "title": "IT Consulting Costa Rica | STDM",
+          "description": "IT consulting in Costa Rica to align technology investments with business goals."
+        }
+      },
+      "itInfrastructure": {
+        "headline": "IT Infrastructure in Costa Rica",
+        "subheadline": "Networks, servers and infrastructure designed for performance, security and day-to-day reliability.",
+        "whyTitle": "Infrastructure that keeps the business running",
+        "whyBody": "From office networks to hybrid environments, STDM designs and supports infrastructure that teams depend on every day.",
+        "benefit1Title": "Reliable networks",
+        "benefit1Body": "Connectivity and segmentation planned for security and performance.",
+        "benefit2Title": "Server & storage readiness",
+        "benefit2Body": "Stable foundations for applications, backups and growth.",
+        "benefit3Title": "Security basics done right",
+        "benefit3Body": "Hardening practices and monitoring aligned with your risk profile.",
+        "benefit4Title": "Support after installation",
+        "benefit4Body": "Configuration, commissioning and technical support included in our delivery model.",
+        "ctaTitle": "Strengthening your infrastructure?",
+        "ctaDescription": "Share your current setup and we will propose a practical improvement plan.",
+        "metadata": {
+          "title": "IT Infrastructure Costa Rica | STDM",
+          "description": "IT infrastructure, networks and servers for performance and security in Costa Rica."
+        }
+      },
+      "digitalMarketing": {
+        "headline": "Digital Marketing in Costa Rica",
+        "subheadline": "Integrated digital marketing strategies that generate visibility, leads and measurable growth for businesses.",
+        "whyTitle": "Marketing connected to business outcomes",
+        "whyBody": "We combine channels, content and analytics so campaigns support sales and brand — not vanity metrics alone.",
+        "benefit1Title": "Channel strategy",
+        "benefit1Body": "Search, social, content and paid media aligned to your audience.",
+        "benefit2Title": "Lead generation focus",
+        "benefit2Body": "Funnels and creative designed to capture and nurture demand.",
+        "benefit3Title": "Measurement that matters",
+        "benefit3Body": "Tracking and reporting that inform decisions every month.",
+        "benefit4Title": "Integrated with technology",
+        "benefit4Body": "Websites, CRM and automation that make marketing scalable.",
+        "ctaTitle": "Ready to grow your digital presence?",
+        "ctaDescription": "Request a consultation and we will map a practical marketing plan for your market.",
+        "metadata": {
+          "title": "Digital Marketing Costa Rica | STDM",
+          "description": "Digital marketing services in Costa Rica for visibility, leads and measurable growth."
+        }
+      },
+      "socialMedia": {
+        "headline": "Social Media Marketing in Costa Rica",
+        "subheadline": "Content, community and paid social that strengthen brand presence and engagement with your customers.",
+        "whyTitle": "Social media with commercial purpose",
+        "whyBody": "STDM helps brands stay consistent and relevant on social platforms while connecting social activity to leads and sales opportunities.",
+        "benefit1Title": "Content systems",
+        "benefit1Body": "Planning and production that keep your brand active without chaos.",
+        "benefit2Title": "Community engagement",
+        "benefit2Body": "Conversations managed with brand voice and response discipline.",
+        "benefit3Title": "Paid social amplification",
+        "benefit3Body": "Audience targeting and creative testing to expand reach efficiently.",
+        "benefit4Title": "Insights over guesswork",
+        "benefit4Body": "Performance reviews that refine what to publish next.",
+        "ctaTitle": "Need a social media partner?",
+        "ctaDescription": "Talk to a specialist about content, ads and community management.",
+        "metadata": {
+          "title": "Social Media Marketing Costa Rica | STDM",
+          "description": "Social media marketing in Costa Rica: content, community and paid social."
+        }
+      },
+      "digitalAdvertising": {
+        "headline": "Digital Advertising in Costa Rica",
+        "subheadline": "Paid campaigns across search, social and display optimized for reach, leads and return on investment.",
+        "whyTitle": "Advertising that respects your budget",
+        "whyBody": "We plan, launch and optimize campaigns with clear KPIs — so spend converts into pipeline and brand impact.",
+        "benefit1Title": "Multi-channel campaigns",
+        "benefit1Body": "Search, social and display coordinated around one message.",
+        "benefit2Title": "Conversion focus",
+        "benefit2Body": "Landing experiences and tracking designed for leads.",
+        "benefit3Title": "Ongoing optimization",
+        "benefit3Body": "Budget shifts and creative tests based on performance.",
+        "benefit4Title": "Connected to offline advertising",
+        "benefit4Body": "Digital campaigns can reinforce outdoor, signage and in-store visibility.",
+        "ctaTitle": "Planning a paid campaign?",
+        "ctaDescription": "Request a consultation to define goals, audiences and budget.",
+        "metadata": {
+          "title": "Digital Advertising Costa Rica | STDM",
+          "description": "Digital advertising campaigns in Costa Rica optimized for leads and ROI."
+        }
+      },
+      "outdoorAdvertising": {
+        "headline": "Outdoor Advertising in Costa Rica",
+        "subheadline": "Billboards, façades, banners and exterior displays designed for maximum visibility in high-traffic locations.",
+        "whyTitle": "Physical presence that builds brands",
+        "whyBody": "STDM delivers outdoor advertising projects that combine creative impact with production and installation readiness.",
+        "benefit1Title": "High-visibility formats",
+        "benefit1Body": "Exterior solutions matched to location, audience and brand goals.",
+        "benefit2Title": "Production capability",
+        "benefit2Body": "Large format printing and fabrication support for durable outdoor materials.",
+        "benefit3Title": "Installation & support",
+        "benefit3Body": "Professional installation and follow-up for reliable deployments.",
+        "benefit4Title": "Integrated campaigns",
+        "benefit4Body": "Connect outdoor visibility with digital marketing for stronger recall.",
+        "ctaTitle": "Need outdoor advertising?",
+        "ctaDescription": "Share your location and objectives — we will propose the right format.",
+        "metadata": {
+          "title": "Outdoor Advertising Costa Rica | STDM",
+          "description": "Outdoor advertising in Costa Rica: billboards, façades, banners and exterior displays."
+        }
+      },
+      "signage": {
+        "headline": "Signage in Costa Rica",
+        "subheadline": "Corporate signage, wayfinding, illuminated signs and brand identity elements for buildings and facilities.",
+        "whyTitle": "Signage that guides and represents",
+        "whyBody": "From corporate façades to interior wayfinding, we design and produce signage that communicates clearly and looks professional.",
+        "benefit1Title": "Brand-consistent design",
+        "benefit1Body": "Visual identity applied correctly across materials and spaces.",
+        "benefit2Title": "Functional wayfinding",
+        "benefit2Body": "Clear direction systems for customers, visitors and staff.",
+        "benefit3Title": "Durable production",
+        "benefit3Body": "Materials and finishes selected for longevity and environment.",
+        "benefit4Title": "From concept to install",
+        "benefit4Body": "Design, fabrication, installation and support in one partner.",
+        "ctaTitle": "Planning a signage project?",
+        "ctaDescription": "Request a consultation for corporate, retail or facility signage.",
+        "metadata": {
+          "title": "Signage Costa Rica | STDM",
+          "description": "Corporate signage, wayfinding and illuminated signs in Costa Rica."
+        }
+      },
+      "largeFormatPrinters": {
+        "headline": "Large Format Printers in Costa Rica",
+        "subheadline": "Professional large format printing equipment for banners, signage, wraps and high-volume production — with installation and training.",
+        "whyTitle": "Equipment plus the team to make it productive",
+        "whyBody": "STDM supplies large format printers and helps you go live with configuration, training and maintenance options.",
+        "benefit1Title": "Production-ready systems",
+        "benefit1Body": "Printer lines selected for your volume, substrates and finishing needs.",
+        "benefit2Title": "Turnkey setup",
+        "benefit2Body": "Installation, commissioning and operator training included.",
+        "benefit3Title": "Ongoing support",
+        "benefit3Body": "Maintenance and technical support to protect uptime.",
+        "benefit4Title": "Complete advertising stack",
+        "benefit4Body": "Pair printers with CNC, displays and signage services for end-to-end delivery.",
+        "ctaTitle": "Looking for a large format printer?",
+        "ctaDescription": "Contact us for equipment recommendations and a quote.",
+        "metadata": {
+          "title": "Large Format Printers Costa Rica | STDM",
+          "description": "Large format printers in Costa Rica with installation, training and support."
+        }
+      },
+      "cnc": {
+        "headline": "CNC Equipment in Costa Rica",
+        "subheadline": "CNC routers and cutting systems for precision fabrication of signage, displays and custom materials.",
+        "whyTitle": "Precision equipment for fabrication teams",
+        "whyBody": "We help businesses select, install and operate CNC equipment that improves quality and production capacity.",
+        "benefit1Title": "Multi-material capability",
+        "benefit1Body": "Solutions for acrylic, wood, composites and specialty substrates.",
+        "benefit2Title": "Installation & training",
+        "benefit2Body": "Commissioning and operator enablement so production starts right.",
+        "benefit3Title": "Workflow integration",
+        "benefit3Body": "Connect CNC with printing and finishing for signage production.",
+        "benefit4Title": "Local support",
+        "benefit4Body": "Technical support and maintenance options in Costa Rica.",
+        "ctaTitle": "Need CNC equipment?",
+        "ctaDescription": "Tell us your materials and volume — we will propose the right system.",
+        "metadata": {
+          "title": "CNC Costa Rica | STDM",
+          "description": "CNC equipment in Costa Rica for signage fabrication and custom materials."
+        }
+      },
+      "digitalDisplays": {
+        "headline": "Digital Displays in Costa Rica",
+        "subheadline": "Commercial digital screens for retail, corporate and public environments — supplied, installed and supported.",
+        "whyTitle": "Screens that work in real environments",
+        "whyBody": "From indoor LCD to outdoor LED, STDM delivers digital display projects with hardware, mounting and content readiness.",
+        "benefit1Title": "Commercial-grade hardware",
+        "benefit1Body": "Displays selected for brightness, durability and use case.",
+        "benefit2Title": "Professional installation",
+        "benefit2Body": "Mounting, power and network setup done correctly.",
+        "benefit3Title": "Content & players",
+        "benefit3Body": "Optional media players and signage software for scheduled playback.",
+        "benefit4Title": "Support after go-live",
+        "benefit4Body": "Maintenance and technical support to keep screens online.",
+        "ctaTitle": "Planning a digital display project?",
+        "ctaDescription": "Request a consultation for screens, video walls or outdoor LED.",
+        "metadata": {
+          "title": "Digital Displays Costa Rica | STDM",
+          "description": "Digital displays and commercial screens in Costa Rica with installation support."
+        }
+      },
+      "interactiveDisplays": {
+        "headline": "Interactive Displays in Costa Rica",
+        "subheadline": "Touch screens, kiosks and collaboration displays for engagement, wayfinding and team productivity.",
+        "whyTitle": "Interactivity with a clear purpose",
+        "whyBody": "We deploy interactive displays that improve customer experience or team collaboration — with installation and training included.",
+        "benefit1Title": "Engagement formats",
+        "benefit1Body": "Kiosks and touch screens for retail, hospitality and public spaces.",
+        "benefit2Title": "Collaboration rooms",
+        "benefit2Body": "Interactive boards for meetings, training and hybrid work.",
+        "benefit3Title": "Turnkey delivery",
+        "benefit3Body": "Hardware, configuration and user training in one project.",
+        "benefit4Title": "Integrated solutions",
+        "benefit4Body": "Connect interactive experiences with digital marketing and signage strategy.",
+        "ctaTitle": "Need interactive displays?",
+        "ctaDescription": "Talk to a specialist about kiosks, touch screens or collaboration rooms.",
+        "metadata": {
+          "title": "Interactive Displays Costa Rica | STDM",
+          "description": "Interactive displays, kiosks and collaboration screens in Costa Rica."
+        }
+      }
+    }
+  }
+}

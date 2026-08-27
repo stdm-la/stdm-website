@@ -1,6 +1,7 @@
 'use client'
 
-import { whatWeBuildData } from '@/appData'
+import Link from 'next/link'
+import { businessUnitsData } from '@/appData'
 import { useTranslation } from '@/hooks/useTranslation'
 import SectionHeading from '../SectionHeading/SectionHeading'
 import ServiceCard from '../Services/ServiceCard'
@@ -16,13 +17,18 @@ const WhatWeBuildSection = () => {
       />
 
       <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-8 md:mt-[3.75rem] md:grid-cols-2 lg:grid-cols-4">
-        {whatWeBuildData.map((item, index) => (
-          <ServiceCard
-            key={index}
-            icon={item.icon}
-            title={item.title}
-            shortDescription={item.shortDescription}
-          />
+        {businessUnitsData.map((unit) => (
+          <Link
+            key={unit.id}
+            id={unit.id}
+            href={unit.href}
+            className="scroll-mt-24 transition-transform hover:scale-[1.02]">
+            <ServiceCard
+              icon={unit.icon}
+              title={t(unit.titleKey)}
+              shortDescription={t(unit.descriptionKey)}
+            />
+          </Link>
         ))}
       </div>
 

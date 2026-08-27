@@ -3,61 +3,49 @@ import './globals.css'
 
 import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/Navbar/Navbar'
+import WhatsAppButton from '@/components/Leads/WhatsAppButton'
+import JsonLd from '@/components/SEO/JsonLd'
 import ThemeMenu from '@/components/Theme/ThemeMenu'
 import ScrollButtons from '@/components/UI/ScrollButtons'
 import { LanguageProvider } from '@/contexts/LanguageContext'
-import { Fira_Code } from 'next/font/google'
+import { getRootMetadata, getServerLanguage } from '@/lib/getPageMetadata'
+import { buildOrganizationSchema, buildWebSiteSchema } from '@/lib/schema'
+import { Montserrat, Open_Sans } from 'next/font/google'
 
-const firaCode = Fira_Code({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['600', '700', '800'],
+  variable: '--font-montserrat',
+})
 
-const title = 'STDM | Digital Solutions for NGOs & SMBs'
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-open-sans',
+})
 
-const description =
-  "We build digital models that help organizations grow. Practical digital solutions for NGOs and small-to-medium businesses — from proof of concept to scalable products."
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-const metadataBase = siteUrl ? new URL(siteUrl) : undefined
-
-export const metadata: Metadata = {
-  title,
-  description,
-  category: 'technology',
-  ...(metadataBase ? { metadataBase } : {}),
-  ...(siteUrl
-    ? {
-        alternates: { canonical: siteUrl },
-        openGraph: {
-          title,
-          description,
-          url: siteUrl,
-          siteName: 'SIS Technologies Digital Models',
-          type: 'website',
-        },
-      }
-    : {
-        openGraph: {
-          title,
-          description,
-          siteName: 'SIS Technologies Digital Models',
-          type: 'website',
-        },
-      }),
-  twitter: {
-    title,
-    description,
-    card: 'summary_large_image',
-    creator: '',
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  return getRootMetadata()
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const lang = await getServerLanguage()
+
   return (
-    <html lang="en" data-theme="light" suppressHydrationWarning>
-      <body className={`${firaCode.className}`} suppressHydrationWarning>
+    <html lang={lang} data-theme="dark" suppressHydrationWarning>
+      <body
+        className={`${montserrat.variable} ${openSans.variable} font-body antialiased`}
+        suppressHydrationWarning>
+        <JsonLd
+          data={[
+            { '@context': 'https://schema.org', ...buildOrganizationSchema() },
+            buildWebSiteSchema(),
+          ]}
+        />
         <LanguageProvider>
           <header className="sticky top-0 z-[1000]">
             <Navbar />
@@ -65,6 +53,7 @@ export default function RootLayout({
           {children}
           <ThemeMenu />
           <ScrollButtons />
+          <WhatsAppButton />
           <Footer />
         </LanguageProvider>
       </body>

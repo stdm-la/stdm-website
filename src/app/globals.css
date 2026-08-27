@@ -1,41 +1,38 @@
 @import 'tailwindcss';
 
-[data-theme='light'] {
-  --p: #fff;
-  --pc: #0d1a3b;
-  --s: #edeaf4;
-  --sc: #0d1a3b;
-  --tc: #6b7c93;
-  --a: #5565e8;
-  --n: #0d1a3b;
-
-  --b: #dfdcdc;
-  --marquee: #dbe3f7;
-
-  /* for logo */
-  --gradient-start: #5565e8;
-  --gradient-mid: #18f2e5;
-  --gradient-end: #dbe3f7;
-}
-
 [data-theme='dark'] {
-  --p: #011627;
-  --pc: #607b96;
-  --s: #011221;
-  --sc: #5565e8;
-  --tc: #99a1af;
-  --a: #18f2e5;
-  --n: #fff;
+  --p: #0a0e17;
+  --pc: #e2e8f0;
+  --s: #111827;
+  --sc: #ffffff;
+  --tc: #94a3b8;
+  --a: #2563eb;
+  --n: #ffffff;
 
-  --b: #1e2d3d;
-  --marquee: #062b48;
+  --b: #1e293b;
+  --marquee: #1a2744;
 
-  /* for logo */
-  --gradient-start: #18f2e5;
-  --gradient-mid: #5cc0fe;
-  --gradient-end: #4ea7ff;
+  --gradient-start: #2563eb;
+  --gradient-mid: #6366f1;
+  --gradient-end: #7c3aed;
 }
 
+[data-theme='light'] {
+  --p: #ffffff;
+  --pc: #0a0e17;
+  --s: #f1f5f9;
+  --sc: #0a0e17;
+  --tc: #64748b;
+  --a: #2563eb;
+  --n: #0a0e17;
+
+  --b: #e2e8f0;
+  --marquee: #dbeafe;
+
+  --gradient-start: #2563eb;
+  --gradient-mid: #6366f1;
+  --gradient-end: #7c3aed;
+}
 
 @theme {
   --color-primary: var(--p);
@@ -47,7 +44,7 @@
   --color-neutral: var(--n);
   --color-border: var(--b);
   --color-marquee: var(--marquee);
-  --color-tag: #ffa800;
+  --color-tag: #f59e0b;
 
   --animate-fade-in: fade-in 0.5s ease-out 1;
   --animate-blink: blink 0.8s ease-in-out infinite;
@@ -55,13 +52,19 @@
 
   --background-image-large-glow: url('../assets/images/bg-lg.svg');
   --background-image-small-glow: url('../assets/images/bg-sm.svg');
-  --background-image-skill-gradient: linear-gradient(to right, var(--p), #062b48, var(--p));
+  --background-image-brand-gradient: linear-gradient(
+    135deg,
+    var(--gradient-start) 0%,
+    var(--gradient-mid) 50%,
+    var(--gradient-end) 100%
+  );
+  --background-image-skill-gradient: linear-gradient(to right, var(--p), #1a2744, var(--p));
 
   --background-position-large-glow-position: 110% 30%;
   --background-position-small-glow-position: 50% 600%;
 
-  --font-fira-code: Fira Code, monospace;
-  --font-inter: Inter, sans-serif;
+  --font-heading: var(--font-montserrat), Montserrat, sans-serif;
+  --font-body: var(--font-open-sans), 'Open Sans', sans-serif;
 
   @keyframes fade-in {
     0% {
@@ -92,14 +95,6 @@
   }
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -119,15 +114,25 @@ html {
 }
 
 body {
-  font-family: 'Fira Code', monospace;
+  font-family: var(--font-body);
   font-optical-sizing: auto;
   font-style: normal;
 
-  @apply bg-primary text-white;
+  @apply bg-primary text-primary-content;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
 }
 
 .rehype-code-title {
-  @apply text-primary-content rounded-t-md bg-[#05101a] px-6 py-3 text-sm font-medium;
+  @apply text-primary-content rounded-t-md bg-[#0a0e17] px-6 py-3 text-sm font-medium;
 }
 
 h2,
@@ -139,7 +144,6 @@ section {
   scroll-margin-top: 1.5rem;
 }
 
-/* Safari-only */
 @supports (-webkit-hyphens: none) {
   * {
     scroll-margin-top: 0;
@@ -158,4 +162,41 @@ section {
     display: none;
   }
   scrollbar-width: none;
+}
+
+@layer utilities {
+  .bg-brand-gradient {
+    background-image: linear-gradient(
+      135deg,
+      var(--gradient-start) 0%,
+      var(--gradient-mid) 50%,
+      var(--gradient-end) 100%
+    );
+  }
+
+  .text-brand-gradient {
+    background-image: linear-gradient(
+      135deg,
+      var(--gradient-start) 0%,
+      var(--gradient-mid) 50%,
+      var(--gradient-end) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .border-brand-gradient {
+    border-image: linear-gradient(
+        135deg,
+        var(--gradient-start) 0%,
+        var(--gradient-mid) 50%,
+        var(--gradient-end) 100%
+      )
+      1;
+  }
+
+  .shadow-brand-glow {
+    box-shadow: 0 0 24px rgba(37, 99, 235, 0.25);
+  }
 }
