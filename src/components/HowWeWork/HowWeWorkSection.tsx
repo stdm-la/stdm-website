@@ -19,9 +19,9 @@ const HowWeWorkSection = () => {
         {steps.map((step) => (
           <div
             key={step}
-            className="bg-secondary border-border flex items-start gap-4 rounded-[14px] border p-5"
+            className="bg-secondary border-border hover:shadow-brand-glow flex items-start gap-4 rounded-xl border p-5 transition-shadow"
           >
-            <span className="text-accent flex size-12 shrink-0 items-center justify-center rounded-full bg-primary">
+            <span className="bg-brand-gradient flex size-12 shrink-0 items-center justify-center rounded-full text-white shadow-brand-glow">
               <span className="text-lg font-bold">{step}</span>
             </span>
             <div>

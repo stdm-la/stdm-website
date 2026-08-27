@@ -4,12 +4,12 @@ import { MoonIcon, SunIcon } from '@/utils/icons'
 import { useEffect, useState } from 'react'
 
 const ThemeMenu = () => {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('dark')
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem('theme')
-      const initialTheme = stored ?? 'light'
+      const initialTheme = stored ?? 'dark'
       setTheme(initialTheme)
       document.documentElement.setAttribute('data-theme', initialTheme)
     }
@@ -29,7 +29,7 @@ const ThemeMenu = () => {
       <button
         onClick={toggleTheme}
         aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
-        className="bg-secondary border-border text-primary-content hover:bg-primary flex items-center justify-center rounded-full border p-3 transition-colors duration-200 md:p-4">
+        className="bg-secondary border-border text-primary-content hover:shadow-brand-glow flex items-center justify-center rounded-full border p-3 transition-all duration-200 md:p-4">
         {theme === 'dark' ? (
           <SunIcon className="h-5 w-5 md:h-6 md:w-6" />
         ) : (

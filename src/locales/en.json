@@ -1,21 +1,22 @@
 {
   "nav": {
-    "home": "Home",
-    "solutions": {
-      "label": "Solutions",
-      "ngos": "Digital Solutions for NGOs",
-      "smbs": "Digital Solutions for SMBs",
-      "poc": "Proof of Concept & MVP Development"
+    "services": {
+      "label": "Services"
     },
-    "howWeWork": "How We Work",
-    "about": "About STDM",
+    "technology": "Technology",
+    "digital": "Digital",
+    "advertising": "Advertising",
+    "equipment": "Equipment",
+    "solutions": "Solutions",
+    "projects": "Projects",
+    "about": "About",
     "contact": "Contact"
   },
   "hero": {
-    "headline": "We build digital models that help organizations grow and operate better.",
-    "subheadline": "At STDM (SIS Technologies Digital Models), we design and develop practical digital solutions for NGOs and small-to-medium businesses — from proof of concept to scalable products.",
-    "primaryCta": "Let's talk about your project",
-    "secondaryCta": "See how we work"
+    "headline": "Technology, Digital & Advertising Solutions",
+    "subheadline": "We integrate technology, marketing, advertising and digital solutions to help businesses create, operate and grow.",
+    "primaryCta": "Request a consultation",
+    "secondaryCta": "Talk to a specialist"
   },
   "contact": {
     "letsTalk": "Let's Talk",
@@ -46,42 +47,355 @@
     "contact": "Contact",
     "languages": "Languages",
     "copyright": "Copyright",
+    "tagline": "Technology, Digital & Advertising Solutions",
     "allRightsReserved": "All rights reserved. STDM is a commercial brand of SIS Technologies Digital Marketing S.R.L."
   },
   "metadata": {
-    "title": "STDM | Digital Solutions for NGOs & SMBs",
-    "description": "We build digital models that help organizations grow. Practical digital solutions for NGOs and small-to-medium businesses — from proof of concept to scalable products.",
-    "siteName": "SIS Technologies Digital Models"
+    "title": "STDM | Technology, Digital & Advertising Solutions",
+    "description": "STDM integrates technology, digital marketing, advertising, signage and specialized equipment for businesses in Costa Rica. Software development, cloud solutions, IT consulting, digital marketing, outdoor advertising and digital displays.",
+    "siteName": "STDM"
   },
   "sections": {
     "whatWeBuild": {
-      "title": "Digital Solutions with Real Business Impact",
-      "subtitle": "We help organizations move from ideas to functional digital products through:",
-      "focus": "We focus on clarity, speed, and long-term value."
+      "title": "Integrated Solutions for Your Business",
+      "subtitle": "Four business units working together to deliver complete technology, digital, advertising and equipment solutions.",
+      "focus": "One partner. Multiple capabilities. Long-term value."
     },
-    "whoWeHelp": {
-      "title": "Who We Work With",
-      "ngos": {
-        "title": "For NGOs",
-        "description": "We help mission-driven organizations strengthen their digital presence, communicate clearly, and engage supporters through professional, easy-to-manage platforms."
+    "businessUnits": {
+      "technology": {
+        "title": "Technology & IT",
+        "description": "Software development, cloud solutions, IT consulting, DevOps, infrastructure and cybersecurity."
       },
-      "smbs": {
-        "title": "For SMBs",
-        "description": "We help businesses turn their websites and applications into tools that generate leads, improve operations, and support growth."
+      "digital": {
+        "title": "Digital Marketing",
+        "description": "Digital marketing, SEO, social media, marketing automation and analytics."
+      },
+      "advertising": {
+        "title": "Advertising & Signage",
+        "description": "Outdoor and indoor advertising, signage, custom projects and brand visibility."
+      },
+      "equipment": {
+        "title": "Equipment & Technology",
+        "description": "Large format printers, CNC equipment, digital displays, interactive screens and installation support."
       }
     },
+    "industriesWeServe": {
+      "title": "Industries We Serve",
+      "retail": "Retail",
+      "manufacturing": "Manufacturing",
+      "construction": "Construction",
+      "education": "Education",
+      "healthcare": "Healthcare",
+      "hospitality": "Hospitality",
+      "professionalServices": "Professional Services",
+      "financialServices": "Financial Services"
+    },
+    "industriesViewAll": "Explore all industries",
     "howWeWork": {
       "title": "How We Work",
       "subtitle": "A clear, practical process.",
       "step1": "Understand your goals and constraints",
-      "step2": "Design a clear digital model",
-      "step3": "Build a functional solution (POC or MVP)",
-      "step4": "Iterate and scale when needed",
+      "step2": "Design the right integrated solution",
+      "step3": "Deliver with clarity and accountability",
+      "step4": "Support, iterate and scale when needed",
       "tagline": "No unnecessary complexity. No overengineering."
     },
     "team": "Our Team",
     "teamSubtitle": "The people behind STDM.",
     "testimonials": "Testimonials",
-    "testimonialsSubtitle": "Don't just take our word for it — see what our clients say."
+    "testimonialsSubtitle": "Don't just take our word for it — see what our clients say.",
+    "projects": "Projects & Case Studies",
+    "projectsSubtitle": "Real results across technology, marketing, advertising and equipment.",
+    "projectsAll": "All",
+    "projectsEmpty": "No projects in this category yet.",
+    "projectsViewAll": "View all projects",
+    "aboutPreview": {
+      "title": "About STDM",
+      "subtitle": "An integrated partner for technology, digital and advertising solutions.",
+      "historyTitle": "Our story",
+      "historyBody": "STDM is the commercial brand of SIS Technologies Digital Marketing S.R.L., a Costa Rican company that grew from technology and digital services into a full integrator of IT, marketing, advertising and specialized equipment.",
+      "visionTitle": "Our vision",
+      "visionBody": "To be the partner companies trust when they need technology, marketing, advertising and equipment to work together — not as disconnected vendors.",
+      "coverageTitle": "Regional coverage",
+      "coverageBody": "We serve businesses across Costa Rica with bilingual delivery, local presence and solutions designed for regional operating realities.",
+      "viewAll": "Learn more about STDM"
+    },
+    "clients": {
+      "title": "Clients who trust us",
+      "subtitle": "Organizations we support with technology, digital and advertising solutions."
+    }
+  },
+  "projectCategories": {
+    "software": "Software",
+    "infrastructure": "Infrastructure",
+    "cloud": "Cloud",
+    "marketing": "Marketing",
+    "signage": "Signage",
+    "digitalDisplays": "Digital Displays",
+    "equipment": "Equipment",
+    "automation": "Automation"
+  },
+  "pages": {
+    "technology": {
+      "metadata": {
+        "title": "Technology & IT Solutions | STDM Costa Rica",
+        "description": "Software development, cloud solutions, IT consulting, DevOps, infrastructure, cybersecurity and industrial technology for businesses in Costa Rica."
+      },
+      "headline": "Technology & IT Solutions",
+      "subheadline": "From custom software and cloud infrastructure to IT consulting and cybersecurity — we build the technology foundation your business needs to operate and scale.",
+      "servicesTitle": "Technology Services",
+      "servicesSubtitle": "End-to-end technology capabilities for modern businesses.",
+      "ctaTitle": "Ready to strengthen your technology?",
+      "ctaDescription": "Tell us about your infrastructure, software or IT challenges. We'll help you design the right solution.",
+      "services": {
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "Custom web platforms, mobile applications and business software tailored to your workflows and growth goals."
+        },
+        "cloudSolutions": {
+          "title": "Cloud Solutions",
+          "description": "Cloud migration, architecture design and managed cloud environments on AWS and other leading platforms."
+        },
+        "itConsulting": {
+          "title": "IT Consulting",
+          "description": "Strategic technology advisory to align your IT investments with business objectives and operational needs."
+        },
+        "devops": {
+          "title": "DevOps",
+          "description": "CI/CD pipelines, automation and deployment practices that accelerate delivery and improve reliability."
+        },
+        "infrastructure": {
+          "title": "Infrastructure",
+          "description": "Network design, server management and IT infrastructure built for performance, security and scalability."
+        },
+        "cybersecurity": {
+          "title": "Cybersecurity",
+          "description": "Security assessments, hardening and best practices to protect your systems, data and digital assets."
+        },
+        "industrialTechnology": {
+          "title": "Industrial Technology",
+          "description": "Technology solutions for manufacturing and industrial environments, including automation and system integration."
+        },
+        "installationSupport": {
+          "title": "Installation & Support",
+          "description": "Professional installation, configuration and ongoing technical support for hardware and software systems."
+        }
+      }
+    },
+    "digital": {
+      "metadata": {
+        "title": "Digital Marketing Services | STDM Costa Rica",
+        "description": "Digital marketing, SEO, social media, marketing automation and analytics for businesses in Costa Rica."
+      },
+      "headline": "Digital Marketing Solutions",
+      "subheadline": "We help businesses reach the right audience, generate leads and measure results through integrated digital marketing strategies.",
+      "servicesTitle": "Digital Marketing Services",
+      "servicesSubtitle": "Data-driven marketing that connects your brand with customers.",
+      "ctaTitle": "Ready to grow your digital presence?",
+      "ctaDescription": "Let's discuss your marketing goals and build a strategy that delivers measurable results.",
+      "services": {
+        "digitalMarketing": {
+          "title": "Digital Marketing",
+          "description": "Integrated digital marketing strategies that combine channels and tactics to drive awareness, engagement and conversions."
+        },
+        "digitalAdvertising": {
+          "title": "Digital Advertising",
+          "description": "Paid campaigns across search, social and display networks optimized for reach, leads and return on investment."
+        },
+        "seo": {
+          "title": "SEO",
+          "description": "Search engine optimization to improve visibility, organic traffic and long-term discoverability in Google and other search engines."
+        },
+        "socialMedia": {
+          "title": "Social Media",
+          "description": "Social media management, content creation and community engagement aligned with your brand and business goals."
+        },
+        "marketingAutomation": {
+          "title": "Marketing Automation",
+          "description": "Automated email workflows, lead nurturing and CRM integrations that scale your marketing efforts efficiently."
+        },
+        "analytics": {
+          "title": "Analytics",
+          "description": "Tracking, reporting and data analysis to understand performance and make informed marketing decisions."
+        }
+      }
+    },
+    "advertising": {
+      "metadata": {
+        "title": "Advertising & Signage | STDM Costa Rica",
+        "description": "Outdoor advertising, indoor advertising, signage and custom projects for brand visibility in Costa Rica."
+      },
+      "headline": "Advertising & Signage",
+      "subheadline": "From outdoor billboards to indoor displays and custom signage — we help your brand stand out and communicate with impact.",
+      "servicesTitle": "Advertising Services",
+      "servicesSubtitle": "Physical and visual advertising solutions for every environment.",
+      "ctaTitle": "Need visibility for your brand?",
+      "ctaDescription": "Share your project requirements and we'll design an advertising solution that fits your space and objectives.",
+      "services": {
+        "outdoorAdvertising": {
+          "title": "Outdoor Advertising",
+          "description": "Billboards, facades, banners and exterior displays designed for maximum visibility in high-traffic locations."
+        },
+        "indoorAdvertising": {
+          "title": "Indoor Advertising",
+          "description": "Interior signage, promotional displays and branded environments for retail, offices and commercial spaces."
+        },
+        "signage": {
+          "title": "Signage",
+          "description": "Corporate signage, wayfinding systems, illuminated signs and brand identity elements for buildings and facilities."
+        },
+        "customProjects": {
+          "title": "Custom Projects",
+          "description": "Bespoke advertising and signage projects tailored to unique spaces, events or brand activation requirements."
+        }
+      }
+    },
+    "equipment": {
+      "metadata": {
+        "title": "Equipment & Technology | STDM Costa Rica",
+        "description": "Large format printers, CNC equipment, digital displays, interactive screens and digital signage equipment in Costa Rica."
+      },
+      "headline": "Equipment & Technology",
+      "subheadline": "We supply, install and support specialized equipment — from large format printers and CNC machines to digital and interactive displays.",
+      "servicesTitle": "Equipment We Offer",
+      "servicesSubtitle": "Professional-grade technology and advertising equipment for your business.",
+      "supportTitle": "Associated Services",
+      "supportSubtitle": "Complete support from installation to ongoing maintenance.",
+      "ctaTitle": "Looking for equipment or a full solution?",
+      "ctaDescription": "Contact us to discuss equipment options, installation and support for your project.",
+      "services": {
+        "largeFormatPrinters": {
+          "title": "Large Format Printers",
+          "description": "Professional large format printing equipment for banners, signage, vehicle wraps and high-volume production."
+        },
+        "cncEquipment": {
+          "title": "CNC Equipment",
+          "description": "CNC cutting and engraving machines for precision fabrication of signage, displays and custom materials."
+        },
+        "digitalDisplays": {
+          "title": "Digital Displays",
+          "description": "Commercial-grade digital screens for retail, corporate and public environments."
+        },
+        "interactiveDisplays": {
+          "title": "Interactive Displays",
+          "description": "Touch-enabled interactive screens for kiosks, presentations, wayfinding and customer engagement."
+        },
+        "digitalSignageEquipment": {
+          "title": "Digital Signage Equipment",
+          "description": "Complete digital signage systems including media players, mounting hardware and content management solutions."
+        }
+      },
+      "support": {
+        "installation": {
+          "title": "Installation",
+          "description": "Professional on-site installation of displays, printers and advertising equipment."
+        },
+        "configuration": {
+          "title": "Configuration",
+          "description": "System setup, network integration and software configuration for optimal performance."
+        },
+        "commissioning": {
+          "title": "Commissioning",
+          "description": "Full testing and handoff to ensure equipment is production-ready before go-live."
+        },
+        "training": {
+          "title": "Training",
+          "description": "Operator and administrator training so your team can use equipment confidently."
+        },
+        "maintenance": {
+          "title": "Maintenance",
+          "description": "Preventive and corrective maintenance plans to maximize equipment lifespan and uptime."
+        },
+        "technicalSupport": {
+          "title": "Technical Support",
+          "description": "Responsive technical support for troubleshooting, updates and ongoing assistance."
+        }
+      }
+    },
+    "projects": {
+      "metadata": {
+        "title": "Projects & Case Studies | STDM Costa Rica",
+        "description": "Explore STDM case studies across software, cloud, infrastructure, marketing, signage, digital displays, equipment and automation."
+      },
+      "headline": "Projects & Case Studies",
+      "subheadline": "Discover how we help businesses across Costa Rica with integrated technology, digital, advertising and equipment solutions.",
+      "ctaTitle": "Have a project in mind?",
+      "ctaDescription": "Tell us about your goals and we'll show you what's possible."
+    },
+    "industries": {
+      "metadata": {
+        "title": "Industries We Serve | STDM Costa Rica",
+        "description": "STDM serves retail, manufacturing, construction, education, healthcare, hospitality, professional services and financial institutions in Costa Rica."
+      },
+      "headline": "Industries We Serve",
+      "subheadline": "We deliver integrated solutions tailored to the operational and commercial needs of each sector.",
+      "ctaTitle": "Does your industry need integrated solutions?",
+      "ctaDescription": "We adapt our technology, marketing, advertising and equipment capabilities to your sector.",
+      "items": {
+        "retail": {
+          "description": "Digital platforms, in-store signage, digital displays and marketing campaigns that drive foot traffic and online sales."
+        },
+        "manufacturing": {
+          "description": "Industrial technology, IT infrastructure, automation and operational software to optimize production and logistics."
+        },
+        "construction": {
+          "description": "Project visibility, signage, branding and technology tools that support construction firms and developers."
+        },
+        "education": {
+          "description": "Web platforms, digital marketing and communication tools for schools, academies and educational institutions."
+        },
+        "healthcare": {
+          "description": "Secure infrastructure, digital presence and communication solutions for clinics and healthcare providers."
+        },
+        "hospitality": {
+          "description": "Brand experiences, digital marketing, signage and interactive displays for hotels and hospitality businesses."
+        },
+        "professionalServices": {
+          "description": "Professional websites, cloud solutions and marketing that build credibility and generate qualified leads."
+        },
+        "financialServices": {
+          "description": "Secure technology infrastructure, compliance-aware systems and professional brand communication."
+        }
+      }
+    },
+    "about": {
+      "metadata": {
+        "title": "About STDM | SIS Technologies Digital Marketing S.R.L.",
+        "description": "Learn about STDM — history, vision, capabilities, technical experience, regional coverage and methodology as an integrator of technology, digital and advertising solutions in Costa Rica."
+      },
+      "headline": "About STDM",
+      "subheadline": "We integrate technology, digital marketing, advertising and specialized equipment so businesses can create, operate and grow with one accountable partner.",
+      "historyTitle": "Our history",
+      "historyBody": "STDM is the commercial brand of SIS Technologies Digital Marketing S.R.L. What began as technology and digital service capabilities evolved into a broader integrator model: helping companies solve problems across software, cloud, marketing, signage and equipment without juggling multiple disconnected vendors.",
+      "visionTitle": "Our vision",
+      "visionBody": "To position STDM as the integrator of choice for organizations that need technology, digital and advertising solutions to converge — enabling long-term partnerships and cross-functional value instead of one-off projects.",
+      "capabilitiesTitle": "Our capabilities",
+      "capabilitiesSubtitle": "Four business units that work together under one delivery model.",
+      "capabilities": {
+        "technology": "Software development, cloud solutions, IT consulting, DevOps, infrastructure, cybersecurity and industrial technology — with installation and support.",
+        "digital": "Digital marketing, paid media, SEO, social media, marketing automation and analytics focused on measurable business outcomes.",
+        "advertising": "Outdoor and indoor advertising, corporate signage and custom projects that strengthen brand visibility in physical spaces.",
+        "equipment": "Large format printers, CNC equipment, digital and interactive displays, plus installation, training, maintenance and technical support."
+      },
+      "experienceTitle": "Technical experience",
+      "experienceBody": "Our team combines software engineering, solution architecture, digital strategy, creative production and operational support. That mix lets us move from strategy to implementation — and stay accountable after go-live.",
+      "coverageTitle": "Regional coverage",
+      "coverageBody": "We operate from Costa Rica and serve companies that need a local partner with bilingual communication, practical delivery and an understanding of regional business conditions. Our focus is B2B across retail, manufacturing, construction, education, healthcare, hospitality, professional services and financial institutions.",
+      "methodologyTitle": "How we work",
+      "methodologySubtitle": "A clear methodology designed for integrated delivery — not unnecessary complexity.",
+      "methodology": {
+        "step1Title": "Discover",
+        "step1Body": "We clarify goals, constraints, stakeholders and success metrics before recommending a path.",
+        "step2Title": "Design the integrated solution",
+        "step2Body": "We define the right mix across technology, digital, advertising and equipment so every piece supports the business outcome.",
+        "step3Title": "Deliver with accountability",
+        "step3Body": "We implement with clear milestones, transparent communication and quality standards your team can trust.",
+        "step4Title": "Support and scale",
+        "step4Body": "We stay available for training, maintenance, iteration and expansion as your needs grow."
+      },
+      "viewProjects": "See our projects and case studies",
+      "ctaTitle": "Want to work with STDM?",
+      "ctaDescription": "Request a consultation and tell us how we can help your business."
+    }
   }
 }
