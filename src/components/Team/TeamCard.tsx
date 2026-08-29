@@ -9,7 +9,7 @@ interface TeamCardProps {
 
 const TeamCard: FC<TeamCardProps> = ({ member: { name, role, image, linkedIn } }) => {
   return (
-    <div className="bg-secondary border-border flex flex-col items-center rounded-[14px] border p-5 transition-shadow hover:shadow-lg">
+    <div className="bg-secondary border-border hover:shadow-brand-glow flex flex-col items-center rounded-xl border p-5 transition-shadow">
       <div className="relative mb-4 overflow-hidden rounded-full">
         <Image
           src={image}

@@ -1,17 +1,24 @@
+export type ProjectCategory =
+  | 'software'
+  | 'infrastructure'
+  | 'cloud'
+  | 'marketing'
+  | 'signage'
+  | 'digitalDisplays'
+  | 'equipment'
+  | 'automation'
+
 export interface Project {
+  slug: string
   title: string
   shortDescription: string
+  description: string
+  category: ProjectCategory
+  client: string
   priority: number
-  cover: string
+  cover?: string
   livePreview?: string
-  githubLink?: string
-  visitors?: string
-  earned?: string
-  githubStars?: string
-  ratings?: string
-  numberOfSales?: string
-  type: string
-  siteAge?: string
+  createdAt: string
 }
 
 export interface Heading {
@@ -23,6 +30,7 @@ export interface Heading {
 export interface Testimonial {
   name: string
   title?: string
+  company?: string
   feedback: string
   image: string
   stars: number

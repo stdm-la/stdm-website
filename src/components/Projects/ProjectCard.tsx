@@ -1,95 +1,53 @@
-import { Project } from '@/lib/types'
-import Image from 'next/image'
-import { Earning, GithubIcon, Likes, PreviewIcon, Star, Timer } from '../../utils/icons'
+'use client'
 
-const IconText: React.FC<{ icon: string; text: string }> = ({ icon, text }) => (
-  <li className="flex gap-2">
-    <Image src={icon} alt={text} className="size-[18px] md:size-5" />
-    <span className="text-neutral text-sm">{text}</span>
-  </li>
-)
+import { Project, ProjectCategory } from '@/lib/types'
+import { useTranslation } from '@/hooks/useTranslation'
 
 interface ProjectCardProps {
   data: Project
+  compact?: boolean
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
-  const {
-    title,
-    shortDescription,
-    visitors,
-    earned,
-    ratings,
-    githubStars,
-    numberOfSales,
-    livePreview,
-    githubLink,
-    siteAge,
-    type,
-    cover,
-  } = data
+const categoryColors: Record<ProjectCategory, string> = {
+  software: 'from-blue-600/80 to-indigo-700/80',
+  infrastructure: 'from-slate-600/80 to-slate-800/80',
+  cloud: 'from-cyan-600/80 to-blue-700/80',
+  marketing: 'from-violet-600/80 to-purple-700/80',
+  signage: 'from-amber-600/80 to-orange-700/80',
+  digitalDisplays: 'from-emerald-600/80 to-teal-700/80',
+  equipment: 'from-rose-600/80 to-red-700/80',
+  automation: 'from-fuchsia-600/80 to-pink-700/80',
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ data, compact = false }) => {
+  const { t } = useTranslation()
+  const { title, shortDescription, description, category, client, createdAt } = data
 
   return (
-    <div className="bg-secondary border-border flex flex-col justify-between rounded-[14px] border p-5">
-      <div className="flex items-start justify-between gap-2">
-        <div className="flex-1">
-          <div className="flex flex-col flex-wrap gap-3 sm:flex-row sm:items-center">
-            <h3 className="text-secondary-content text-lg font-medium md:font-semibold">{title}</h3>
-            {type && (
-              <span
-                className={`h-7 w-fit rounded-md bg-[#FFFFFF1A] p-1 text-sm ${type === 'New 🔥' ? 'animate-blink text-tag' : 'text-accent'} backdrop-blur-[80px]`}>
-                {type}
-              </span>
-            )}
-          </div>
-          <ul className="mt-3 flex flex-col flex-wrap gap-2 sm:flex-row sm:gap-4">
-            {(visitors || numberOfSales) && (
-              <IconText text={(visitors || numberOfSales)?.toString() || ''} icon={Likes} />
-            )}
-            {siteAge && <IconText text={siteAge} icon={Timer} />}
-            {earned && <IconText text={earned} icon={Earning} />}
-            {(ratings || githubStars) && (
-              <IconText text={(ratings || githubStars)?.toString() || ''} icon={Star} />
-            )}
-          </ul>
-        </div>
-        <figure className="flex justify-end overflow-hidden">
-          <Image
-            src={cover}
-            width={150}
-            height={80}
-            alt="Project Cover"
-            className="h-[80px] w-[150px] rounded-md object-cover shadow-[0px_1.66px_3.74px_-1.25px_#18274B1F]"
-          />
-        </figure>
+    <article className="bg-secondary border-border hover:shadow-brand-glow flex h-full flex-col rounded-xl border transition-shadow">
+      <div
+        className={`bg-linear-to-br ${categoryColors[category]} flex h-24 items-end rounded-t-xl p-4 md:h-28`}>
+        <span className="rounded-md bg-black/30 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+          {t(`projectCategories.${category}`)}
+        </span>
       </div>
 
-      <div>
-        <div className="bg-primary text-primary-content my-4 h-[100px] overflow-scroll rounded-2xl px-4 py-2">
-          <p className="text-[14px] font-normal md:text-base">{shortDescription}</p>
-        </div>
-        <div className="flex gap-5">
-          {livePreview && (
-            <a
-              href={livePreview}
-              className="text-accent flex gap-2 text-sm underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
-              target="_blank">
-              <PreviewIcon className="h-auto w-[18px] md:w-5" />
-              <span>Live Preview</span>
-            </a>
-          )}
-          {githubLink && (
-            <a
-              href={githubLink}
-              className="text-accent flex gap-2 text-sm underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
-              target="_blank">
-              <GithubIcon className="w-[18px] md:w-5" />
-              <span>Github Link</span>
-            </a>
-          )}
+      <div className="flex flex-1 flex-col p-5 md:p-6">
+        <p className="text-accent text-xs font-medium tracking-wide uppercase">{client}</p>
+        <h3 className="text-primary-content mt-2 text-lg font-semibold">{title}</h3>
+        <p className="text-tertiary-content mt-3 flex-1 text-sm leading-relaxed">
+          {compact ? shortDescription : description}
+        </p>
+        <div className="text-tertiary-content mt-4 flex items-center justify-between text-xs">
+          <time dateTime={createdAt}>
+            {new Date(createdAt).toLocaleDateString(undefined, {
+              year: 'numeric',
+              month: 'short',
+            })}
+          </time>
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 
