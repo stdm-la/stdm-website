@@ -5,7 +5,7 @@ import { buildContactHref, buildWhatsAppUrl } from '@/lib/leads'
 import { useTranslation } from '@/hooks/useTranslation'
 
 interface LeadCtaProps {
-  source: string
+  source?: string
   interest?: string
   title?: string
   description?: string

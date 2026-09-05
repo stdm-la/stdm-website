@@ -20,8 +20,8 @@ const HUBSPOT_FORM_BY_LANGUAGE = {
 
 /**
  * HubSpot is the active CRM for inbound leads.
- * Optional `source` / `interest` query params (on /#contact?…) are surfaced for attribution.
- * Context follows the URL only — generic `/#contact` clears any previous CTA attribution.
+ * Optional `source` / `interest` query params (on /contact?…) are surfaced for attribution.
+ * Context follows the URL only — generic `/contact` clears any previous CTA attribution.
  */
 const ContactForm = () => {
   const { language } = useLanguage()
@@ -39,10 +39,10 @@ const ContactForm = () => {
         : null
       const fromSearch = new URLSearchParams(window.location.search)
 
-      const nextInterest = fromHash?.get('interest') || fromSearch.get('interest') || null
-      const nextSource = fromHash?.get('source') || fromSearch.get('source') || null
+      const nextInterest = fromSearch.get('interest') || fromHash?.get('interest') || null
+      const nextSource = fromSearch.get('source') || fromHash?.get('source') || null
 
-      // Drop any legacy session keys so generic /#contact never rehydrates an old CTA.
+      // Drop any legacy session keys so generic /contact never rehydrates an old CTA.
       if (!nextInterest && !nextSource) {
         sessionStorage.removeItem('stdm_lead_interest')
         sessionStorage.removeItem('stdm_lead_source')
@@ -54,7 +54,11 @@ const ContactForm = () => {
 
     syncLeadAttribution()
     window.addEventListener('hashchange', syncLeadAttribution)
-    return () => window.removeEventListener('hashchange', syncLeadAttribution)
+    window.addEventListener('popstate', syncLeadAttribution)
+    return () => {
+      window.removeEventListener('hashchange', syncLeadAttribution)
+      window.removeEventListener('popstate', syncLeadAttribution)
+    }
   }, [])
 
   return (

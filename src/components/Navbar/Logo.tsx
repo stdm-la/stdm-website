@@ -10,13 +10,13 @@ interface LogoProps {
 
 const Logo = ({ width = 220, height = 32, className = '' }: LogoProps) => {
   return (
-    <span className={`relative inline-flex shrink-0 items-center ${className}`}>
+    <span className={`relative inline-flex shrink-0 items-center ${className || 'h-8'}`}>
       <Image
         src={logoDark}
         alt="STDM | Technology, Digital & Advertising Solutions"
         width={width}
         height={height}
-        className="h-8 w-auto object-contain [html[data-theme=light]_&]:hidden"
+        className="h-full w-auto object-contain [html[data-theme=light]_&]:hidden"
         priority
       />
       <Image
@@ -24,7 +24,7 @@ const Logo = ({ width = 220, height = 32, className = '' }: LogoProps) => {
         alt="STDM | Technology, Digital & Advertising Solutions"
         width={width}
         height={height}
-        className="hidden h-8 w-auto object-contain [html[data-theme=light]_&]:block"
+        className="hidden h-full w-auto object-contain [html[data-theme=light]_&]:block"
         priority
       />
     </span>

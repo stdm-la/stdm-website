@@ -13,9 +13,9 @@ export function buildContactHref(params?: {
   source?: string
   interest?: string
 }) {
-  if (!params?.source && !params?.interest) return '/#contact'
+  if (!params?.source && !params?.interest) return '/contact'
   const search = new URLSearchParams()
   if (params.source) search.set('source', params.source)
   if (params.interest) search.set('interest', params.interest)
-  return `/#contact?${search.toString()}`
+  return `/contact?${search.toString()}`
 }
