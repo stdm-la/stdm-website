@@ -1,7 +1,18 @@
 'use client'
 
+import { useLanguage } from '@/contexts/LanguageContext'
 import { Project, ProjectCategory } from '@/lib/types'
 import { useTranslation } from '@/hooks/useTranslation'
+
+function formatProjectDate(createdAt: string, language: 'en' | 'es') {
+  const [year, month] = createdAt.split('-').map(Number)
+  if (!year || !month) return createdAt
+
+  return new Date(year, month - 1, 1).toLocaleDateString(language === 'es' ? 'es-CR' : 'en-US', {
+    year: 'numeric',
+    month: 'short',
+  })
+}
 
 interface ProjectCardProps {
   data: Project
@@ -21,6 +32,7 @@ const categoryColors: Record<ProjectCategory, string> = {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data, compact = false }) => {
   const { t } = useTranslation()
+  const { language } = useLanguage()
   const { title, shortDescription, description, category, client, createdAt } = data
 
   return (
@@ -39,12 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, compact = false }) => {
           {compact ? shortDescription : description}
         </p>
         <div className="text-tertiary-content mt-4 flex items-center justify-between text-xs">
-          <time dateTime={createdAt}>
-            {new Date(createdAt).toLocaleDateString(undefined, {
-              year: 'numeric',
-              month: 'short',
-            })}
-          </time>
+          <time dateTime={createdAt}>{formatProjectDate(createdAt, language)}</time>
         </div>
       </div>
     </article>
