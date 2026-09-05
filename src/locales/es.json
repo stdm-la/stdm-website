@@ -10,13 +10,33 @@
     "solutions": "Soluciones",
     "projects": "Proyectos",
     "about": "Nosotros",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "languages": {
+      "en": "Cambiar a inglés",
+      "es": "Cambiar a español"
+    }
   },
   "hero": {
     "headline": "Soluciones Tecnológicas, Digitales y Publicitarias",
     "subheadline": "Integramos tecnología, marketing, publicidad y soluciones digitales para ayudar a las empresas a crear, operar y hacer crecer sus negocios.",
     "primaryCta": "Solicitar una consulta",
-    "secondaryCta": "Hablar con un especialista"
+    "secondaryCta": "Hablar con un especialista",
+    "centerLabel": "Un socio",
+    "pillars": {
+      "create": "Crear",
+      "operate": "Operar",
+      "grow": "Crecer"
+    },
+    "units": {
+      "technology": "Tecnología",
+      "digital": "Digital",
+      "advertising": "Publicidad",
+      "equipment": "Equipos"
+    },
+    "carousel": {
+      "previous": "Diapositiva anterior",
+      "next": "Diapositiva siguiente"
+    }
   },
   "contact": {
     "letsTalk": "Hablemos",
@@ -75,7 +95,7 @@
         "description": "Publicidad exterior e interior, señalización, proyectos personalizados y visibilidad de marca."
       },
       "equipment": {
-        "title": "Equipos y Tecnología",
+        "title": "Equipos y Soporte",
         "description": "Impresoras gran formato, equipos CNC, pantallas digitales, displays interactivos e instalación."
       }
     },
@@ -94,9 +114,13 @@
     "howWeWork": {
       "title": "Cómo trabajamos",
       "subtitle": "Un proceso claro y práctico.",
+      "step1Title": "Entender",
       "step1": "Entender tus objetivos y limitaciones",
+      "step2Title": "Diseñar",
       "step2": "Diseñar la solución integrada adecuada",
+      "step3Title": "Entregar",
       "step3": "Entregar con claridad y responsabilidad",
+      "step4Title": "Escalar",
       "step4": "Acompañar, iterar y escalar cuando sea necesario",
       "tagline": "Sin complejidad innecesaria. Sin sobreingeniería."
     },
@@ -123,6 +147,10 @@
     "clients": {
       "title": "Clientes que confían en nosotros",
       "subtitle": "Organizaciones que acompañamos con soluciones tecnológicas, digitales y publicitarias."
+    },
+    "homeCta": {
+      "title": "¿Listo para trabajar con STDM?",
+      "description": "Solicite una consulta y cuéntenos cómo podemos ayudar a su empresa a crear, operar y crecer."
     }
   },
   "projectCategories": {
@@ -252,10 +280,10 @@
     },
     "equipment": {
       "metadata": {
-        "title": "Equipos y Tecnología | STDM Costa Rica",
+        "title": "Equipos y Soporte | STDM Costa Rica",
         "description": "Impresoras gran formato, equipos CNC, pantallas digitales, displays interactivos y equipos de señalización digital en Costa Rica."
       },
-      "headline": "Equipos y Tecnología",
+      "headline": "Equipos y Soporte",
       "subheadline": "Suministramos, instalamos y damos soporte a equipos especializados — desde impresoras gran formato y CNC hasta pantallas digitales e interactivas.",
       "servicesTitle": "Equipos que Ofrecemos",
       "servicesSubtitle": "Equipos profesionales de tecnología y publicidad para su negocio.",
@@ -396,6 +424,14 @@
       "viewProjects": "Ver nuestros proyectos y casos de éxito",
       "ctaTitle": "¿Quiere trabajar con STDM?",
       "ctaDescription": "Solicite una consulta y cuéntenos cómo podemos ayudar a su empresa."
+    },
+    "contact": {
+      "metadata": {
+        "title": "Contacto STDM | Solicitar una consulta",
+        "description": "Contacte a STDM en Costa Rica para solicitar una consulta sobre soluciones tecnológicas, de marketing digital, publicidad y equipos."
+      },
+      "headline": "Solicite una consulta",
+      "subheadline": "Cuéntenos sobre su proyecto. Le ayudaremos a diseñar la solución integrada adecuada."
     }
   }
 }

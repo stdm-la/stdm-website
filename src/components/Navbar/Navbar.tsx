@@ -2,20 +2,20 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { businessUnitRoutes } from '@/appData/services'
-import { useLanguage } from '@/contexts/LanguageContext'
 import { useTranslation } from '@/hooks/useTranslation'
 import useOutsideClick from '@/hooks/useOutsideClick'
 import { BurgerIcon, ChevronRightIcon, CloseIcon } from '../../utils/icons'
+import LanguageSwitcher from './LanguageSwitcher'
 import Logo from './Logo'
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [compact, setCompact] = useState(false)
   const pathname = usePathname()
   const { t } = useTranslation()
-  const { language, setLanguage } = useLanguage()
 
   const serviceItems = [
     { label: t('nav.technology'), href: businessUnitRoutes.technology },
@@ -28,7 +28,7 @@ const Navbar = () => {
     { label: t('nav.solutions'), href: '/#solutions' },
     { label: t('nav.projects'), href: '/projects' },
     { label: t('nav.about'), href: '/about' },
-    { label: t('nav.contact'), href: '/#contact' },
+    { label: t('nav.contact'), href: '/contact' },
   ]
 
   const toggleMenu = () => {
@@ -39,6 +39,13 @@ const Navbar = () => {
   const closeServices = useCallback(() => setServicesOpen(false), [])
   const servicesRef = useOutsideClick(closeServices)
 
+  useEffect(() => {
+    const onScroll = () => setCompact(window.scrollY > 24)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   const isActive = (href: string) =>
     href.startsWith('/#') ? pathname === '/' && false : pathname === href
 
@@ -48,12 +55,17 @@ const Navbar = () => {
     }`
 
   return (
-    <nav className="bg-primary/95 border-border relative z-[1000] h-16 border-b backdrop-blur-md">
+    <nav
+      className={`bg-primary/95 border-border relative z-[1000] border-b backdrop-blur-md transition-[height] duration-300 ${
+        compact ? 'h-16' : 'h-24 md:h-28'
+      }`}>
       <div className="mx-auto flex h-full w-dvw max-w-[1200px] items-center justify-between gap-4 px-4 py-1">
         <Link href="/" className="shrink-0 cursor-pointer">
-          <div className="animate-fade-up flex items-center transition-all duration-300">
-            <Logo />
-          </div>
+          <Logo
+            width={320}
+            height={56}
+            className={`transition-[height] duration-300 ${compact ? 'h-8' : 'h-12 md:h-14'}`}
+          />
         </Link>
 
         <div className="md:hidden shrink-0">
@@ -67,7 +79,7 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`${isVisible ? 'flex' : 'hidden'} animate-fade-in bg-primary absolute top-16 left-0 z-10 h-dvh w-dvw flex-col overflow-y-auto md:static md:top-0 md:flex md:h-full md:w-auto md:flex-1 md:flex-row md:items-center md:justify-end md:overflow-visible md:gap-1 lg:gap-2`}>
+          className={`${isVisible ? 'flex' : 'hidden'} animate-fade-in bg-primary absolute top-full left-0 z-10 h-dvh w-dvw flex-col overflow-y-auto md:static md:top-0 md:flex md:h-full md:w-auto md:flex-1 md:flex-row md:items-center md:justify-end md:overflow-visible md:gap-1 lg:gap-2`}>
           {/* Mobile: flat service links */}
           {serviceItems.map(({ label, href }) => (
             <li
@@ -125,30 +137,7 @@ const Navbar = () => {
           ))}
 
           <li className="flex items-center border-b px-4 py-7 md:border-0 md:py-0 md:pl-2 lg:pl-4">
-            <div className="flex gap-4">
-              <button
-                type="button"
-                onClick={() => {
-                  setLanguage('en')
-                  setIsVisible(false)
-                }}
-                className={`text-sm transition-colors duration-300 ${
-                  language === 'en' ? 'text-neutral cursor-default font-medium' : 'text-tertiary-content hover:text-neutral cursor-pointer'
-                }`}>
-                En
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  setLanguage('es')
-                  setIsVisible(false)
-                }}
-                className={`text-sm transition-colors duration-300 ${
-                  language === 'es' ? 'text-neutral cursor-default font-medium' : 'text-tertiary-content hover:text-neutral cursor-pointer'
-                }`}>
-                Es
-              </button>
-            </div>
+            <LanguageSwitcher onSelect={() => setIsVisible(false)} />
           </li>
         </ul>
       </div>

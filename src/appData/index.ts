@@ -1,5 +1,4 @@
 // Data for portfolio
-import { AiIcon, AwsIcon, NextjsIcon, ReactIcon } from '../utils/icons'
 import { businessUnitRoutes } from './services'
 
 import oscarImage from '../assets/images/team/oscar.jpeg'
@@ -17,32 +16,36 @@ export const businessUnitsData = [
   {
     id: 'technology',
     href: businessUnitRoutes.technology,
-    icon: AwsIcon,
+    image: '/images/home/technology.jpg',
+    labelKey: 'hero.units.technology',
     titleKey: 'sections.businessUnits.technology.title',
     descriptionKey: 'sections.businessUnits.technology.description',
   },
   {
     id: 'digital',
     href: businessUnitRoutes.digital,
-    icon: AiIcon,
+    image: '/images/home/digital.jpg',
+    labelKey: 'hero.units.digital',
     titleKey: 'sections.businessUnits.digital.title',
     descriptionKey: 'sections.businessUnits.digital.description',
   },
   {
     id: 'advertising',
     href: businessUnitRoutes.advertising,
-    icon: ReactIcon,
+    image: '/images/home/advertising.jpg',
+    labelKey: 'hero.units.advertising',
     titleKey: 'sections.businessUnits.advertising.title',
     descriptionKey: 'sections.businessUnits.advertising.description',
   },
   {
     id: 'equipment',
     href: businessUnitRoutes.equipment,
-    icon: NextjsIcon,
+    image: '/images/home/equipment.jpg',
+    labelKey: 'hero.units.equipment',
     titleKey: 'sections.businessUnits.equipment.title',
     descriptionKey: 'sections.businessUnits.equipment.description',
   },
-]
+] as const
 
 // Team Data
 export const teamData = [

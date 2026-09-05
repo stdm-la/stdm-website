@@ -11,7 +11,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="bg-secondary border-border my-8 grid grid-cols-1 gap-16 rounded-2xl border p-8 md:my-16 md:grid-cols-2 md:gap-8 lg:gap-12">
+      className="bg-secondary border-border grid grid-cols-1 gap-16 rounded-2xl border p-8 md:grid-cols-2 md:gap-8 lg:gap-12">
       <div className="flex flex-col justify-between gap-8">
         <div>
           <h3 className="text-neutral font-heading text-3xl font-bold">{t('contact.letsTalk')}</h3>

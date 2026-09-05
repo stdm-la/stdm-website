@@ -10,13 +10,33 @@
     "solutions": "Solutions",
     "projects": "Projects",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "languages": {
+      "en": "Switch to English",
+      "es": "Switch to Spanish"
+    }
   },
   "hero": {
     "headline": "Technology, Digital & Advertising Solutions",
     "subheadline": "We integrate technology, marketing, advertising and digital solutions to help businesses create, operate and grow.",
     "primaryCta": "Request a consultation",
-    "secondaryCta": "Talk to a specialist"
+    "secondaryCta": "Talk to a specialist",
+    "centerLabel": "One partner",
+    "pillars": {
+      "create": "Create",
+      "operate": "Operate",
+      "grow": "Grow"
+    },
+    "units": {
+      "technology": "Technology",
+      "digital": "Digital",
+      "advertising": "Advertising",
+      "equipment": "Equipment"
+    },
+    "carousel": {
+      "previous": "Previous slide",
+      "next": "Next slide"
+    }
   },
   "contact": {
     "letsTalk": "Let's Talk",
@@ -75,7 +95,7 @@
         "description": "Outdoor and indoor advertising, signage, custom projects and brand visibility."
       },
       "equipment": {
-        "title": "Equipment & Technology",
+        "title": "Equipment & Support",
         "description": "Large format printers, CNC equipment, digital displays, interactive screens and installation support."
       }
     },
@@ -94,9 +114,13 @@
     "howWeWork": {
       "title": "How We Work",
       "subtitle": "A clear, practical process.",
+      "step1Title": "Understand",
       "step1": "Understand your goals and constraints",
+      "step2Title": "Design",
       "step2": "Design the right integrated solution",
+      "step3Title": "Deliver",
       "step3": "Deliver with clarity and accountability",
+      "step4Title": "Scale",
       "step4": "Support, iterate and scale when needed",
       "tagline": "No unnecessary complexity. No overengineering."
     },
@@ -123,6 +147,10 @@
     "clients": {
       "title": "Clients who trust us",
       "subtitle": "Organizations we support with technology, digital and advertising solutions."
+    },
+    "homeCta": {
+      "title": "Ready to work with STDM?",
+      "description": "Request a consultation and tell us how we can help your business create, operate and grow."
     }
   },
   "projectCategories": {
@@ -252,10 +280,10 @@
     },
     "equipment": {
       "metadata": {
-        "title": "Equipment & Technology | STDM Costa Rica",
+        "title": "Equipment & Support | STDM Costa Rica",
         "description": "Large format printers, CNC equipment, digital displays, interactive screens and digital signage equipment in Costa Rica."
       },
-      "headline": "Equipment & Technology",
+      "headline": "Equipment & Support",
       "subheadline": "We supply, install and support specialized equipment — from large format printers and CNC machines to digital and interactive displays.",
       "servicesTitle": "Equipment We Offer",
       "servicesSubtitle": "Professional-grade technology and advertising equipment for your business.",
@@ -396,6 +424,14 @@
       "viewProjects": "See our projects and case studies",
       "ctaTitle": "Want to work with STDM?",
       "ctaDescription": "Request a consultation and tell us how we can help your business."
+    },
+    "contact": {
+      "metadata": {
+        "title": "Contact STDM | Request a Consultation",
+        "description": "Contact STDM in Costa Rica to request a consultation on technology, digital marketing, advertising and equipment solutions."
+      },
+      "headline": "Request a consultation",
+      "subheadline": "Tell us about your project. We'll help you design the right integrated solution."
     }
   }
 }

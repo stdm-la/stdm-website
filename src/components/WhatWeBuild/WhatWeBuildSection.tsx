@@ -24,7 +24,7 @@ const WhatWeBuildSection = () => {
             href={unit.href}
             className="scroll-mt-24 transition-transform hover:scale-[1.02]">
             <ServiceCard
-              icon={unit.icon}
+              image={unit.image}
               title={t(unit.titleKey)}
               shortDescription={t(unit.descriptionKey)}
             />

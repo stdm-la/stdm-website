@@ -18,7 +18,10 @@ const ScrollButtons = () => {
       const nearTop = currentY <= SCROLL_THRESHOLD
       const nearBottom = window.innerHeight + currentY >= document.documentElement.scrollHeight - 4
 
-      setVisible({ showToTop: !nearTop, showToBottom: !nearBottom })
+      setVisible({
+        showToTop: !nearTop,
+        showToBottom: !nearTop && !nearBottom,
+      })
     }
 
     handleScroll()
