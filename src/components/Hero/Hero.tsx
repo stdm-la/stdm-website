@@ -1,60 +1,84 @@
 'use client'
 
-import useRotatingAnimation from '@/hooks/useRotatingAnimation'
+import { useState } from 'react'
+import Link from 'next/link'
+import { businessUnitsData } from '@/appData'
 import { useTranslation } from '@/hooks/useTranslation'
 import { buildWhatsAppUrl } from '@/lib/leads'
-import Ellipse from './Ellipse'
-import ArchitectureAnimation from './ArchitectureAnimation'
+import HeroCarousel from './HeroCarousel'
+
+const valuePillars = [
+  { key: 'create', fallback: 'Create' },
+  { key: 'operate', fallback: 'Operate' },
+  { key: 'grow', fallback: 'Grow' },
+] as const
 
 const Hero = () => {
-  const ellipseRef = useRotatingAnimation()
   const { t } = useTranslation()
+  const [index, setIndex] = useState(0)
+  const current = businessUnitsData[index]
 
   return (
-    <section className="bg-primary bg-small-glow bg-small-glow-position md:bg-large-glow-position lg:bg-large-glow min-h-[calc(dvh-4rem)] bg-no-repeat">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pt-12 pb-10 md:grid-cols-2 lg:p-4">
-        <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
-          <h1 className="text-neutral text-3xl font-bold tracking-tight md:text-4xl">
-            {t('hero.headline')}
-          </h1>
+    <section className="relative min-h-[calc(100dvh-6rem)] w-full overflow-hidden md:min-h-[calc(100dvh-7rem)]">
+      <HeroCarousel index={index} onIndexChange={setIndex} />
 
-          <h2 className="text-tertiary-content mt-3 text-lg leading-relaxed font-normal">
-            {t('hero.subheadline')}
-          </h2>
+      <div className="relative z-10 flex min-h-[calc(100dvh-6rem)] items-stretch md:min-h-[calc(100dvh-7rem)]">
+        <div className="mx-auto flex min-h-[calc(100dvh-6rem)] w-full max-w-[1200px] flex-col justify-between px-4 pt-12 pb-24 md:min-h-[calc(100dvh-7rem)] md:flex-row md:py-16">
+          <div className="mt-16 max-w-2xl self-start md:mt-28">
+            <h1 className="text-4xl font-bold tracking-tight text-white md:text-6xl">
+              {t('hero.headline')}
+            </h1>
 
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="#contact"
-              aria-label={t('hero.primaryCta')}
-              className="bg-brand-gradient shadow-brand-glow min-w-32 cursor-pointer rounded-xl px-[14px] py-[10px] text-center text-sm font-semibold text-white transition-opacity hover:opacity-90">
-              {t('hero.primaryCta')}
-            </a>
-            <a
-              href="#contact"
-              aria-label={t('hero.secondaryCta')}
-              className="text-neutral border-border hover:border-accent/50 cursor-pointer rounded-xl border bg-secondary px-[14px] py-[10px] text-sm transition-colors">
-              {t('hero.secondaryCta')}
-            </a>
-            <a
-              href={buildWhatsAppUrl(t('leads.whatsappDefaultMessage'))}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={t('leads.whatsappCta')}
-              className="text-accent hover:text-neutral cursor-pointer self-center px-2 text-sm font-medium underline underline-offset-4 transition-colors">
-              {t('leads.whatsappCta')}
-            </a>
-          </div>
-        </div>
+            <h2 className="mt-5 text-xl leading-relaxed font-normal text-white/80 md:text-2xl">
+              {t('hero.subheadline')}
+            </h2>
 
-        <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]">
-          <div className="text-accent relative size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
-            <div className="absolute inset-0 p-7">
-              <ArchitectureAnimation />
+            <div className="mt-5 flex flex-wrap gap-2">
+              {valuePillars.map((pillar) => (
+                <span
+                  key={pillar.key}
+                  className="rounded-full border border-white/25 bg-black/30 px-3.5 py-1.5 text-sm font-semibold tracking-wide text-white uppercase backdrop-blur-sm">
+                  {t(`hero.pillars.${pillar.key}`, pillar.fallback)}
+                </span>
+              ))}
             </div>
-            <Ellipse
-              ref={ellipseRef}
-              className="absolute top-0 left-0 size-56 transition-transform duration-500 ease-out sm:size-60 md:size-[20rem] lg:size-[25.75rem]"
-            />
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href="/contact"
+                aria-label={t('hero.primaryCta')}
+                className="bg-brand-gradient shadow-brand-glow min-w-32 cursor-pointer rounded-xl px-4 py-3 text-center text-base font-semibold text-white transition-opacity hover:opacity-90">
+                {t('hero.primaryCta')}
+              </Link>
+              <Link
+                href="/contact"
+                aria-label={t('hero.secondaryCta')}
+                className="cursor-pointer rounded-xl border border-white/30 bg-black/30 px-4 py-3 text-base text-white backdrop-blur-sm transition-colors hover:border-white/60">
+                {t('hero.secondaryCta')}
+              </Link>
+              <a
+                href={buildWhatsAppUrl(t('leads.whatsappDefaultMessage'))}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={t('leads.whatsappCta')}
+                className="cursor-pointer self-center px-2 text-base font-medium text-white underline underline-offset-4 transition-colors hover:text-white/80">
+                {t('leads.whatsappCta')}
+              </a>
+            </div>
+          </div>
+
+          <div className="max-w-md self-end text-right md:shrink-0">
+            <p className="text-sm font-semibold tracking-wide text-white/75 uppercase md:text-base">
+              {t(current.labelKey, current.id)}
+            </p>
+            <Link
+              href={current.href}
+              className="mt-1 inline-block text-2xl font-semibold text-white underline-offset-4 hover:underline md:text-3xl">
+              {t(current.titleKey)}
+            </Link>
+            <p className="mt-3 text-base leading-relaxed text-white/80 md:text-lg">
+              {t(current.descriptionKey)}
+            </p>
           </div>
         </div>
       </div>

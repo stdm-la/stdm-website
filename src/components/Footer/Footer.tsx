@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { socials } from '@/appData/personal'
 import { buildWhatsAppUrl } from '@/lib/leads'
 import { useTranslation } from '@/hooks/useTranslation'
@@ -34,6 +35,11 @@ const Footer = () => {
               className="text-tertiary-content hover:text-neutral text-sm transition-colors duration-300">
               +506 85174990
             </a>
+            <Link
+              href="/contact"
+              className="text-tertiary-content hover:text-neutral text-sm transition-colors duration-300">
+              {t('nav.contact')}
+            </Link>
             <a
               href={buildWhatsAppUrl(t('leads.whatsappDefaultMessage'))}
               target="_blank"

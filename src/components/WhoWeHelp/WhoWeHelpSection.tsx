@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { industryKeys } from '@/appData/industries'
 import { useTranslation } from '@/hooks/useTranslation'
 import SectionHeading from '../SectionHeading/SectionHeading'
+import IndustryIcon from './IndustryIcon'
 
 const WhoWeHelpSection = () => {
   const { t } = useTranslation()
@@ -16,7 +17,8 @@ const WhoWeHelpSection = () => {
         {industryKeys.map((key) => (
           <div
             key={key}
-            className="bg-secondary border-border hover:shadow-brand-glow rounded-xl border p-4 text-center transition-shadow md:p-6">
+            className="bg-secondary border-border hover:shadow-brand-glow flex flex-col items-center gap-3 rounded-xl border p-4 text-center transition-shadow md:p-6">
+            <IndustryIcon name={key} />
             <h3 className="text-brand-gradient text-base font-semibold md:text-lg">
               {t(`sections.industriesWeServe.${key}`)}
             </h3>

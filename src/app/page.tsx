@@ -2,8 +2,9 @@ import { cookies } from 'next/headers'
 import { teamData } from '@/appData'
 import AboutPreviewSection from '@/components/About/AboutPreviewSection'
 import ClientsSection from '@/components/About/ClientsSection'
-import ContactSection from '@/components/Contact/ContactSection'
+import ContactHashRedirect from '@/components/Contact/ContactHashRedirect'
 import Hero from '@/components/Hero/Hero'
+import HomeCta from '@/components/Home/HomeCta'
 import HowWeWorkSection from '@/components/HowWeWork/HowWeWorkSection'
 import ProjectSection from '@/components/Projects/ProjectSection'
 import JsonLd from '@/components/SEO/JsonLd'
@@ -25,6 +26,7 @@ export default async function Home() {
   return (
     <>
       <JsonLd data={buildHomeSchema()} />
+      <ContactHashRedirect />
       <main>
         <Hero />
         <div className="mx-auto my-8 max-w-[1200px] px-4 md:my-[3.75rem]">
@@ -36,7 +38,7 @@ export default async function Home() {
           <ClientsSection />
           <TeamSection team={teamData} />
           <TestimonialSection testimonials={testimonials} />
-          <ContactSection />
+          <HomeCta />
         </div>
       </main>
     </>

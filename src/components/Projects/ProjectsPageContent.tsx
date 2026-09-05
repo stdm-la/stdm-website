@@ -83,7 +83,7 @@ const ProjectsPageContent = ({ projects }: ProjectsPageContentProps) => {
             {t('pages.projects.ctaDescription')}
           </p>
           <Link
-            href="/#contact"
+            href="/contact"
             className="bg-brand-gradient shadow-brand-glow mt-6 inline-block rounded-xl px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90">
             {t('hero.primaryCta')}
           </Link>

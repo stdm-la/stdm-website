@@ -29,7 +29,7 @@ const SeoLandingPage = ({ landing }: SeoLandingPageProps) => {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href={`/#contact?source=seo-${landing.slug}&interest=${encodeURIComponent(t(`${prefix}.headline`))}`}
+              href={`/contact?source=seo-${landing.slug}&interest=${encodeURIComponent(t(`${prefix}.headline`))}`}
               className="bg-brand-gradient shadow-brand-glow inline-block rounded-xl px-[14px] py-[10px] text-sm font-semibold text-white transition-opacity hover:opacity-90">
               {t('hero.primaryCta')}
             </Link>
