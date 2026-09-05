@@ -1,6 +1,5 @@
 // Data for portfolio
 import { businessUnitRoutes } from './services'
-
 import oscarImage from '../assets/images/team/oscar.jpeg'
 import dianaImage from '../assets/images/team/diana.jpeg'
 import christopherImage from '../assets/images/team/christopher.jpeg'
