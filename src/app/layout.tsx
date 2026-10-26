@@ -46,7 +46,7 @@ export default async function RootLayout({
             buildWebSiteSchema(),
           ]}
         />
-        <LanguageProvider>
+        <LanguageProvider initialLanguage={lang}>
           <header className="sticky top-0 z-[1000]">
             <Navbar />
           </header>
