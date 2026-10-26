@@ -1,24 +1,23 @@
 import { cookies } from 'next/headers'
 import type { Metadata } from 'next'
-import { deepMergeTranslations } from '@/lib/mergeTranslations'
-import en from '@/locales/en.json'
-import es from '@/locales/es.json'
-import enSprint4 from '@/locales/en-sprint4.json'
-import esSprint4 from '@/locales/es-sprint4.json'
+import { COOKIE_CONSENT_NAME, isCookieConsentAccepted } from '@/lib/cookieConsent'
+import { getLocaleMessages, resolveLanguage, type Language } from '@/lib/translations'
 
-export async function getServerLanguage(): Promise<'en' | 'es'> {
+export async function getServerLanguage(): Promise<Language> {
   const cookieStore = await cookies()
-  const lang = cookieStore.get('language')?.value
-  return lang === 'es' ? 'es' : 'en'
+  return resolveLanguage(cookieStore.get('language')?.value)
+}
+
+export async function hasAcceptedCookieNotice(): Promise<boolean> {
+  const cookieStore = await cookies()
+  return isCookieConsentAccepted(cookieStore.get(COOKIE_CONSENT_NAME)?.value)
 }
 
 export async function getMergedTranslations() {
   const lang = await getServerLanguage()
-  const base = (lang === 'es' ? es : en) as Record<string, unknown>
-  const sprint4 = (lang === 'es' ? esSprint4 : enSprint4) as Record<string, unknown>
   return {
     lang,
-    translations: deepMergeTranslations(base, sprint4),
+    translations: getLocaleMessages(lang),
   }
 }
 

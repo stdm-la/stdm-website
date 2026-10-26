@@ -70,6 +70,12 @@
     "tagline": "Soluciones Tecnológicas, Digitales y Publicitarias",
     "allRightsReserved": "Todos los derechos reservados. STDM es una marca comercial de SIS Technologies Digital Marketing S.R.L."
   },
+  "cookies": {
+    "title": "Aviso de cookies",
+    "description": "Este sitio puede usar cookies para recordar tu idioma y para el funcionamiento básico de la página.",
+    "accept": "Entendido",
+    "dismiss": "Cerrar aviso"
+  },
   "metadata": {
     "title": "STDM | Soluciones Tecnológicas, Digitales y Publicitarias",
     "description": "STDM integra tecnología, marketing digital, publicidad, señalización y equipamiento especializado para empresas en Costa Rica. Desarrollo de software, soluciones cloud, consultoría IT, marketing digital, publicidad exterior y pantallas digitales.",
