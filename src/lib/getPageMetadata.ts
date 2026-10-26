@@ -1,11 +1,16 @@
 import { cookies } from 'next/headers'
 import type { Metadata } from 'next'
-import { getLocaleMessages, type Language } from '@/lib/translations'
+import { COOKIE_CONSENT_NAME, isCookieConsentAccepted } from '@/lib/cookieConsent'
+import { getLocaleMessages, resolveLanguage, type Language } from '@/lib/translations'
 
 export async function getServerLanguage(): Promise<Language> {
   const cookieStore = await cookies()
-  const lang = cookieStore.get('language')?.value
-  return lang === 'es' ? 'es' : 'en'
+  return resolveLanguage(cookieStore.get('language')?.value)
+}
+
+export async function hasAcceptedCookieNotice(): Promise<boolean> {
+  const cookieStore = await cookies()
+  return isCookieConsentAccepted(cookieStore.get(COOKIE_CONSENT_NAME)?.value)
 }
 
 export async function getMergedTranslations() {

@@ -6,6 +6,11 @@ import { deepMergeTranslations } from '@/lib/mergeTranslations'
 
 export type Language = 'en' | 'es'
 
+/** Spanish unless the visitor explicitly chose English. */
+export function resolveLanguage(value: string | null | undefined): Language {
+  return value === 'en' ? 'en' : 'es'
+}
+
 const messages: Record<Language, Record<string, unknown>> = {
   en: deepMergeTranslations(en as Record<string, unknown>, enSprint4 as Record<string, unknown>),
   es: deepMergeTranslations(es as Record<string, unknown>, esSprint4 as Record<string, unknown>),

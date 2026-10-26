@@ -7,8 +7,9 @@ import WhatsAppButton from '@/components/Leads/WhatsAppButton'
 import JsonLd from '@/components/SEO/JsonLd'
 import ThemeMenu from '@/components/Theme/ThemeMenu'
 import ScrollButtons from '@/components/UI/ScrollButtons'
+import CookieNotice from '@/components/Cookies/CookieNotice'
 import { LanguageProvider } from '@/contexts/LanguageContext'
-import { getRootMetadata, getServerLanguage } from '@/lib/getPageMetadata'
+import { getRootMetadata, getServerLanguage, hasAcceptedCookieNotice } from '@/lib/getPageMetadata'
 import { buildOrganizationSchema, buildWebSiteSchema } from '@/lib/schema'
 import { Montserrat, Open_Sans } from 'next/font/google'
 
@@ -33,7 +34,10 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const lang = await getServerLanguage()
+  const [lang, cookieNoticeAccepted] = await Promise.all([
+    getServerLanguage(),
+    hasAcceptedCookieNotice(),
+  ])
 
   return (
     <html lang={lang} data-theme="dark" suppressHydrationWarning>
@@ -54,6 +58,7 @@ export default async function RootLayout({
           <ThemeMenu />
           <ScrollButtons />
           <WhatsAppButton />
+          <CookieNotice initialAccepted={cookieNoticeAccepted} />
           <Footer />
         </LanguageProvider>
       </body>

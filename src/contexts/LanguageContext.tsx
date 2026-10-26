@@ -12,16 +12,27 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
+function hasLanguageCookie() {
+  return document.cookie.split(';').some((part) => part.trim().startsWith('language='))
+}
+
 function persistLanguage(lang: Language) {
   localStorage.setItem('language', lang)
-  // Cookie is what Server Components use for projects, testimonials, and metadata.
-  document.cookie = `language=${lang}; path=/; max-age=31536000`
   document.documentElement.lang = lang
+  // Spanish is the default and stays cookieless. Any other locale is stored so
+  // Server Components can render it; switching back to Spanish removes the cookie.
+  if (lang === 'es') {
+    if (hasLanguageCookie()) {
+      document.cookie = 'language=; path=/; max-age=0'
+    }
+    return
+  }
+  document.cookie = `language=${lang}; path=/; max-age=31536000`
 }
 
 export function LanguageProvider({
   children,
-  initialLanguage = 'en',
+  initialLanguage = 'es',
 }: {
   children: ReactNode
   initialLanguage?: Language
@@ -35,19 +46,10 @@ export function LanguageProvider({
   )
 
   useEffect(() => {
-    const stored = localStorage.getItem('language')
-    const storedLang = stored === 'en' || stored === 'es' ? stored : null
-
-    if (storedLang && storedLang !== initialLanguage) {
-      setLanguageState(storedLang)
-      setTranslations(getLocaleMessages(storedLang))
-      persistLanguage(storedLang)
-      router.refresh()
-      return
-    }
-
+    // Keep storage aligned with the server language. A missing cookie is Spanish,
+    // so this does not create a language cookie on the first visit.
     persistLanguage(initialLanguage)
-  }, [initialLanguage, router])
+  }, [initialLanguage])
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang)
