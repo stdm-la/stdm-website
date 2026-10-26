@@ -3,6 +3,7 @@ import type { BusinessUnitKey } from '@/appData/services'
 import { businessUnitServiceKeys, equipmentSupportKeys } from '@/appData/services'
 import en from '@/locales/en.json'
 import es from '@/locales/es.json'
+import { resolveLanguage } from '@/lib/translations'
 
 const SOCIAL_PROFILES = [
   'https://www.linkedin.com/company/stdm-la/',
@@ -86,7 +87,7 @@ export function buildBreadcrumbSchema(
   }
 }
 
-export function buildBusinessUnitSchema(unit: BusinessUnitKey, lang: 'en' | 'es' = 'en') {
+export function buildBusinessUnitSchema(unit: BusinessUnitKey, lang: 'en' | 'es' = 'es') {
   const siteUrl = getSiteUrl()
   const translations = getTranslations(lang)
   const page = translations.pages[unit]
@@ -158,7 +159,7 @@ export function buildBusinessUnitSchema(unit: BusinessUnitKey, lang: 'en' | 'es'
   return [...services, breadcrumbs]
 }
 
-export function buildProjectsSchema(projects: Project[], lang: 'en' | 'es' = 'en') {
+export function buildProjectsSchema(projects: Project[], lang: 'en' | 'es' = 'es') {
   const siteUrl = getSiteUrl()
   const translations = getTranslations(lang)
 
@@ -193,7 +194,7 @@ export function buildProjectsSchema(projects: Project[], lang: 'en' | 'es' = 'en
   return [...caseStudies, breadcrumbs]
 }
 
-export function buildIndustriesSchema(lang: 'en' | 'es' = 'en') {
+export function buildIndustriesSchema(lang: 'en' | 'es' = 'es') {
   const siteUrl = getSiteUrl()
   const translations = getTranslations(lang)
   const page = translations.pages.industries
@@ -209,6 +210,5 @@ export function buildIndustriesSchema(lang: 'en' | 'es' = 'en') {
 export async function getServerLanguage(): Promise<'en' | 'es'> {
   const { cookies } = await import('next/headers')
   const cookieStore = await cookies()
-  const lang = cookieStore.get('language')?.value
-  return lang === 'es' ? 'es' : 'en'
+  return resolveLanguage(cookieStore.get('language')?.value)
 }

@@ -1,4 +1,3 @@
-import { cookies } from 'next/headers'
 import { teamData } from '@/appData'
 import AboutPreviewSection from '@/components/About/AboutPreviewSection'
 import ClientsSection from '@/components/About/ClientsSection'
@@ -12,12 +11,12 @@ import TeamSection from '@/components/Team/TeamSection'
 import TestimonialSection from '@/components/Testimonials/TestimonialSection'
 import WhatWeBuildSection from '@/components/WhatWeBuild/WhatWeBuildSection'
 import WhoWeHelpSection from '@/components/WhoWeHelp/WhoWeHelpSection'
+import { getServerLanguage } from '@/lib/getPageMetadata'
 import { buildHomeSchema } from '@/lib/schema'
 import { getAllProjects, getAllTestimonials } from '@/services'
 
 export default async function Home() {
-  const cookieStore = await cookies()
-  const language = (cookieStore.get('language')?.value || 'en') as 'en' | 'es'
+  const language = await getServerLanguage()
   const [testimonials, projects] = await Promise.all([
     getAllTestimonials(language),
     getAllProjects(language),
