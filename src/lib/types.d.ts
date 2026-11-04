@@ -3,8 +3,6 @@ export type ProjectCategory =
   | 'infrastructure'
   | 'cloud'
   | 'marketing'
-  | 'signage'
-  | 'digitalDisplays'
   | 'equipment'
   | 'automation'
 
