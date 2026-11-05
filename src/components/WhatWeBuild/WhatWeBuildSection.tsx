@@ -16,7 +16,7 @@ const WhatWeBuildSection = () => {
         subtitle={t('sections.whatWeBuild.subtitle')}
       />
 
-      <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-8 md:mt-[3.75rem] md:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-8 md:mt-[3.75rem] md:grid-cols-3">
         {businessUnitsData.map((unit) => (
           <Link
             key={unit.id}

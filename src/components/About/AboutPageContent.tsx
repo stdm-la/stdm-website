@@ -7,7 +7,7 @@ import SectionHeading from '../SectionHeading/SectionHeading'
 import TeamSection from '../Team/TeamSection'
 import { TeamMember } from '@/lib/types'
 
-const capabilityKeys = ['technology', 'digital', 'advertising', 'equipment'] as const
+const capabilityKeys = ['technology', 'digital', 'equipment'] as const
 const methodologySteps = [1, 2, 3, 4] as const
 
 interface AboutPageContentProps {
@@ -61,7 +61,7 @@ const AboutPageContent = ({ team }: AboutPageContentProps) => {
             title={t('pages.about.capabilitiesTitle')}
             subtitle={t('pages.about.capabilitiesSubtitle')}
           />
-          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
             {capabilityKeys.map((key) => (
               <article
                 key={key}

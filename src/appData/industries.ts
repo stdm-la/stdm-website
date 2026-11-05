@@ -5,8 +5,6 @@ export const projectCategoryKeys: ProjectCategory[] = [
   'infrastructure',
   'cloud',
   'marketing',
-  'signage',
-  'digitalDisplays',
   'equipment',
   'automation',
 ]

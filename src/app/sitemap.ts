@@ -7,7 +7,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const corePages = [
     'technology',
     'digital',
-    'advertising',
     'equipment',
     'projects',
     'industries',

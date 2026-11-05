@@ -24,8 +24,6 @@ const categoryColors: Record<ProjectCategory, string> = {
   infrastructure: 'from-slate-600/80 to-slate-800/80',
   cloud: 'from-cyan-600/80 to-blue-700/80',
   marketing: 'from-violet-600/80 to-purple-700/80',
-  signage: 'from-amber-600/80 to-orange-700/80',
-  digitalDisplays: 'from-emerald-600/80 to-teal-700/80',
   equipment: 'from-rose-600/80 to-red-700/80',
   automation: 'from-fuchsia-600/80 to-pink-700/80',
 }
