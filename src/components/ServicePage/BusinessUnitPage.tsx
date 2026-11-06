@@ -1,10 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import {
-  equipmentCategorySlugs,
-  type EquipmentCategoryKey,
-} from '@/appData/catalog'
+import { equipmentCategorySlugs } from '@/appData/catalog'
 import { useTranslation } from '@/hooks/useTranslation'
 import {
   businessUnitServiceKeys,
@@ -64,37 +61,18 @@ const BusinessUnitPage = ({ unit }: BusinessUnitPageProps) => {
         />
 
         <div className="mt-8 grid grid-cols-1 gap-6 md:mt-12 md:grid-cols-2 lg:grid-cols-3">
-          {serviceKeys.map((key) => {
-            const title = t(`${prefix}.services.${key}.title`)
-            const isEquipment = unit === 'equipment'
-            const categoryKey = key as EquipmentCategoryKey
-            const href =
-              isEquipment && equipmentCategorySlugs[categoryKey]
-                ? `/equipment/${equipmentCategorySlugs[categoryKey]}`
-                : undefined
-
-            const card = (
-              <article className="bg-secondary border-border hover:shadow-brand-glow h-full rounded-xl border p-6 transition-shadow">
-                <h2 className="text-brand-gradient text-lg font-semibold">{title}</h2>
-                <p className="text-primary-content mt-3 text-sm leading-relaxed">
-                  {t(`${prefix}.services.${key}.description`)}
-                </p>
-                {href && (
-                  <p className="text-accent mt-4 text-sm font-medium">
-                    {t('pages.catalog.viewCatalog')} →
-                  </p>
-                )}
-              </article>
-            )
-
-            return href ? (
-              <Link key={key} href={href} className="block transition-transform hover:scale-[1.01]">
-                {card}
-              </Link>
-            ) : (
-              <div key={key}>{card}</div>
-            )
-          })}
+          {serviceKeys.map((key) => (
+            <article
+              key={key}
+              className="bg-secondary border-border hover:shadow-brand-glow h-full rounded-xl border p-6 transition-shadow">
+              <h2 className="text-brand-gradient text-lg font-semibold">
+                {t(`${prefix}.services.${key}.title`)}
+              </h2>
+              <p className="text-primary-content mt-3 text-sm leading-relaxed">
+                {t(`${prefix}.services.${key}.description`)}
+              </p>
+            </article>
+          ))}
         </div>
 
         {unit === 'equipment' && (
@@ -115,6 +93,30 @@ const BusinessUnitPage = ({ unit }: BusinessUnitPageProps) => {
                 </div>
               ))}
             </div>
+          </div>
+        )}
+
+        {unit === 'equipment' && (
+          <div className="mt-16">
+            <SectionHeading
+              title={t('pages.equipment.supplyTitle')}
+              subtitle={t('pages.equipment.supplySubtitle')}
+            />
+            <Link
+              href={`/equipment/${equipmentCategorySlugs.computerEquipment}`}
+              className="mt-8 block max-w-xl transition-transform hover:scale-[1.01]">
+              <article className="bg-secondary border-border hover:shadow-brand-glow rounded-xl border p-6 transition-shadow">
+                <h2 className="text-brand-gradient text-lg font-semibold">
+                  {t('pages.equipment.services.computerEquipment.title')}
+                </h2>
+                <p className="text-primary-content mt-3 text-sm leading-relaxed">
+                  {t('pages.equipment.services.computerEquipment.description')}
+                </p>
+                <p className="text-accent mt-4 text-sm font-medium">
+                  {t('pages.catalog.viewCatalog')} →
+                </p>
+              </article>
+            </Link>
           </div>
         )}
 

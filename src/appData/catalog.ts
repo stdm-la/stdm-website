@@ -1,10 +1,9 @@
 import type { BusinessUnitKey } from './services'
 
-export type EquipmentCategoryKey = 'digitalDisplays' | 'interactiveDisplays'
+export type EquipmentCategoryKey = 'computerEquipment'
 
 export const equipmentCategorySlugs: Record<EquipmentCategoryKey, string> = {
-  digitalDisplays: 'digital-displays',
-  interactiveDisplays: 'interactive-displays',
+  computerEquipment: 'computer-equipment',
 }
 
 export const equipmentSlugToCategory: Record<string, EquipmentCategoryKey> = Object.fromEntries(
@@ -13,8 +12,7 @@ export const equipmentSlugToCategory: Record<string, EquipmentCategoryKey> = Obj
 
 /** Product lines per category (inquiry-based catalog, not e-commerce SKUs) */
 export const catalogProductKeys: Record<EquipmentCategoryKey, string[]> = {
-  digitalDisplays: ['indoorLcd', 'outdoorLed', 'videoWall', 'windowDisplay'],
-  interactiveDisplays: ['touchScreen', 'interactiveKiosk', 'collaborationDisplay'],
+  computerEquipment: ['laptops', 'desktops', 'peripherals', 'servers'],
 }
 
 export type SeoLandingDefinition = {
@@ -68,16 +66,16 @@ export const seoLandings: SeoLandingDefinition[] = [
     relatedPath: '/digital',
   },
   {
-    slug: 'digital-displays-costa-rica',
+    slug: 'help-desk-costa-rica',
     unit: 'equipment',
-    contentKey: 'digitalDisplays',
-    relatedPath: '/equipment/digital-displays',
+    contentKey: 'helpDesk',
+    relatedPath: '/equipment',
   },
   {
-    slug: 'interactive-displays-costa-rica',
+    slug: 'it-maintenance-costa-rica',
     unit: 'equipment',
-    contentKey: 'interactiveDisplays',
-    relatedPath: '/equipment/interactive-displays',
+    contentKey: 'itMaintenance',
+    relatedPath: '/equipment',
   },
 ]
 

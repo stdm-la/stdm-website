@@ -76,7 +76,7 @@
   },
   "metadata": {
     "title": "STDM | TI, Marketing Digital y Soporte Técnico",
-    "description": "STDM integra TI, marketing digital y soporte técnico para empresas en Costa Rica. Desarrollo de software, soluciones cloud, consultoría IT, marketing digital, pantallas comerciales y soporte técnico.",
+    "description": "STDM integra TI, marketing digital y soporte técnico para empresas en Costa Rica. Desarrollo de software, soluciones cloud, consultoría IT, marketing digital, mesa de ayuda y mantenimiento.",
     "siteName": "STDM"
   },
   "sections": {
@@ -96,7 +96,8 @@
       },
       "equipment": {
         "title": "Soporte Técnico",
-        "description": "Pantallas comerciales, pantallas interactivas, instalación y soporte técnico."
+        "description": "Mesa de ayuda, mantenimiento preventivo y correctivo, y soporte remoto o presencial en Costa Rica.",
+        "imageAlt": "Gabinetes de servidores y cableado de red en un centro de datos"
       }
     },
     "industriesWeServe": {
@@ -158,7 +159,7 @@
     "infrastructure": "Infraestructura",
     "cloud": "Cloud",
     "marketing": "Marketing",
-    "equipment": "Equipamiento",
+    "equipment": "Soporte técnico",
     "automation": "Automatización"
   },
   "pages": {
@@ -248,58 +249,76 @@
     },
     "equipment": {
       "metadata": {
-        "title": "Soporte Técnico | STDM Costa Rica",
-        "description": "Pantallas comerciales, pantallas interactivas, instalación y soporte técnico en Costa Rica."
+        "title": "Soporte Técnico para Empresas | STDM Costa Rica",
+        "description": "Mesa de ayuda, mantenimiento preventivo y correctivo, y soporte remoto o presencial en Costa Rica. El suministro de equipos de cómputo es un complemento, a cotizar."
       },
       "headline": "Soporte Técnico",
-      "subheadline": "Suministramos, instalamos y damos soporte a pantallas comerciales e interactivas, con configuración, capacitación y soporte técnico.",
-      "servicesTitle": "Equipos que ofrecemos",
-      "servicesSubtitle": "Equipos profesionales y soporte técnico para tu negocio.",
-      "supportTitle": "Servicios asociados",
-      "supportSubtitle": "Soporte completo desde la instalación hasta el mantenimiento continuo.",
-      "ctaTitle": "¿Buscas equipos o soporte técnico?",
-      "ctaDescription": "Contáctanos para revisar opciones de equipos, instalación y soporte para tu proyecto. Precio a cotizar.",
+      "subheadline": "Mesa de ayuda, mantenimiento preventivo y correctivo, y soporte remoto o presencial para empresas en Costa Rica. Si lo necesitas, también cotizamos equipos de cómputo.",
+      "servicesTitle": "Servicios de soporte",
+      "servicesSubtitle": "Primero atendemos, mantenemos y resolvemos. El suministro de equipos queda como complemento.",
+      "supportTitle": "Cómo te damos soporte",
+      "supportSubtitle": "La mesa de ayuda y el mantenimiento se atienden en remoto o en tu empresa, en Costa Rica.",
+      "supplyTitle": "Equipos, solo si hacen falta",
+      "supplySubtitle": "El suministro no es el servicio. Si el diagnóstico lo pide, cotizamos laptops, computadoras o servidores y los dejamos dentro del soporte. Precio a cotizar.",
+      "ctaTitle": "¿Necesitas mesa de ayuda o mantenimiento?",
+      "ctaDescription": "Cuéntanos cómo opera tu empresa. Te proponemos soporte remoto, visitas en Costa Rica o un plan de mantenimiento. Precio a cotizar.",
       "services": {
-        "digitalDisplays": {
-          "title": "Pantallas digitales",
-          "description": "Pantallas digitales comerciales para entornos de retail, corporativos y públicos."
+        "helpDesk": {
+          "title": "Mesa de ayuda",
+          "description": "Un punto de contacto para las incidencias de tu empresa: dudas de usuario, fallas del día a día y seguimiento hasta el cierre. Atención remota y, cuando hace falta, presencial en Costa Rica."
         },
-        "interactiveDisplays": {
-          "title": "Pantallas interactivas",
-          "description": "Pantallas táctiles para kioscos, presentaciones y atención a clientes."
+        "preventiveMaintenance": {
+          "title": "Mantenimiento preventivo",
+          "description": "Revisiones programadas de equipos de cómputo, redes y servidores para reducir fallas antes de que detengan tu operación."
+        },
+        "correctiveMaintenance": {
+          "title": "Mantenimiento correctivo",
+          "description": "Diagnóstico y reparación cuando algo deja de funcionar, para que tu equipo vuelva a trabajar sin convertir cada falla en una compra."
+        },
+        "infrastructureNetworks": {
+          "title": "Infraestructura y redes",
+          "description": "Soporte de conectividad, redes y equipos de comunicación. Atendemos fallas y damos mantenimiento para que tu empresa siga en línea."
+        },
+        "serversLicensing": {
+          "title": "Servidores y licenciamiento",
+          "description": "Acompañamiento de servidores, respaldos y licencias de software para que tu operación siga ordenada y en regla."
+        },
+        "computerEquipment": {
+          "title": "Equipos de cómputo",
+          "description": "Cuando el diagnóstico lo justifica, suministramos laptops, computadoras o servidores y los incorporamos al plan de soporte. Precio a cotizar."
         }
       },
       "support": {
+        "remoteSupport": {
+          "title": "Soporte remoto",
+          "description": "Te atendemos a distancia para diagnosticar, orientar y resolver incidencias sin esperar una visita."
+        },
+        "onsiteSupport": {
+          "title": "Soporte presencial",
+          "description": "Cuando el caso lo pide, vamos a tu empresa en Costa Rica para revisar equipos, red o servidores."
+        },
+        "diagnosis": {
+          "title": "Diagnóstico",
+          "description": "Identificamos la causa antes de proponerte una reparación o un reemplazo."
+        },
         "installation": {
-          "title": "Instalación",
-          "description": "Instalación profesional en sitio de pantallas y equipos relacionados."
-        },
-        "configuration": {
-          "title": "Configuración",
-          "description": "Configuración de sistemas, integración de red y software para un rendimiento óptimo."
-        },
-        "commissioning": {
-          "title": "Puesta en Marcha",
-          "description": "Pruebas completas y entrega para garantizar que el equipo esté listo para producción."
+          "title": "Instalación y configuración",
+          "description": "Dejamos listos usuarios, red y software cuando el soporte incluye un equipo o un cambio en tu infraestructura."
         },
         "training": {
           "title": "Capacitación",
-          "description": "Capacitación para operadores y administradores para que tu equipo use el equipamiento con confianza."
+          "description": "Explicamos a tu equipo cómo reportar una incidencia y cómo usar lo que quedó instalado."
         },
-        "maintenance": {
-          "title": "Mantenimiento",
-          "description": "Planes de mantenimiento preventivo y correctivo para maximizar la vida útil y disponibilidad del equipo."
-        },
-        "technicalSupport": {
-          "title": "Soporte Técnico",
-          "description": "Soporte técnico ágil para resolución de problemas, actualizaciones y asistencia continua."
+        "followUp": {
+          "title": "Seguimiento",
+          "description": "Cerramos el caso contigo y quedamos disponibles para el siguiente mantenimiento o incidente."
         }
       }
     },
     "projects": {
       "metadata": {
         "title": "Proyectos y Casos de Éxito | STDM Costa Rica",
-        "description": "Explora casos de éxito de STDM en software, cloud, infraestructura, marketing, equipamiento y automatización."
+        "description": "Explora casos de éxito de STDM en software, cloud, infraestructura, marketing, soporte técnico y automatización."
       },
       "headline": "Proyectos y Casos de Éxito",
       "subheadline": "Descubre cómo ayudamos a empresas en Costa Rica con TI, marketing digital y soporte técnico.",
@@ -317,7 +336,7 @@
       "ctaDescription": "Adaptamos nuestras capacidades de TI, marketing digital y soporte técnico a tu sector.",
       "items": {
         "retail": {
-          "description": "Plataformas digitales, pantallas comerciales y campañas de marketing que impulsan tráfico y ventas online."
+          "description": "Plataformas digitales, soporte técnico para la operación y campañas de marketing que impulsan tráfico y ventas online."
         },
         "manufacturing": {
           "description": "Tecnología industrial, infraestructura IT, automatización y software operativo para optimizar producción y logística."
@@ -332,7 +351,7 @@
           "description": "Infraestructura segura, presencia digital y soluciones de comunicación para clínicas y proveedores de salud."
         },
         "hospitality": {
-          "description": "Experiencias de marca, marketing digital y pantallas interactivas para hoteles y negocios de hospitalidad."
+          "description": "Experiencias de marca, marketing digital y soporte técnico para hoteles y negocios de hospitalidad."
         },
         "professionalServices": {
           "description": "Sitios web profesionales, soluciones cloud y marketing que generan credibilidad y leads calificados."
@@ -358,7 +377,7 @@
       "capabilities": {
         "technology": "Desarrollo de software, soluciones cloud, consultoría IT, DevOps, infraestructura, ciberseguridad y tecnología industrial — con instalación y soporte.",
         "digital": "Marketing digital, medios pagados, SEO, redes sociales, automatización y analítica orientados a resultados de negocio medibles.",
-        "equipment": "Pantallas comerciales e interactivas, más instalación, capacitación, mantenimiento y soporte técnico."
+        "equipment": "Mesa de ayuda, mantenimiento preventivo y correctivo, y soporte remoto o presencial en Costa Rica. El suministro de equipos de cómputo es un complemento, a cotizar."
       },
       "experienceTitle": "Experiencia técnica",
       "experienceBody": "Nuestro equipo combina ingeniería de software, arquitectura de soluciones, estrategia digital, producción creativa y soporte operativo. Esa mezcla nos permite pasar de la estrategia a la implementación — y mantenernos responsables después del go-live.",
