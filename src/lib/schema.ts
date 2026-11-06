@@ -120,24 +120,21 @@ export function buildBusinessUnitSchema(unit: BusinessUnitKey, lang: 'en' | 'es'
   if (unit === 'equipment') {
     const equipmentPage = translations.pages.equipment
 
-    const products = serviceKeys.map((key) => {
-      const product = equipmentPage.services[key as keyof typeof equipmentPage.services] as {
-        title: string
-        description: string
-      }
-      return {
+    const supply = equipmentPage.services.computerEquipment
+    const products = [
+      {
         '@context': 'https://schema.org',
         '@type': 'Product',
-        name: product.title,
-        description: product.description,
+        name: supply.title,
+        description: supply.description,
         brand: { '@type': 'Brand', name: 'STDM' },
         offers: {
           '@type': 'Offer',
-          availability: 'https://schema.org/InStock',
+          availability: 'https://schema.org/PreOrder',
           seller: organizationRef(siteUrl),
         },
-      }
-    })
+      },
+    ]
 
     const supportServices = equipmentSupportKeys.map((key) => {
       const support = equipmentPage.support[key as keyof typeof equipmentPage.support] as {

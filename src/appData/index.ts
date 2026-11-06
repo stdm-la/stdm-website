@@ -32,6 +32,7 @@ export const businessUnitsData = [
     id: 'equipment',
     href: businessUnitRoutes.equipment,
     image: '/images/home/equipment.jpg',
+    imageAltKey: 'sections.businessUnits.equipment.imageAlt',
     labelKey: 'hero.units.equipment',
     titleKey: 'sections.businessUnits.equipment.title',
     descriptionKey: 'sections.businessUnits.equipment.description',

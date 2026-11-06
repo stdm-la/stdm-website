@@ -44,12 +44,13 @@ export default async function EquipmentCategoryRoute({ params }: Props) {
   if (!category) notFound()
 
   const { translations } = await getMergedTranslations()
-  const catalog = translations.pages as {
+  const pages = translations.pages as {
+    equipment: { headline: string }
     catalog: {
       categories: Record<EquipmentCategoryKey, { title: string; description: string }>
     }
   }
-  const page = catalog.catalog.categories[category]
+  const page = pages.catalog.categories[category]
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://stdm-la.com'
 
   const schema = [
@@ -62,7 +63,7 @@ export default async function EquipmentCategoryRoute({ params }: Props) {
     },
     buildBreadcrumbSchema([
       { name: 'Home', url: siteUrl },
-      { name: 'Equipment', url: `${siteUrl}/equipment` },
+      { name: pages.equipment.headline, url: `${siteUrl}/equipment` },
       { name: page.title, url: `${siteUrl}/equipment/${slug}` },
     ]),
   ]

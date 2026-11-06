@@ -76,7 +76,7 @@
   },
   "metadata": {
     "title": "STDM | IT, Digital Marketing and Technical Support",
-    "description": "STDM integrates IT, digital marketing and technical support for businesses in Costa Rica. Software development, cloud solutions, IT consulting, digital marketing, commercial displays and technical support.",
+    "description": "STDM integrates IT, digital marketing and technical support for businesses in Costa Rica. Software development, cloud solutions, IT consulting, digital marketing, help desk and maintenance.",
     "siteName": "STDM"
   },
   "sections": {
@@ -96,7 +96,8 @@
       },
       "equipment": {
         "title": "Technical Support",
-        "description": "Commercial displays, interactive screens, installation and technical support."
+        "description": "Help desk, preventive and corrective maintenance, and remote or on-site support in Costa Rica.",
+        "imageAlt": "Server cabinets and network cabling in a data center"
       }
     },
     "industriesWeServe": {
@@ -158,7 +159,7 @@
     "infrastructure": "Infrastructure",
     "cloud": "Cloud",
     "marketing": "Marketing",
-    "equipment": "Equipment",
+    "equipment": "Technical support",
     "automation": "Automation"
   },
   "pages": {
@@ -248,58 +249,76 @@
     },
     "equipment": {
       "metadata": {
-        "title": "Technical Support | STDM Costa Rica",
-        "description": "Commercial displays, interactive screens, installation and technical support in Costa Rica."
+        "title": "Technical Support for Businesses | STDM Costa Rica",
+        "description": "Help desk, preventive and corrective maintenance, and remote or on-site support in Costa Rica. Computer equipment supply is a complement, quoted on request."
       },
       "headline": "Technical Support",
-      "subheadline": "We supply, install and support commercial displays and interactive screens, with configuration, training and technical support.",
-      "servicesTitle": "Equipment We Offer",
-      "servicesSubtitle": "Professional equipment and technical support for your business.",
-      "supportTitle": "Associated Services",
-      "supportSubtitle": "Complete support from installation to ongoing maintenance.",
-      "ctaTitle": "Looking for equipment or technical support?",
-      "ctaDescription": "Contact us to discuss equipment options, installation and support for your project.",
+      "subheadline": "Help desk, preventive and corrective maintenance, and remote or on-site support for businesses in Costa Rica. When you need it, we also quote computer equipment.",
+      "servicesTitle": "Support services",
+      "servicesSubtitle": "We start by supporting, maintaining and resolving issues. Equipment supply stays a complement.",
+      "supportTitle": "How we support you",
+      "supportSubtitle": "Help desk and maintenance are handled remotely or at your business in Costa Rica.",
+      "supplyTitle": "Equipment, only when it is needed",
+      "supplySubtitle": "Supply is not the service. If a diagnosis calls for it, we quote laptops, desktops or servers and bring them into support. Price on request.",
+      "ctaTitle": "Need a help desk or a maintenance plan?",
+      "ctaDescription": "Tell us how your company operates. We will propose remote support, on-site visits in Costa Rica or a maintenance plan. Price on request.",
       "services": {
-        "digitalDisplays": {
-          "title": "Digital Displays",
-          "description": "Commercial-grade digital screens for retail, corporate and public environments."
+        "helpDesk": {
+          "title": "Help desk",
+          "description": "A single point of contact for your company's incidents: everyday user questions, failures and follow-up until the case is closed. Remote support and, when needed, on-site in Costa Rica."
         },
-        "interactiveDisplays": {
-          "title": "Interactive Displays",
-          "description": "Touch-enabled interactive screens for kiosks, presentations and customer engagement."
+        "preventiveMaintenance": {
+          "title": "Preventive maintenance",
+          "description": "Scheduled reviews of computers, networks and servers so issues are caught before they stop your operation."
+        },
+        "correctiveMaintenance": {
+          "title": "Corrective maintenance",
+          "description": "Diagnosis and repair when something stops working, so your team can get back to work without turning every failure into a purchase."
+        },
+        "infrastructureNetworks": {
+          "title": "Infrastructure and networks",
+          "description": "Support for connectivity, networks and communications equipment. We handle failures and maintenance so your company stays online."
+        },
+        "serversLicensing": {
+          "title": "Servers and licensing",
+          "description": "Support for servers, backups and software licenses so your operation stays organized and properly licensed."
+        },
+        "computerEquipment": {
+          "title": "Computer equipment",
+          "description": "When a diagnosis calls for it, we supply laptops, desktops or servers and bring them into the support plan. Price on request."
         }
       },
       "support": {
+        "remoteSupport": {
+          "title": "Remote support",
+          "description": "We help you at a distance to diagnose, guide and resolve incidents without waiting for a visit."
+        },
+        "onsiteSupport": {
+          "title": "On-site support",
+          "description": "When the case needs it, we go to your business in Costa Rica to check computers, the network or servers."
+        },
+        "diagnosis": {
+          "title": "Diagnosis",
+          "description": "We identify the cause before recommending a repair or a replacement."
+        },
         "installation": {
-          "title": "Installation",
-          "description": "Professional on-site installation of displays and related equipment."
-        },
-        "configuration": {
-          "title": "Configuration",
-          "description": "System setup, network integration and software configuration for optimal performance."
-        },
-        "commissioning": {
-          "title": "Commissioning",
-          "description": "Full testing and handoff to ensure equipment is production-ready before go-live."
+          "title": "Installation and configuration",
+          "description": "We set up users, network and software when support includes a device or a change in your infrastructure."
         },
         "training": {
           "title": "Training",
-          "description": "Operator and administrator training so your team can use equipment confidently."
+          "description": "We show your team how to report an incident and how to use what was installed."
         },
-        "maintenance": {
-          "title": "Maintenance",
-          "description": "Preventive and corrective maintenance plans to maximize equipment lifespan and uptime."
-        },
-        "technicalSupport": {
-          "title": "Technical Support",
-          "description": "Responsive technical support for troubleshooting, updates and ongoing assistance."
+        "followUp": {
+          "title": "Follow-up",
+          "description": "We close the case with you and stay available for the next maintenance visit or incident."
         }
       }
     },
     "projects": {
       "metadata": {
         "title": "Projects & Case Studies | STDM Costa Rica",
-        "description": "Explore STDM case studies across software, cloud, infrastructure, marketing, equipment and automation."
+        "description": "Explore STDM case studies across software, cloud, infrastructure, marketing, technical support and automation."
       },
       "headline": "Projects & Case Studies",
       "subheadline": "Discover how we help businesses across Costa Rica with IT, digital marketing and technical support.",
@@ -317,7 +336,7 @@
       "ctaDescription": "We adapt our IT, digital marketing and technical support capabilities to your sector.",
       "items": {
         "retail": {
-          "description": "Digital platforms, commercial displays and marketing campaigns that drive foot traffic and online sales."
+          "description": "Digital platforms, technical support for day-to-day operations and marketing campaigns that drive foot traffic and online sales."
         },
         "manufacturing": {
           "description": "Industrial technology, IT infrastructure, automation and operational software to optimize production and logistics."
@@ -332,7 +351,7 @@
           "description": "Secure infrastructure, digital presence and communication solutions for clinics and healthcare providers."
         },
         "hospitality": {
-          "description": "Brand experiences, digital marketing and interactive displays for hotels and hospitality businesses."
+          "description": "Brand experiences, digital marketing and technical support for hotels and hospitality businesses."
         },
         "professionalServices": {
           "description": "Professional websites, cloud solutions and marketing that build credibility and generate qualified leads."
@@ -358,7 +377,7 @@
       "capabilities": {
         "technology": "Software development, cloud solutions, IT consulting, DevOps, infrastructure, cybersecurity and industrial technology — with installation and support.",
         "digital": "Digital marketing, paid media, SEO, social media, marketing automation and analytics focused on measurable business outcomes.",
-        "equipment": "Commercial and interactive displays, plus installation, training, maintenance and technical support."
+        "equipment": "Help desk, preventive and corrective maintenance, and remote or on-site support in Costa Rica. Computer equipment supply is a complement, quoted on request."
       },
       "experienceTitle": "Technical experience",
       "experienceBody": "Our team combines software engineering, solution architecture, digital strategy, creative production and operational support. That mix lets us move from strategy to implementation — and stay accountable after go-live.",

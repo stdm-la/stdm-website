@@ -55,7 +55,7 @@ const HeroCarousel = ({ index, onIndexChange }: HeroCarouselProps) => {
             }`}>
             <Image
               src={unit.image}
-              alt={t(unit.titleKey)}
+              alt={t('imageAltKey' in unit ? unit.imageAltKey : unit.titleKey)}
               fill
               className="object-cover"
               sizes="100vw"

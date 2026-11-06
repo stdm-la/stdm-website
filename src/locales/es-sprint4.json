@@ -10,55 +10,37 @@
   },
   "pages": {
     "catalog": {
-      "productsTitle": "Líneas de producto",
-      "productsSubtitle": "Pide cotización del equipo que necesitas. Suministramos, instalamos y damos soporte. Precio a cotizar.",
-      "inquiryNote": "Disponible bajo pedido — instalación y capacitación incluidas en proyectos llave en mano. Precio a cotizar.",
-      "otherCategories": "Explorar otras categorías de equipos",
-      "ctaTitle": "¿Necesitas equipos o soporte técnico?",
-      "ctaDescription": "Cuéntanos tu caso de uso y recomendamos la configuración, instalación y plan de soporte adecuados. Precio a cotizar.",
+      "productsTitle": "Equipos que podemos suministrar",
+      "productsSubtitle": "El suministro es un complemento del soporte, no el punto de partida. Si tu empresa necesita equipos, los cotizamos. Precio a cotizar.",
+      "inquiryNote": "Complemento del soporte técnico. Precio a cotizar.",
+      "otherCategories": "Explorar otras líneas",
+      "ctaTitle": "¿El soporte debe incluir equipos?",
+      "ctaDescription": "Cuéntanos el caso. Si hace falta hardware, cotizamos laptops, computadoras o servidores junto con la instalación y el mantenimiento. Precio a cotizar.",
       "categories": {
-        "digitalDisplays": {
-          "title": "Pantallas digitales",
-          "description": "Pantallas digitales comerciales para retail, corporativo, hospitalidad y entornos públicos.",
+        "computerEquipment": {
+          "title": "Equipos de cómputo",
+          "description": "Laptops, computadoras y servidores como complemento de la mesa de ayuda y el mantenimiento. Precio a cotizar.",
           "products": {
-            "indoorLcd": {
-              "title": "Pantallas LCD interiores",
-              "description": "Paneles LCD comerciales de alto brillo para lobbies, tiendas y salas de reunión."
+            "laptops": {
+              "title": "Laptops para equipos de trabajo",
+              "description": "Equipos portátiles para el día a día de tu empresa, listos para configurarse y entrar al soporte."
             },
-            "outdoorLed": {
-              "title": "Pantallas LED exteriores",
-              "description": "Pantallas LED para exteriores comerciales, preparadas para clima."
+            "desktops": {
+              "title": "Computadoras de escritorio",
+              "description": "Estaciones de trabajo para oficinas y puestos fijos que necesitan un equipo estable."
             },
-            "videoWall": {
-              "title": "Video walls",
-              "description": "Configuraciones modulares de video wall para experiencias visuales de gran escala."
+            "peripherals": {
+              "title": "Periféricos",
+              "description": "Teclados, mouse y accesorios de puesto de trabajo cuando el soporte lo pide."
             },
-            "windowDisplay": {
-              "title": "Pantallas de alto brillo",
-              "description": "Pantallas diseñadas para condiciones de alta luminosidad ambiental."
-            }
-          }
-        },
-        "interactiveDisplays": {
-          "title": "Pantallas interactivas",
-          "description": "Pantallas táctiles e interactivas para kioscos, colaboración y atención a clientes.",
-          "products": {
-            "touchScreen": {
-              "title": "Pantallas táctiles",
-              "description": "Displays multi-touch comerciales para presentaciones y contenido interactivo."
-            },
-            "interactiveKiosk": {
-              "title": "Kioscos interactivos",
-              "description": "Kioscos de autoservicio e información para retail, hospitalidad y espacios públicos."
-            },
-            "collaborationDisplay": {
-              "title": "Displays de colaboración",
-              "description": "Pizarras interactivas para reuniones, capacitación y espacios corporativos."
+            "servers": {
+              "title": "Servidores",
+              "description": "Servidores para archivos, aplicaciones o respaldos, cotizados según lo que tu operación necesita."
             }
           }
         }
       },
-      "viewCatalog": "Ver catálogo de productos"
+      "viewCatalog": "Ver equipos que suministramos"
     },
     "seoLandings": {
       "badge": "Soluciones locales",
@@ -203,44 +185,44 @@
           "description": "Campañas pagadas en búsqueda, redes y display en Costa Rica, optimizadas para leads y retorno de inversión."
         }
       },
-      "digitalDisplays": {
-        "headline": "Pantallas Digitales en Costa Rica",
-        "subheadline": "Pantallas digitales comerciales para retail, corporativo y entornos públicos — suministradas, instaladas y soportadas.",
-        "whyTitle": "Pantallas que funcionan en entornos reales",
-        "whyBody": "Desde LCD interior hasta LED exterior, entregamos proyectos de pantallas digitales con hardware, montaje y preparación de contenido.",
-        "benefit1Title": "Hardware comercial",
-        "benefit1Body": "Pantallas seleccionadas por brillo, durabilidad y caso de uso.",
-        "benefit2Title": "Instalación profesional",
-        "benefit2Body": "Montaje, energía y red configurados correctamente.",
-        "benefit3Title": "Contenido y players",
-        "benefit3Body": "Players opcionales para reproducción programada.",
-        "benefit4Title": "Soporte después del arranque",
-        "benefit4Body": "Mantenimiento y soporte técnico para mantener las pantallas en línea.",
-        "ctaTitle": "¿Planeas un proyecto de pantallas?",
-        "ctaDescription": "Solicita una consulta para pantallas, video walls o LED exterior. Precio a cotizar.",
+      "helpDesk": {
+        "headline": "Mesa de ayuda para empresas en Costa Rica",
+        "subheadline": "Un punto de contacto para las incidencias de tu equipo, con atención remota y visitas presenciales cuando el caso lo requiere.",
+        "whyTitle": "Soporte al que tu empresa puede acudir",
+        "whyBody": "La mesa de ayuda de STDM atiende dudas, fallas de usuario y el seguimiento hasta el cierre. El objetivo es que tu operación siga, no venderte un equipo en cada ticket.",
+        "benefit1Title": "Un solo canal",
+        "benefit1Body": "Reportas la incidencia y te acompañamos hasta dejarla resuelta o escalada con claridad.",
+        "benefit2Title": "Remoto y presencial",
+        "benefit2Body": "Empezamos a distancia y, si hace falta, vamos a tu empresa en Costa Rica.",
+        "benefit3Title": "Mantenimiento cuando corresponde",
+        "benefit3Body": "Si la falla se repite, te proponemos mantenimiento preventivo o correctivo en lugar de cambios sueltos.",
+        "benefit4Title": "Equipos solo si hacen falta",
+        "benefit4Body": "El suministro de laptops, computadoras o servidores es un complemento, a cotizar, no la primera respuesta.",
+        "ctaTitle": "¿Quieres una mesa de ayuda para tu empresa?",
+        "ctaDescription": "Solicita una consulta. Te contamos cómo cubrir soporte remoto y presencial en Costa Rica. Precio a cotizar.",
         "metadata": {
-          "title": "Pantallas Digitales Costa Rica | STDM",
-          "description": "Pantallas digitales comerciales en Costa Rica con instalación y soporte."
+          "title": "Mesa de ayuda para empresas en Costa Rica | STDM",
+          "description": "Mesa de ayuda remota y presencial en Costa Rica: incidencias, seguimiento y mantenimiento. Equipos de cómputo a cotizar como complemento."
         }
       },
-      "interactiveDisplays": {
-        "headline": "Pantallas Interactivas en Costa Rica",
-        "subheadline": "Pantallas táctiles, kioscos y displays de colaboración para atención a clientes y productividad de equipos.",
-        "whyTitle": "Interactividad con propósito claro",
-        "whyBody": "Desplegamos pantallas interactivas que mejoran la experiencia del cliente o la colaboración — con instalación y capacitación.",
-        "benefit1Title": "Formatos de engagement",
-        "benefit1Body": "Kioscos y touch screens para retail, hospitalidad y espacios públicos.",
-        "benefit2Title": "Salas de colaboración",
-        "benefit2Body": "Pizarras interactivas para reuniones, capacitación y trabajo híbrido.",
-        "benefit3Title": "Entrega llave en mano",
-        "benefit3Body": "Hardware, configuración y capacitación de usuarios en un solo proyecto.",
-        "benefit4Title": "Soluciones integradas",
-        "benefit4Body": "Conecta experiencias interactivas con marketing digital y soporte técnico.",
-        "ctaTitle": "¿Necesitas pantallas interactivas?",
-        "ctaDescription": "Habla con un especialista sobre kioscos, pantallas táctiles o salas de colaboración. Precio a cotizar.",
+      "itMaintenance": {
+        "headline": "Mantenimiento de TI en Costa Rica",
+        "subheadline": "Mantenimiento preventivo y correctivo para los equipos de cómputo, las redes y los servidores de tu empresa.",
+        "whyTitle": "Mantener antes de reemplazar",
+        "whyBody": "Revisamos, diagnosticamos y reparamos la infraestructura que tu equipo usa cada día. El suministro de equipos entra solo cuando el mantenimiento ya no alcanza.",
+        "benefit1Title": "Preventivo",
+        "benefit1Body": "Revisiones programadas para reducir fallas en equipos, red y servidores.",
+        "benefit2Title": "Correctivo",
+        "benefit2Body": "Atención cuando algo se detiene, con diagnóstico antes de proponerte un reemplazo.",
+        "benefit3Title": "En tu empresa o en remoto",
+        "benefit3Body": "Parte del trabajo se resuelve a distancia. Lo que exige presencia se atiende en Costa Rica.",
+        "benefit4Title": "Ligado a la mesa de ayuda",
+        "benefit4Body": "El mantenimiento y la mesa de ayuda se hablan: lo que se repite en los tickets puede pasar a un plan preventivo.",
+        "ctaTitle": "¿Buscas mantenimiento preventivo y correctivo?",
+        "ctaDescription": "Cuéntanos qué equipos e infraestructura quieres mantener. Precio a cotizar.",
         "metadata": {
-          "title": "Pantallas Interactivas Costa Rica | STDM",
-          "description": "Pantallas interactivas, kioscos y displays de colaboración en Costa Rica."
+          "title": "Mantenimiento de TI en Costa Rica | STDM",
+          "description": "Mantenimiento preventivo y correctivo de equipos, redes y servidores en Costa Rica, remoto o presencial. Precio a cotizar."
         }
       }
     }

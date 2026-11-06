@@ -11,7 +11,7 @@ export default async function Image() {
     buildOgImageJsx({
       badge: 'Technical Support',
       title: 'Technical Support',
-      subtitle: 'Commercial displays, interactive screens and installation support',
+      subtitle: 'Help desk, preventive and corrective maintenance, remote and on-site support',
     }),
     { ...size },
   )

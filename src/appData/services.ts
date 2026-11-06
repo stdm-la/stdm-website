@@ -25,14 +25,21 @@ export const businessUnitServiceKeys: Record<BusinessUnitKey, string[]> = {
     'marketingAutomation',
     'analytics',
   ],
-  equipment: ['digitalDisplays', 'interactiveDisplays'],
+  equipment: [
+    'helpDesk',
+    'preventiveMaintenance',
+    'correctiveMaintenance',
+    'infrastructureNetworks',
+    'serversLicensing',
+  ],
 }
 
+/** How support is delivered. Equipment supply is a separate, secondary block. */
 export const equipmentSupportKeys = [
+  'remoteSupport',
+  'onsiteSupport',
+  'diagnosis',
   'installation',
-  'configuration',
-  'commissioning',
   'training',
-  'maintenance',
-  'technicalSupport',
+  'followUp',
 ]

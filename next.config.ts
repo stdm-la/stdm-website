@@ -16,6 +16,18 @@ const nextConfig: NextConfig = {
       { source: '/equipment/large-format-printers', destination: '/equipment', permanent: true },
       { source: '/equipment/cnc-equipment', destination: '/equipment', permanent: true },
       { source: '/equipment/digital-signage', destination: '/equipment', permanent: true },
+      { source: '/equipment/digital-displays', destination: '/equipment', permanent: true },
+      { source: '/equipment/interactive-displays', destination: '/equipment', permanent: true },
+      {
+        source: '/solutions/digital-displays-costa-rica',
+        destination: '/equipment',
+        permanent: true,
+      },
+      {
+        source: '/solutions/interactive-displays-costa-rica',
+        destination: '/equipment',
+        permanent: true,
+      },
       {
         source: '/solutions/large-format-printers-costa-rica',
         destination: '/equipment',

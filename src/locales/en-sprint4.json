@@ -10,55 +10,37 @@
   },
   "pages": {
     "catalog": {
-      "productsTitle": "Product lines",
-      "productsSubtitle": "Request a quote for the equipment that fits your operation. We supply, install and support.",
-      "inquiryNote": "Available upon request — installation and training included in turnkey projects.",
-      "otherCategories": "Explore other equipment categories",
-      "ctaTitle": "Need equipment or a full turnkey solution?",
-      "ctaDescription": "Tell us your use case and we will recommend the right configuration, installation and support plan.",
+      "productsTitle": "Equipment we can supply",
+      "productsSubtitle": "Supply is a complement to support, not the starting point. If your company needs equipment, we quote it. Price on request.",
+      "inquiryNote": "A complement to technical support. Price on request.",
+      "otherCategories": "Explore other lines",
+      "ctaTitle": "Should support include equipment?",
+      "ctaDescription": "Tell us about the case. If hardware is needed, we quote laptops, desktops or servers together with installation and maintenance. Price on request.",
       "categories": {
-        "digitalDisplays": {
-          "title": "Digital Displays",
-          "description": "Commercial digital screens for retail, corporate, hospitality and public environments.",
+        "computerEquipment": {
+          "title": "Computer equipment",
+          "description": "Laptops, desktops and servers as a complement to help desk and maintenance. Price on request.",
           "products": {
-            "indoorLcd": {
-              "title": "Indoor LCD Displays",
-              "description": "High-brightness commercial LCD panels for lobbies, stores and meeting spaces."
+            "laptops": {
+              "title": "Laptops for working teams",
+              "description": "Portable computers for your company's day-to-day work, ready to be configured and brought into support."
             },
-            "outdoorLed": {
-              "title": "Outdoor LED Screens",
-              "description": "Weather-rated LED screens for outdoor commercial environments."
+            "desktops": {
+              "title": "Desktop computers",
+              "description": "Workstations for offices and fixed desks that need a stable computer."
             },
-            "videoWall": {
-              "title": "Video Walls",
-              "description": "Modular video wall configurations for large-scale visual experiences."
+            "peripherals": {
+              "title": "Peripherals",
+              "description": "Keyboards, mice and desk accessories when support calls for them."
             },
-            "windowDisplay": {
-              "title": "Window & High-Brightness Displays",
-              "description": "Displays engineered for bright ambient light conditions."
-            }
-          }
-        },
-        "interactiveDisplays": {
-          "title": "Interactive Displays",
-          "description": "Touch-enabled and interactive screens for kiosks, collaboration and customer engagement.",
-          "products": {
-            "touchScreen": {
-              "title": "Touch Screens",
-              "description": "Multi-touch commercial displays for presentations and interactive content."
-            },
-            "interactiveKiosk": {
-              "title": "Interactive Kiosks",
-              "description": "Self-service and information kiosks for retail, hospitality and public venues."
-            },
-            "collaborationDisplay": {
-              "title": "Collaboration Displays",
-              "description": "Meeting-room interactive boards for teams, training rooms and corporate spaces."
+            "servers": {
+              "title": "Servers",
+              "description": "Servers for files, applications or backups, quoted for what your operation needs."
             }
           }
         }
       },
-      "viewCatalog": "View product catalog"
+      "viewCatalog": "See equipment we supply"
     },
     "seoLandings": {
       "badge": "Local solutions",
@@ -203,44 +185,44 @@
           "description": "Paid search, social and display campaigns in Costa Rica optimized for leads and ROI."
         }
       },
-      "digitalDisplays": {
-        "headline": "Digital Displays in Costa Rica",
-        "subheadline": "Commercial digital screens for retail, corporate and public environments — supplied, installed and supported.",
-        "whyTitle": "Screens that work in real environments",
-        "whyBody": "From indoor LCD to outdoor LED, STDM delivers digital display projects with hardware, mounting and content readiness.",
-        "benefit1Title": "Commercial-grade hardware",
-        "benefit1Body": "Displays selected for brightness, durability and use case.",
-        "benefit2Title": "Professional installation",
-        "benefit2Body": "Mounting, power and network setup done correctly.",
-        "benefit3Title": "Content & players",
-        "benefit3Body": "Optional media players for scheduled playback.",
-        "benefit4Title": "Support after go-live",
-        "benefit4Body": "Maintenance and technical support to keep screens online.",
-        "ctaTitle": "Planning a digital display project?",
-        "ctaDescription": "Request a consultation for screens, video walls or outdoor LED.",
+      "helpDesk": {
+        "headline": "Business Help Desk in Costa Rica",
+        "subheadline": "A point of contact for your team's incidents, with remote support and on-site visits when the case requires it.",
+        "whyTitle": "Support your company can turn to",
+        "whyBody": "STDM's help desk handles questions, user issues and follow-up until the case is closed. The goal is to keep your operation running, not to sell you equipment on every ticket.",
+        "benefit1Title": "One channel",
+        "benefit1Body": "You report the incident and we stay with you until it is resolved or clearly escalated.",
+        "benefit2Title": "Remote and on-site",
+        "benefit2Body": "We start at a distance and, when needed, go to your business in Costa Rica.",
+        "benefit3Title": "Maintenance when it fits",
+        "benefit3Body": "If the failure repeats, we propose preventive or corrective maintenance instead of one-off changes.",
+        "benefit4Title": "Equipment only when needed",
+        "benefit4Body": "Supplying laptops, desktops or servers is a complement, quoted on request, not the first response.",
+        "ctaTitle": "Want a help desk for your company?",
+        "ctaDescription": "Request a consultation. We will explain how remote and on-site support works in Costa Rica. Price on request.",
         "metadata": {
-          "title": "Digital Displays Costa Rica | STDM",
-          "description": "Digital displays and commercial screens in Costa Rica with installation support."
+          "title": "Business Help Desk in Costa Rica | STDM",
+          "description": "Remote and on-site help desk in Costa Rica for incidents, follow-up and maintenance. Computer equipment is quoted on request as a complement."
         }
       },
-      "interactiveDisplays": {
-        "headline": "Interactive Displays in Costa Rica",
-        "subheadline": "Touch screens, kiosks and collaboration displays for customer engagement and team productivity.",
-        "whyTitle": "Interactivity with a clear purpose",
-        "whyBody": "We deploy interactive displays that improve customer experience or team collaboration — with installation and training included.",
-        "benefit1Title": "Engagement formats",
-        "benefit1Body": "Kiosks and touch screens for retail, hospitality and public spaces.",
-        "benefit2Title": "Collaboration rooms",
-        "benefit2Body": "Interactive boards for meetings, training and hybrid work.",
-        "benefit3Title": "Turnkey delivery",
-        "benefit3Body": "Hardware, configuration and user training in one project.",
-        "benefit4Title": "Integrated solutions",
-        "benefit4Body": "Connect interactive experiences with digital marketing and technical support.",
-        "ctaTitle": "Need interactive displays?",
-        "ctaDescription": "Talk to a specialist about kiosks, touch screens or collaboration rooms.",
+      "itMaintenance": {
+        "headline": "IT Maintenance in Costa Rica",
+        "subheadline": "Preventive and corrective maintenance for your company's computers, networks and servers.",
+        "whyTitle": "Maintain before you replace",
+        "whyBody": "We review, diagnose and repair the infrastructure your team uses every day. Equipment supply comes in only when maintenance is no longer enough.",
+        "benefit1Title": "Preventive",
+        "benefit1Body": "Scheduled reviews to reduce failures across computers, the network and servers.",
+        "benefit2Title": "Corrective",
+        "benefit2Body": "Attention when something stops, with a diagnosis before we recommend a replacement.",
+        "benefit3Title": "At your office or remote",
+        "benefit3Body": "Part of the work is resolved at a distance. What needs a visit is handled in Costa Rica.",
+        "benefit4Title": "Tied to the help desk",
+        "benefit4Body": "Maintenance and the help desk talk to each other: what repeats in tickets can move into a preventive plan.",
+        "ctaTitle": "Looking for preventive and corrective maintenance?",
+        "ctaDescription": "Tell us which computers and infrastructure you want to maintain. Price on request.",
         "metadata": {
-          "title": "Interactive Displays Costa Rica | STDM",
-          "description": "Interactive displays, kiosks and collaboration screens in Costa Rica."
+          "title": "IT Maintenance in Costa Rica | STDM",
+          "description": "Preventive and corrective maintenance for computers, networks and servers in Costa Rica, remote or on-site. Price on request."
         }
       }
     }

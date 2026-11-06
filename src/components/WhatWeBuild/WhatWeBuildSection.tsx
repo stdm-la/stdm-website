@@ -25,6 +25,7 @@ const WhatWeBuildSection = () => {
             className="scroll-mt-24 transition-transform hover:scale-[1.02]">
             <ServiceCard
               image={unit.image}
+              imageAlt={'imageAltKey' in unit ? t(unit.imageAltKey) : undefined}
               title={t(unit.titleKey)}
               shortDescription={t(unit.descriptionKey)}
             />
