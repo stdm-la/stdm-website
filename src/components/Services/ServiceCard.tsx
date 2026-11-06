@@ -2,17 +2,23 @@ import Image from 'next/image'
 
 interface ServiceCardTypes {
   image: string
+  imageAlt?: string
   title: string
   shortDescription: string
 }
 
-const ServiceCard: React.FC<ServiceCardTypes> = ({ title, shortDescription, image }) => {
+const ServiceCard: React.FC<ServiceCardTypes> = ({
+  title,
+  shortDescription,
+  image,
+  imageAlt = '',
+}) => {
   return (
     <div className="bg-secondary border-border hover:shadow-brand-glow flex h-full flex-col overflow-hidden rounded-xl border transition-shadow">
       <div className="relative h-36 w-full md:h-40">
         <Image
           src={image}
-          alt=""
+          alt={imageAlt}
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"

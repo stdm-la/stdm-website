@@ -11,7 +11,7 @@ export default async function Image() {
     buildOgImageJsx({
       badge: 'Digital Marketing',
       title: 'Digital Marketing Solutions',
-      subtitle: 'SEO, social media, digital advertising and analytics in Costa Rica',
+      subtitle: 'SEO, social media, paid media and analytics in Costa Rica',
     }),
     { ...size },
   )

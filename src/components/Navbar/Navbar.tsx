@@ -20,7 +20,6 @@ const Navbar = () => {
   const serviceItems = [
     { label: t('nav.technology'), href: businessUnitRoutes.technology },
     { label: t('nav.digital'), href: businessUnitRoutes.digital },
-    { label: t('nav.advertising'), href: businessUnitRoutes.advertising },
     { label: t('nav.equipment'), href: businessUnitRoutes.equipment },
   ]
 

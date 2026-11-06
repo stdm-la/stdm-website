@@ -1,126 +1,46 @@
 {
   "leads": {
-    "ctaTitle": "¿Listo para hablar de su proyecto?",
-    "ctaDescription": "Solicite una consulta o escríbanos por WhatsApp. Nuestro equipo le ayudará a elegir la solución adecuada.",
+    "ctaTitle": "¿Listo para hablar de tu proyecto?",
+    "ctaDescription": "Solicita una consulta o escríbenos por WhatsApp. Nuestro equipo te ayuda a elegir la solución adecuada.",
     "whatsappCta": "Contactar por WhatsApp",
-    "whatsappDefaultMessage": "Hola STDM, me gustaría solicitar una consulta sobre sus soluciones tecnológicas, digitales y publicitarias.",
+    "whatsappDefaultMessage": "Hola STDM, me gustaría solicitar una consulta sobre TI, marketing digital y soporte técnico.",
     "whatsappInterestMessage": "Hola STDM, estoy interesado en: {interest}. ¿Podemos agendar una consulta?",
     "contextLabel": "Consulta sobre",
     "sourceLabel": "Origen del lead"
   },
   "pages": {
     "catalog": {
-      "productsTitle": "Líneas de producto",
-      "productsSubtitle": "Solicite cotización del equipo que necesita. Suministramos, instalamos y damos soporte.",
-      "inquiryNote": "Disponible bajo pedido — instalación y capacitación incluidas en proyectos llave en mano.",
-      "otherCategories": "Explorar otras categorías de equipos",
-      "ctaTitle": "¿Necesita equipos o una solución integral?",
-      "ctaDescription": "Cuéntenos su caso de uso y recomendaremos la configuración, instalación y plan de soporte adecuados.",
+      "productsTitle": "Equipos que podemos suministrar",
+      "productsSubtitle": "El suministro es un complemento del soporte, no el punto de partida. Si tu empresa necesita equipos, los cotizamos. Precio a cotizar.",
+      "inquiryNote": "Complemento del soporte técnico. Precio a cotizar.",
+      "otherCategories": "Explorar otras líneas",
+      "ctaTitle": "¿El soporte debe incluir equipos?",
+      "ctaDescription": "Cuéntanos el caso. Si hace falta hardware, cotizamos laptops, computadoras o servidores junto con la instalación y el mantenimiento. Precio a cotizar.",
       "categories": {
-        "largeFormatPrinters": {
-          "title": "Impresoras Gran Formato",
-          "description": "Sistemas profesionales de impresión gran formato para señalización, rotulación vehicular, banners y producción de alto volumen en Costa Rica.",
+        "computerEquipment": {
+          "title": "Equipos de cómputo",
+          "description": "Laptops, computadoras y servidores como complemento de la mesa de ayuda y el mantenimiento. Precio a cotizar.",
           "products": {
-            "solventPrinter": {
-              "title": "Impresoras Solvente",
-              "description": "Impresión durable para exteriores: banners, vallas y gráficas de larga duración."
+            "laptops": {
+              "title": "Laptops para equipos de trabajo",
+              "description": "Equipos portátiles para el día a día de tu empresa, listos para configurarse y entrar al soporte."
             },
-            "uvPrinter": {
-              "title": "Impresoras UV",
-              "description": "Impresión UV directa a sustrato para materiales rígidos, displays y aplicaciones especiales."
+            "desktops": {
+              "title": "Computadoras de escritorio",
+              "description": "Estaciones de trabajo para oficinas y puestos fijos que necesitan un equipo estable."
             },
-            "ecoSolventPrinter": {
-              "title": "Impresoras Eco-Solvente",
-              "description": "Producción de bajo olor para gráficas interiores y exteriores con alta calidad de color."
+            "peripherals": {
+              "title": "Periféricos",
+              "description": "Teclados, mouse y accesorios de puesto de trabajo cuando el soporte lo pide."
             },
-            "plotterCutter": {
-              "title": "Plotters y Cortadoras",
-              "description": "Corte de precisión para vinilo, etiquetas y acabados en su línea de producción."
-            }
-          }
-        },
-        "cncEquipment": {
-          "title": "Equipos CNC",
-          "description": "Soluciones CNC de corte y grabado para fabricación de señalización, displays y materiales personalizados.",
-          "products": {
-            "cncRouter": {
-              "title": "Routers CNC",
-              "description": "Routers multimaterial para acrílico, madera, foam, ACM y sustratos de rótulos."
-            },
-            "laserCnc": {
-              "title": "CNC Láser",
-              "description": "Corte y grabado láser para detalle de precisión y acabados especiales."
-            },
-            "plasmaCutter": {
-              "title": "Sistemas de Corte Plasma",
-              "description": "Capacidad de corte de metal para proyectos industriales y fabricación a medida."
-            }
-          }
-        },
-        "digitalDisplays": {
-          "title": "Pantallas Digitales",
-          "description": "Pantallas digitales comerciales para retail, corporativo, hospitalidad y entornos públicos.",
-          "products": {
-            "indoorLcd": {
-              "title": "Pantallas LCD Interiores",
-              "description": "Paneles LCD comerciales de alto brillo para lobbies, tiendas y salas de reunión."
-            },
-            "outdoorLed": {
-              "title": "Pantallas LED Exteriores",
-              "description": "Soluciones LED resistentes al clima para fachadas, plazas y visibilidad exterior."
-            },
-            "videoWall": {
-              "title": "Video Walls",
-              "description": "Configuraciones modulares de video wall para experiencias visuales de gran formato."
-            },
-            "windowDisplay": {
-              "title": "Displays para Vitrinas",
-              "description": "Pantallas diseñadas para escaparates y condiciones de alta luminosidad ambiental."
-            }
-          }
-        },
-        "interactiveDisplays": {
-          "title": "Pantallas Interactivas",
-          "description": "Pantallas táctiles e interactivas para kioscos, colaboración y engagement con clientes.",
-          "products": {
-            "touchScreen": {
-              "title": "Pantallas Táctiles",
-              "description": "Displays multi-touch comerciales para presentaciones, wayfinding y contenido interactivo."
-            },
-            "interactiveKiosk": {
-              "title": "Kioscos Interactivos",
-              "description": "Kioscos de autoservicio e información para retail, hospitalidad y espacios públicos."
-            },
-            "collaborationDisplay": {
-              "title": "Displays de Colaboración",
-              "description": "Pizarras interactivas para reuniones, capacitación y espacios corporativos."
-            }
-          }
-        },
-        "digitalSignageEquipment": {
-          "title": "Equipos de Señalización Digital",
-          "description": "Stacks completos de señalización digital: players, montajes y gestión de contenido.",
-          "products": {
-            "mediaPlayer": {
-              "title": "Media Players",
-              "description": "Players confiables para reproducción programada en pantallas individuales o en red."
-            },
-            "signageSoftware": {
-              "title": "Software de Señalización",
-              "description": "Plataformas CMS para programar, publicar y monitorear redes de digital signage."
-            },
-            "mountingKits": {
-              "title": "Kits de Montaje",
-              "description": "Soportes, gabinetes y hardware profesional para instalaciones seguras."
-            },
-            "completeKit": {
-              "title": "Kits Llave en Mano",
-              "description": "Paquetes con pantalla, player, software e instalación listos para arrancar."
+            "servers": {
+              "title": "Servidores",
+              "description": "Servidores para archivos, aplicaciones o respaldos, cotizados según lo que tu operación necesita."
             }
           }
         }
       },
-      "viewCatalog": "Ver catálogo de productos"
+      "viewCatalog": "Ver equipos que suministramos"
     },
     "seoLandings": {
       "badge": "Soluciones locales",
@@ -246,143 +166,63 @@
         }
       },
       "digitalAdvertising": {
-        "headline": "Publicidad Digital en Costa Rica",
-        "subheadline": "Campañas pagadas en búsqueda, redes y display optimizadas para alcance, leads y ROI.",
-        "whyTitle": "Publicidad que respeta su presupuesto",
-        "whyBody": "Planificamos, lanzamos y optimizamos campañas con KPIs claros — para que la inversión se convierta en pipeline e impacto de marca.",
+        "headline": "Medios pagados en Costa Rica",
+        "subheadline": "Campañas pagadas en búsqueda, redes y display optimizadas para alcance, leads y retorno de inversión.",
+        "whyTitle": "Medios pagados que respetan tu presupuesto",
+        "whyBody": "Planificamos, lanzamos y optimizamos campañas con indicadores claros — para que la inversión se convierta en oportunidades e impacto de marca.",
         "benefit1Title": "Campañas multicanal",
         "benefit1Body": "Búsqueda, social y display coordinados alrededor de un mensaje.",
         "benefit2Title": "Enfoque en conversión",
         "benefit2Body": "Landings y tracking diseñados para generar leads.",
         "benefit3Title": "Optimización continua",
         "benefit3Body": "Ajustes de presupuesto y creatividades según rendimiento.",
-        "benefit4Title": "Conectada a publicidad offline",
-        "benefit4Body": "Las campañas digitales pueden reforzar exterior, señalización y visibilidad en tienda.",
-        "ctaTitle": "¿Planea una campaña pagada?",
-        "ctaDescription": "Solicite una consulta para definir objetivos, audiencias y presupuesto.",
+        "benefit4Title": "Conectada a tus otros canales",
+        "benefit4Body": "Las campañas pagadas pueden reforzar el SEO, las redes y tu sitio.",
+        "ctaTitle": "¿Planeas una campaña pagada?",
+        "ctaDescription": "Solicita una consulta para definir objetivos, audiencias y presupuesto.",
         "metadata": {
-          "title": "Publicidad Digital Costa Rica | STDM",
-          "description": "Publicidad digital en Costa Rica optimizada para leads y retorno de inversión."
+          "title": "Medios pagados Costa Rica | STDM",
+          "description": "Campañas pagadas en búsqueda, redes y display en Costa Rica, optimizadas para leads y retorno de inversión."
         }
       },
-      "outdoorAdvertising": {
-        "headline": "Publicidad Exterior en Costa Rica",
-        "subheadline": "Vallas, fachadas, banners y displays exteriores diseñados para máxima visibilidad en ubicaciones de alto tráfico.",
-        "whyTitle": "Presencia física que construye marcas",
-        "whyBody": "Entregamos proyectos de publicidad exterior que combinan impacto creativo con producción e instalación profesional.",
-        "benefit1Title": "Formatos de alta visibilidad",
-        "benefit1Body": "Soluciones exteriores acordes a ubicación, audiencia y objetivos de marca.",
-        "benefit2Title": "Capacidad de producción",
-        "benefit2Body": "Impresión gran formato y fabricación para materiales durables de exterior.",
-        "benefit3Title": "Instalación y soporte",
-        "benefit3Body": "Instalación profesional y seguimiento para despliegues confiables.",
-        "benefit4Title": "Campañas integradas",
-        "benefit4Body": "Conecte visibilidad exterior con marketing digital para mayor recordación.",
-        "ctaTitle": "¿Necesita publicidad exterior?",
-        "ctaDescription": "Comparta ubicación y objetivos — propondremos el formato adecuado.",
+      "helpDesk": {
+        "headline": "Mesa de ayuda para empresas en Costa Rica",
+        "subheadline": "Un punto de contacto para las incidencias de tu equipo, con atención remota y visitas presenciales cuando el caso lo requiere.",
+        "whyTitle": "Soporte al que tu empresa puede acudir",
+        "whyBody": "La mesa de ayuda de STDM atiende dudas, fallas de usuario y el seguimiento hasta el cierre. El objetivo es que tu operación siga, no venderte un equipo en cada ticket.",
+        "benefit1Title": "Un solo canal",
+        "benefit1Body": "Reportas la incidencia y te acompañamos hasta dejarla resuelta o escalada con claridad.",
+        "benefit2Title": "Remoto y presencial",
+        "benefit2Body": "Empezamos a distancia y, si hace falta, vamos a tu empresa en Costa Rica.",
+        "benefit3Title": "Mantenimiento cuando corresponde",
+        "benefit3Body": "Si la falla se repite, te proponemos mantenimiento preventivo o correctivo en lugar de cambios sueltos.",
+        "benefit4Title": "Equipos solo si hacen falta",
+        "benefit4Body": "El suministro de laptops, computadoras o servidores es un complemento, a cotizar, no la primera respuesta.",
+        "ctaTitle": "¿Quieres una mesa de ayuda para tu empresa?",
+        "ctaDescription": "Solicita una consulta. Te contamos cómo cubrir soporte remoto y presencial en Costa Rica. Precio a cotizar.",
         "metadata": {
-          "title": "Publicidad Exterior Costa Rica | STDM",
-          "description": "Publicidad exterior en Costa Rica: vallas, fachadas, banners y displays."
+          "title": "Mesa de ayuda para empresas en Costa Rica | STDM",
+          "description": "Mesa de ayuda remota y presencial en Costa Rica: incidencias, seguimiento y mantenimiento. Equipos de cómputo a cotizar como complemento."
         }
       },
-      "signage": {
-        "headline": "Señalización y Rótulos en Costa Rica",
-        "subheadline": "Señalización corporativa, wayfinding, letreros iluminados e identidad de marca para edificios e instalaciones.",
-        "whyTitle": "Señalización que guía y representa",
-        "whyBody": "Desde fachadas corporativas hasta wayfinding interior, diseñamos y producimos señalización clara y profesional.",
-        "benefit1Title": "Diseño consistente con la marca",
-        "benefit1Body": "Identidad visual aplicada correctamente en materiales y espacios.",
-        "benefit2Title": "Wayfinding funcional",
-        "benefit2Body": "Sistemas de dirección claros para clientes, visitantes y personal.",
-        "benefit3Title": "Producción durable",
-        "benefit3Body": "Materiales y acabados seleccionados por durabilidad y entorno.",
-        "benefit4Title": "Del concepto a la instalación",
-        "benefit4Body": "Diseño, fabricación, instalación y soporte con un solo socio.",
-        "ctaTitle": "¿Planea un proyecto de señalización?",
-        "ctaDescription": "Solicite una consulta para rótulos corporativos, retail o instalaciones.",
+      "itMaintenance": {
+        "headline": "Mantenimiento de TI en Costa Rica",
+        "subheadline": "Mantenimiento preventivo y correctivo para los equipos de cómputo, las redes y los servidores de tu empresa.",
+        "whyTitle": "Mantener antes de reemplazar",
+        "whyBody": "Revisamos, diagnosticamos y reparamos la infraestructura que tu equipo usa cada día. El suministro de equipos entra solo cuando el mantenimiento ya no alcanza.",
+        "benefit1Title": "Preventivo",
+        "benefit1Body": "Revisiones programadas para reducir fallas en equipos, red y servidores.",
+        "benefit2Title": "Correctivo",
+        "benefit2Body": "Atención cuando algo se detiene, con diagnóstico antes de proponerte un reemplazo.",
+        "benefit3Title": "En tu empresa o en remoto",
+        "benefit3Body": "Parte del trabajo se resuelve a distancia. Lo que exige presencia se atiende en Costa Rica.",
+        "benefit4Title": "Ligado a la mesa de ayuda",
+        "benefit4Body": "El mantenimiento y la mesa de ayuda se hablan: lo que se repite en los tickets puede pasar a un plan preventivo.",
+        "ctaTitle": "¿Buscas mantenimiento preventivo y correctivo?",
+        "ctaDescription": "Cuéntanos qué equipos e infraestructura quieres mantener. Precio a cotizar.",
         "metadata": {
-          "title": "Señalización y Rótulos Costa Rica | STDM",
-          "description": "Señalización corporativa, wayfinding y rótulos en Costa Rica."
-        }
-      },
-      "largeFormatPrinters": {
-        "headline": "Impresoras Gran Formato en Costa Rica",
-        "subheadline": "Equipos profesionales de impresión gran formato para banners, señalización y producción — con instalación y capacitación.",
-        "whyTitle": "Equipos más el equipo para hacerlos productivos",
-        "whyBody": "Suministramos impresoras gran formato y le ayudamos a arrancar con configuración, capacitación y opciones de mantenimiento.",
-        "benefit1Title": "Sistemas listos para producción",
-        "benefit1Body": "Líneas seleccionadas según volumen, sustratos y acabados.",
-        "benefit2Title": "Puesta en marcha llave en mano",
-        "benefit2Body": "Instalación, commissioning y capacitación de operadores incluidos.",
-        "benefit3Title": "Soporte continuo",
-        "benefit3Body": "Mantenimiento y soporte técnico para proteger el uptime.",
-        "benefit4Title": "Stack publicitario completo",
-        "benefit4Body": "Combine impresoras con CNC, pantallas y servicios de señalización.",
-        "ctaTitle": "¿Busca una impresora gran formato?",
-        "ctaDescription": "Contáctenos para recomendaciones de equipo y cotización.",
-        "metadata": {
-          "title": "Impresoras Gran Formato Costa Rica | STDM",
-          "description": "Impresoras gran formato en Costa Rica con instalación, capacitación y soporte."
-        }
-      },
-      "cnc": {
-        "headline": "Equipos CNC en Costa Rica",
-        "subheadline": "Routers CNC y sistemas de corte para fabricación de precisión de señalización, displays y materiales a medida.",
-        "whyTitle": "Equipos de precisión para equipos de fabricación",
-        "whyBody": "Ayudamos a seleccionar, instalar y operar equipos CNC que mejoran calidad y capacidad de producción.",
-        "benefit1Title": "Capacidad multimaterial",
-        "benefit1Body": "Soluciones para acrílico, madera, composites y sustratos especiales.",
-        "benefit2Title": "Instalación y capacitación",
-        "benefit2Body": "Puesta en marcha y habilitación de operadores para arrancar bien.",
-        "benefit3Title": "Integración de flujo de trabajo",
-        "benefit3Body": "Conecte CNC con impresión y acabados para producción de señalización.",
-        "benefit4Title": "Soporte local",
-        "benefit4Body": "Soporte técnico y mantenimiento en Costa Rica.",
-        "ctaTitle": "¿Necesita equipos CNC?",
-        "ctaDescription": "Cuéntenos materiales y volumen — propondremos el sistema adecuado.",
-        "metadata": {
-          "title": "CNC Costa Rica | STDM",
-          "description": "Equipos CNC en Costa Rica para fabricación de señalización y materiales a medida."
-        }
-      },
-      "digitalDisplays": {
-        "headline": "Pantallas Digitales en Costa Rica",
-        "subheadline": "Pantallas digitales comerciales para retail, corporativo y entornos públicos — suministradas, instaladas y soportadas.",
-        "whyTitle": "Pantallas que funcionan en entornos reales",
-        "whyBody": "Desde LCD interior hasta LED exterior, entregamos proyectos de pantallas digitales con hardware, montaje y preparación de contenido.",
-        "benefit1Title": "Hardware comercial",
-        "benefit1Body": "Pantallas seleccionadas por brillo, durabilidad y caso de uso.",
-        "benefit2Title": "Instalación profesional",
-        "benefit2Body": "Montaje, energía y red configurados correctamente.",
-        "benefit3Title": "Contenido y players",
-        "benefit3Body": "Players y software de señalización opcionales para reproducción programada.",
-        "benefit4Title": "Soporte post go-live",
-        "benefit4Body": "Mantenimiento y soporte técnico para mantener pantallas en línea.",
-        "ctaTitle": "¿Planea un proyecto de pantallas?",
-        "ctaDescription": "Solicite una consulta para pantallas, video walls o LED exterior.",
-        "metadata": {
-          "title": "Pantallas Digitales Costa Rica | STDM",
-          "description": "Pantallas digitales comerciales en Costa Rica con instalación y soporte."
-        }
-      },
-      "interactiveDisplays": {
-        "headline": "Pantallas Interactivas en Costa Rica",
-        "subheadline": "Pantallas táctiles, kioscos y displays de colaboración para engagement, wayfinding y productividad de equipos.",
-        "whyTitle": "Interactividad con propósito claro",
-        "whyBody": "Desplegamos pantallas interactivas que mejoran la experiencia del cliente o la colaboración — con instalación y capacitación.",
-        "benefit1Title": "Formatos de engagement",
-        "benefit1Body": "Kioscos y touch screens para retail, hospitalidad y espacios públicos.",
-        "benefit2Title": "Salas de colaboración",
-        "benefit2Body": "Pizarras interactivas para reuniones, capacitación y trabajo híbrido.",
-        "benefit3Title": "Entrega llave en mano",
-        "benefit3Body": "Hardware, configuración y capacitación de usuarios en un solo proyecto.",
-        "benefit4Title": "Soluciones integradas",
-        "benefit4Body": "Conecte experiencias interactivas con marketing digital y señalización.",
-        "ctaTitle": "¿Necesita pantallas interactivas?",
-        "ctaDescription": "Hable con un especialista sobre kioscos, touch screens o salas de colaboración.",
-        "metadata": {
-          "title": "Pantallas Interactivas Costa Rica | STDM",
-          "description": "Pantallas interactivas, kioscos y displays de colaboración en Costa Rica."
+          "title": "Mantenimiento de TI en Costa Rica | STDM",
+          "description": "Mantenimiento preventivo y correctivo de equipos, redes y servidores en Costa Rica, remoto o presencial. Precio a cotizar."
         }
       }
     }
