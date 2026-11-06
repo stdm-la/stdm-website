@@ -1,9 +1,8 @@
-export type BusinessUnitKey = 'technology' | 'digital' | 'advertising' | 'equipment'
+export type BusinessUnitKey = 'technology' | 'digital' | 'equipment'
 
 export const businessUnitRoutes: Record<BusinessUnitKey, string> = {
   technology: '/technology',
   digital: '/digital',
-  advertising: '/advertising',
   equipment: '/equipment',
 }
 
@@ -26,26 +25,21 @@ export const businessUnitServiceKeys: Record<BusinessUnitKey, string[]> = {
     'marketingAutomation',
     'analytics',
   ],
-  advertising: [
-    'outdoorAdvertising',
-    'indoorAdvertising',
-    'signage',
-    'customProjects',
-  ],
   equipment: [
-    'largeFormatPrinters',
-    'cncEquipment',
-    'digitalDisplays',
-    'interactiveDisplays',
-    'digitalSignageEquipment',
+    'helpDesk',
+    'preventiveMaintenance',
+    'correctiveMaintenance',
+    'infrastructureNetworks',
+    'serversLicensing',
   ],
 }
 
+/** How support is delivered. Equipment supply is a separate, secondary block. */
 export const equipmentSupportKeys = [
+  'remoteSupport',
+  'onsiteSupport',
+  'diagnosis',
   'installation',
-  'configuration',
-  'commissioning',
   'training',
-  'maintenance',
-  'technicalSupport',
+  'followUp',
 ]

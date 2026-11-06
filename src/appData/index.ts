@@ -29,17 +29,10 @@ export const businessUnitsData = [
     descriptionKey: 'sections.businessUnits.digital.description',
   },
   {
-    id: 'advertising',
-    href: businessUnitRoutes.advertising,
-    image: '/images/home/advertising.jpg',
-    labelKey: 'hero.units.advertising',
-    titleKey: 'sections.businessUnits.advertising.title',
-    descriptionKey: 'sections.businessUnits.advertising.description',
-  },
-  {
     id: 'equipment',
     href: businessUnitRoutes.equipment,
     image: '/images/home/equipment.jpg',
+    imageAltKey: 'sections.businessUnits.equipment.imageAlt',
     labelKey: 'hero.units.equipment',
     titleKey: 'sections.businessUnits.equipment.title',
     descriptionKey: 'sections.businessUnits.equipment.description',

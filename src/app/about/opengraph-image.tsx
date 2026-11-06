@@ -11,7 +11,7 @@ export default async function Image() {
     buildOgImageJsx({
       badge: 'About STDM',
       title: 'SIS Technologies Digital Marketing S.R.L.',
-      subtitle: 'Technology, digital and advertising solutions integrator in Costa Rica',
+      subtitle: 'IT, digital marketing and technical support in Costa Rica',
     }),
     { ...size },
   )

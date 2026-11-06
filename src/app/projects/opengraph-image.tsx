@@ -11,7 +11,7 @@ export default async function Image() {
     buildOgImageJsx({
       badge: 'Projects',
       title: 'Projects & Case Studies',
-      subtitle: 'Real results across technology, digital, advertising and equipment',
+      subtitle: 'Real results across IT, digital marketing and technical support',
     }),
     { ...size },
   )

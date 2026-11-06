@@ -20,6 +20,9 @@ const CatalogCategoryPage = ({ category }: CatalogCategoryPageProps) => {
   const prefix = `pages.catalog.categories.${category}`
   const products = catalogProductKeys[category]
   const categoryTitle = t(`${prefix}.title`)
+  const otherCategories = (Object.keys(equipmentCategorySlugs) as EquipmentCategoryKey[]).filter(
+    (key) => key !== category,
+  )
 
   return (
     <main>
@@ -43,55 +46,54 @@ const CatalogCategoryPage = ({ category }: CatalogCategoryPageProps) => {
 
       <div className="mx-auto max-w-[1200px] px-4 py-12 md:py-16">
         <SectionHeading
-          title={t('pages.catalog.productsTitle')}
-          subtitle={t('pages.catalog.productsSubtitle')}
+          title={t('pages.equipment.supportTitle')}
+          subtitle={t('pages.equipment.supportSubtitle')}
         />
-
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {products.map((productKey) => (
-            <article
-              key={productKey}
-              className="bg-secondary border-border hover:shadow-brand-glow flex flex-col rounded-xl border p-6 transition-shadow">
-              <h2 className="text-brand-gradient text-lg font-semibold">
-                {t(`${prefix}.products.${productKey}.title`)}
-              </h2>
-              <p className="text-primary-content mt-3 flex-1 text-sm leading-relaxed">
-                {t(`${prefix}.products.${productKey}.description`)}
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {equipmentSupportKeys.map((key) => (
+            <div key={key} className="bg-secondary border-border rounded-xl border p-5">
+              <h3 className="text-primary-content font-semibold">
+                {t(`pages.equipment.support.${key}.title`)}
+              </h3>
+              <p className="text-tertiary-content mt-2 text-sm">
+                {t(`pages.equipment.support.${key}.description`)}
               </p>
-              <p className="text-tertiary-content mt-4 text-xs">
-                {t('pages.catalog.inquiryNote')}
-              </p>
-            </article>
+            </div>
           ))}
         </div>
 
         <div className="mt-16">
           <SectionHeading
-            title={t('pages.equipment.supportTitle')}
-            subtitle={t('pages.equipment.supportSubtitle')}
+            title={t('pages.catalog.productsTitle')}
+            subtitle={t('pages.catalog.productsSubtitle')}
           />
-          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {equipmentSupportKeys.map((key) => (
-              <div key={key} className="bg-secondary border-border rounded-xl border p-5">
-                <h3 className="text-primary-content font-semibold">
-                  {t(`pages.equipment.support.${key}.title`)}
-                </h3>
-                <p className="text-tertiary-content mt-2 text-sm">
-                  {t(`pages.equipment.support.${key}.description`)}
+
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {products.map((productKey) => (
+              <article
+                key={productKey}
+                className="bg-secondary border-border hover:shadow-brand-glow flex flex-col rounded-xl border p-6 transition-shadow">
+                <h2 className="text-brand-gradient text-lg font-semibold">
+                  {t(`${prefix}.products.${productKey}.title`)}
+                </h2>
+                <p className="text-primary-content mt-3 flex-1 text-sm leading-relaxed">
+                  {t(`${prefix}.products.${productKey}.description`)}
                 </p>
-              </div>
+                <p className="text-tertiary-content mt-4 text-xs">
+                  {t('pages.catalog.inquiryNote')}
+                </p>
+              </article>
             ))}
           </div>
         </div>
 
-        <div className="mt-10">
-          <p className="text-tertiary-content mb-4 text-sm">
-            {t('pages.catalog.otherCategories')}
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {(Object.keys(equipmentCategorySlugs) as EquipmentCategoryKey[])
-              .filter((key) => key !== category)
-              .map((key) => (
+        {otherCategories.length > 0 && (
+          <div className="mt-10">
+            <p className="text-tertiary-content mb-4 text-sm">
+              {t('pages.catalog.otherCategories')}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {otherCategories.map((key) => (
                 <Link
                   key={key}
                   href={`/equipment/${equipmentCategorySlugs[key]}`}
@@ -99,8 +101,9 @@ const CatalogCategoryPage = ({ category }: CatalogCategoryPageProps) => {
                   {t(`pages.catalog.categories.${key}.title`)}
                 </Link>
               ))}
+            </div>
           </div>
-        </div>
+        )}
 
         <LeadCta
           className="mt-16"

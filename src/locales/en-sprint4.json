@@ -3,124 +3,44 @@
     "ctaTitle": "Ready to talk about your project?",
     "ctaDescription": "Request a consultation or message us on WhatsApp. Our team will help you choose the right solution.",
     "whatsappCta": "Contact via WhatsApp",
-    "whatsappDefaultMessage": "Hi STDM, I would like to request a consultation about your technology, digital and advertising solutions.",
+    "whatsappDefaultMessage": "Hi STDM, I would like to request a consultation about IT, digital marketing and technical support.",
     "whatsappInterestMessage": "Hi STDM, I am interested in: {interest}. Can we schedule a consultation?",
     "contextLabel": "Inquiry about",
     "sourceLabel": "Lead source"
   },
   "pages": {
     "catalog": {
-      "productsTitle": "Product lines",
-      "productsSubtitle": "Request a quote for the equipment that fits your operation. We supply, install and support.",
-      "inquiryNote": "Available upon request — installation and training included in turnkey projects.",
-      "otherCategories": "Explore other equipment categories",
-      "ctaTitle": "Need equipment or a full turnkey solution?",
-      "ctaDescription": "Tell us your use case and we will recommend the right configuration, installation and support plan.",
+      "productsTitle": "Equipment we can supply",
+      "productsSubtitle": "Supply is a complement to support, not the starting point. If your company needs equipment, we quote it. Price on request.",
+      "inquiryNote": "A complement to technical support. Price on request.",
+      "otherCategories": "Explore other lines",
+      "ctaTitle": "Should support include equipment?",
+      "ctaDescription": "Tell us about the case. If hardware is needed, we quote laptops, desktops or servers together with installation and maintenance. Price on request.",
       "categories": {
-        "largeFormatPrinters": {
-          "title": "Large Format Printers",
-          "description": "Professional large format printing systems for signage, vehicle wraps, banners and high-volume production in Costa Rica.",
+        "computerEquipment": {
+          "title": "Computer equipment",
+          "description": "Laptops, desktops and servers as a complement to help desk and maintenance. Price on request.",
           "products": {
-            "solventPrinter": {
-              "title": "Solvent Printers",
-              "description": "Durable outdoor printing for banners, billboards and long-lasting graphics."
+            "laptops": {
+              "title": "Laptops for working teams",
+              "description": "Portable computers for your company's day-to-day work, ready to be configured and brought into support."
             },
-            "uvPrinter": {
-              "title": "UV Printers",
-              "description": "Direct-to-substrate UV printing for rigid materials, displays and specialty applications."
+            "desktops": {
+              "title": "Desktop computers",
+              "description": "Workstations for offices and fixed desks that need a stable computer."
             },
-            "ecoSolventPrinter": {
-              "title": "Eco-Solvent Printers",
-              "description": "Low-odor production printers for indoor and outdoor graphics with strong color quality."
+            "peripherals": {
+              "title": "Peripherals",
+              "description": "Keyboards, mice and desk accessories when support calls for them."
             },
-            "plotterCutter": {
-              "title": "Plotters & Cutters",
-              "description": "Precision cutting for vinyl, labels and finishing workflows paired with your print line."
-            }
-          }
-        },
-        "cncEquipment": {
-          "title": "CNC Equipment",
-          "description": "CNC cutting and engraving solutions for signage fabrication, displays and custom materials.",
-          "products": {
-            "cncRouter": {
-              "title": "CNC Routers",
-              "description": "Multi-material routers for acrylic, wood, foam, aluminum composite and sign substrates."
-            },
-            "laserCnc": {
-              "title": "Laser CNC",
-              "description": "Laser cutting and engraving for precision detailing and specialty finishing."
-            },
-            "plasmaCutter": {
-              "title": "Plasma Cutting Systems",
-              "description": "Metal cutting capabilities for industrial and custom fabrication projects."
-            }
-          }
-        },
-        "digitalDisplays": {
-          "title": "Digital Displays",
-          "description": "Commercial digital screens for retail, corporate, hospitality and public environments.",
-          "products": {
-            "indoorLcd": {
-              "title": "Indoor LCD Displays",
-              "description": "High-brightness commercial LCD panels for lobbies, stores and meeting spaces."
-            },
-            "outdoorLed": {
-              "title": "Outdoor LED Screens",
-              "description": "Weather-rated LED solutions for façades, plazas and high-visibility outdoor brand presence."
-            },
-            "videoWall": {
-              "title": "Video Walls",
-              "description": "Modular video wall configurations for impactful large-scale visual experiences."
-            },
-            "windowDisplay": {
-              "title": "Window & High-Brightness Displays",
-              "description": "Displays engineered for storefronts and bright ambient light conditions."
-            }
-          }
-        },
-        "interactiveDisplays": {
-          "title": "Interactive Displays",
-          "description": "Touch-enabled and interactive screens for kiosks, collaboration and customer engagement.",
-          "products": {
-            "touchScreen": {
-              "title": "Touch Screens",
-              "description": "Multi-touch commercial displays for presentations, wayfinding and interactive content."
-            },
-            "interactiveKiosk": {
-              "title": "Interactive Kiosks",
-              "description": "Self-service and information kiosks for retail, hospitality and public venues."
-            },
-            "collaborationDisplay": {
-              "title": "Collaboration Displays",
-              "description": "Meeting-room interactive boards for teams, training rooms and corporate spaces."
-            }
-          }
-        },
-        "digitalSignageEquipment": {
-          "title": "Digital Signage Equipment",
-          "description": "Complete digital signage stacks including players, mounts and content management.",
-          "products": {
-            "mediaPlayer": {
-              "title": "Media Players",
-              "description": "Reliable media players for scheduled content playback across single or networked screens."
-            },
-            "signageSoftware": {
-              "title": "Signage Software",
-              "description": "Content management platforms to schedule, publish and monitor digital signage networks."
-            },
-            "mountingKits": {
-              "title": "Mounting & Hardware Kits",
-              "description": "Professional mounts, enclosures and installation hardware for safe deployments."
-            },
-            "completeKit": {
-              "title": "Turnkey Signage Kits",
-              "description": "Bundled screen, player, software and installation packages ready for go-live."
+            "servers": {
+              "title": "Servers",
+              "description": "Servers for files, applications or backups, quoted for what your operation needs."
             }
           }
         }
       },
-      "viewCatalog": "View product catalog"
+      "viewCatalog": "See equipment we supply"
     },
     "seoLandings": {
       "badge": "Local solutions",
@@ -246,9 +166,9 @@
         }
       },
       "digitalAdvertising": {
-        "headline": "Digital Advertising in Costa Rica",
+        "headline": "Paid Media in Costa Rica",
         "subheadline": "Paid campaigns across search, social and display optimized for reach, leads and return on investment.",
-        "whyTitle": "Advertising that respects your budget",
+        "whyTitle": "Paid media that respects your budget",
         "whyBody": "We plan, launch and optimize campaigns with clear KPIs — so spend converts into pipeline and brand impact.",
         "benefit1Title": "Multi-channel campaigns",
         "benefit1Body": "Search, social and display coordinated around one message.",
@@ -256,133 +176,53 @@
         "benefit2Body": "Landing experiences and tracking designed for leads.",
         "benefit3Title": "Ongoing optimization",
         "benefit3Body": "Budget shifts and creative tests based on performance.",
-        "benefit4Title": "Connected to offline advertising",
-        "benefit4Body": "Digital campaigns can reinforce outdoor, signage and in-store visibility.",
+        "benefit4Title": "Connected to your other channels",
+        "benefit4Body": "Paid campaigns can reinforce SEO, social media and your website.",
         "ctaTitle": "Planning a paid campaign?",
         "ctaDescription": "Request a consultation to define goals, audiences and budget.",
         "metadata": {
-          "title": "Digital Advertising Costa Rica | STDM",
-          "description": "Digital advertising campaigns in Costa Rica optimized for leads and ROI."
+          "title": "Paid Media Costa Rica | STDM",
+          "description": "Paid search, social and display campaigns in Costa Rica optimized for leads and ROI."
         }
       },
-      "outdoorAdvertising": {
-        "headline": "Outdoor Advertising in Costa Rica",
-        "subheadline": "Billboards, façades, banners and exterior displays designed for maximum visibility in high-traffic locations.",
-        "whyTitle": "Physical presence that builds brands",
-        "whyBody": "STDM delivers outdoor advertising projects that combine creative impact with production and installation readiness.",
-        "benefit1Title": "High-visibility formats",
-        "benefit1Body": "Exterior solutions matched to location, audience and brand goals.",
-        "benefit2Title": "Production capability",
-        "benefit2Body": "Large format printing and fabrication support for durable outdoor materials.",
-        "benefit3Title": "Installation & support",
-        "benefit3Body": "Professional installation and follow-up for reliable deployments.",
-        "benefit4Title": "Integrated campaigns",
-        "benefit4Body": "Connect outdoor visibility with digital marketing for stronger recall.",
-        "ctaTitle": "Need outdoor advertising?",
-        "ctaDescription": "Share your location and objectives — we will propose the right format.",
+      "helpDesk": {
+        "headline": "Business Help Desk in Costa Rica",
+        "subheadline": "A point of contact for your team's incidents, with remote support and on-site visits when the case requires it.",
+        "whyTitle": "Support your company can turn to",
+        "whyBody": "STDM's help desk handles questions, user issues and follow-up until the case is closed. The goal is to keep your operation running, not to sell you equipment on every ticket.",
+        "benefit1Title": "One channel",
+        "benefit1Body": "You report the incident and we stay with you until it is resolved or clearly escalated.",
+        "benefit2Title": "Remote and on-site",
+        "benefit2Body": "We start at a distance and, when needed, go to your business in Costa Rica.",
+        "benefit3Title": "Maintenance when it fits",
+        "benefit3Body": "If the failure repeats, we propose preventive or corrective maintenance instead of one-off changes.",
+        "benefit4Title": "Equipment only when needed",
+        "benefit4Body": "Supplying laptops, desktops or servers is a complement, quoted on request, not the first response.",
+        "ctaTitle": "Want a help desk for your company?",
+        "ctaDescription": "Request a consultation. We will explain how remote and on-site support works in Costa Rica. Price on request.",
         "metadata": {
-          "title": "Outdoor Advertising Costa Rica | STDM",
-          "description": "Outdoor advertising in Costa Rica: billboards, façades, banners and exterior displays."
+          "title": "Business Help Desk in Costa Rica | STDM",
+          "description": "Remote and on-site help desk in Costa Rica for incidents, follow-up and maintenance. Computer equipment is quoted on request as a complement."
         }
       },
-      "signage": {
-        "headline": "Signage in Costa Rica",
-        "subheadline": "Corporate signage, wayfinding, illuminated signs and brand identity elements for buildings and facilities.",
-        "whyTitle": "Signage that guides and represents",
-        "whyBody": "From corporate façades to interior wayfinding, we design and produce signage that communicates clearly and looks professional.",
-        "benefit1Title": "Brand-consistent design",
-        "benefit1Body": "Visual identity applied correctly across materials and spaces.",
-        "benefit2Title": "Functional wayfinding",
-        "benefit2Body": "Clear direction systems for customers, visitors and staff.",
-        "benefit3Title": "Durable production",
-        "benefit3Body": "Materials and finishes selected for longevity and environment.",
-        "benefit4Title": "From concept to install",
-        "benefit4Body": "Design, fabrication, installation and support in one partner.",
-        "ctaTitle": "Planning a signage project?",
-        "ctaDescription": "Request a consultation for corporate, retail or facility signage.",
+      "itMaintenance": {
+        "headline": "IT Maintenance in Costa Rica",
+        "subheadline": "Preventive and corrective maintenance for your company's computers, networks and servers.",
+        "whyTitle": "Maintain before you replace",
+        "whyBody": "We review, diagnose and repair the infrastructure your team uses every day. Equipment supply comes in only when maintenance is no longer enough.",
+        "benefit1Title": "Preventive",
+        "benefit1Body": "Scheduled reviews to reduce failures across computers, the network and servers.",
+        "benefit2Title": "Corrective",
+        "benefit2Body": "Attention when something stops, with a diagnosis before we recommend a replacement.",
+        "benefit3Title": "At your office or remote",
+        "benefit3Body": "Part of the work is resolved at a distance. What needs a visit is handled in Costa Rica.",
+        "benefit4Title": "Tied to the help desk",
+        "benefit4Body": "Maintenance and the help desk talk to each other: what repeats in tickets can move into a preventive plan.",
+        "ctaTitle": "Looking for preventive and corrective maintenance?",
+        "ctaDescription": "Tell us which computers and infrastructure you want to maintain. Price on request.",
         "metadata": {
-          "title": "Signage Costa Rica | STDM",
-          "description": "Corporate signage, wayfinding and illuminated signs in Costa Rica."
-        }
-      },
-      "largeFormatPrinters": {
-        "headline": "Large Format Printers in Costa Rica",
-        "subheadline": "Professional large format printing equipment for banners, signage, wraps and high-volume production — with installation and training.",
-        "whyTitle": "Equipment plus the team to make it productive",
-        "whyBody": "STDM supplies large format printers and helps you go live with configuration, training and maintenance options.",
-        "benefit1Title": "Production-ready systems",
-        "benefit1Body": "Printer lines selected for your volume, substrates and finishing needs.",
-        "benefit2Title": "Turnkey setup",
-        "benefit2Body": "Installation, commissioning and operator training included.",
-        "benefit3Title": "Ongoing support",
-        "benefit3Body": "Maintenance and technical support to protect uptime.",
-        "benefit4Title": "Complete advertising stack",
-        "benefit4Body": "Pair printers with CNC, displays and signage services for end-to-end delivery.",
-        "ctaTitle": "Looking for a large format printer?",
-        "ctaDescription": "Contact us for equipment recommendations and a quote.",
-        "metadata": {
-          "title": "Large Format Printers Costa Rica | STDM",
-          "description": "Large format printers in Costa Rica with installation, training and support."
-        }
-      },
-      "cnc": {
-        "headline": "CNC Equipment in Costa Rica",
-        "subheadline": "CNC routers and cutting systems for precision fabrication of signage, displays and custom materials.",
-        "whyTitle": "Precision equipment for fabrication teams",
-        "whyBody": "We help businesses select, install and operate CNC equipment that improves quality and production capacity.",
-        "benefit1Title": "Multi-material capability",
-        "benefit1Body": "Solutions for acrylic, wood, composites and specialty substrates.",
-        "benefit2Title": "Installation & training",
-        "benefit2Body": "Commissioning and operator enablement so production starts right.",
-        "benefit3Title": "Workflow integration",
-        "benefit3Body": "Connect CNC with printing and finishing for signage production.",
-        "benefit4Title": "Local support",
-        "benefit4Body": "Technical support and maintenance options in Costa Rica.",
-        "ctaTitle": "Need CNC equipment?",
-        "ctaDescription": "Tell us your materials and volume — we will propose the right system.",
-        "metadata": {
-          "title": "CNC Costa Rica | STDM",
-          "description": "CNC equipment in Costa Rica for signage fabrication and custom materials."
-        }
-      },
-      "digitalDisplays": {
-        "headline": "Digital Displays in Costa Rica",
-        "subheadline": "Commercial digital screens for retail, corporate and public environments — supplied, installed and supported.",
-        "whyTitle": "Screens that work in real environments",
-        "whyBody": "From indoor LCD to outdoor LED, STDM delivers digital display projects with hardware, mounting and content readiness.",
-        "benefit1Title": "Commercial-grade hardware",
-        "benefit1Body": "Displays selected for brightness, durability and use case.",
-        "benefit2Title": "Professional installation",
-        "benefit2Body": "Mounting, power and network setup done correctly.",
-        "benefit3Title": "Content & players",
-        "benefit3Body": "Optional media players and signage software for scheduled playback.",
-        "benefit4Title": "Support after go-live",
-        "benefit4Body": "Maintenance and technical support to keep screens online.",
-        "ctaTitle": "Planning a digital display project?",
-        "ctaDescription": "Request a consultation for screens, video walls or outdoor LED.",
-        "metadata": {
-          "title": "Digital Displays Costa Rica | STDM",
-          "description": "Digital displays and commercial screens in Costa Rica with installation support."
-        }
-      },
-      "interactiveDisplays": {
-        "headline": "Interactive Displays in Costa Rica",
-        "subheadline": "Touch screens, kiosks and collaboration displays for engagement, wayfinding and team productivity.",
-        "whyTitle": "Interactivity with a clear purpose",
-        "whyBody": "We deploy interactive displays that improve customer experience or team collaboration — with installation and training included.",
-        "benefit1Title": "Engagement formats",
-        "benefit1Body": "Kiosks and touch screens for retail, hospitality and public spaces.",
-        "benefit2Title": "Collaboration rooms",
-        "benefit2Body": "Interactive boards for meetings, training and hybrid work.",
-        "benefit3Title": "Turnkey delivery",
-        "benefit3Body": "Hardware, configuration and user training in one project.",
-        "benefit4Title": "Integrated solutions",
-        "benefit4Body": "Connect interactive experiences with digital marketing and signage strategy.",
-        "ctaTitle": "Need interactive displays?",
-        "ctaDescription": "Talk to a specialist about kiosks, touch screens or collaboration rooms.",
-        "metadata": {
-          "title": "Interactive Displays Costa Rica | STDM",
-          "description": "Interactive displays, kiosks and collaboration screens in Costa Rica."
+          "title": "IT Maintenance in Costa Rica | STDM",
+          "description": "Preventive and corrective maintenance for computers, networks and servers in Costa Rica, remote or on-site. Price on request."
         }
       }
     }

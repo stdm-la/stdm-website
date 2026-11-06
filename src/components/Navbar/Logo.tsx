@@ -13,7 +13,7 @@ const Logo = ({ width = 220, height = 32, className = '' }: LogoProps) => {
     <span className={`relative inline-flex shrink-0 items-center ${className || 'h-8'}`}>
       <Image
         src={logoDark}
-        alt="STDM | Technology, Digital & Advertising Solutions"
+        alt="STDM | IT, Digital Marketing and Technical Support"
         width={width}
         height={height}
         className="h-full w-auto object-contain [html[data-theme=light]_&]:hidden"
@@ -21,7 +21,7 @@ const Logo = ({ width = 220, height = 32, className = '' }: LogoProps) => {
       />
       <Image
         src={logoLight}
-        alt="STDM | Technology, Digital & Advertising Solutions"
+        alt="STDM | IT, Digital Marketing and Technical Support"
         width={width}
         height={height}
         className="hidden h-full w-auto object-contain [html[data-theme=light]_&]:block"

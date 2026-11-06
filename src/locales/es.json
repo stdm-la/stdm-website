@@ -3,10 +3,9 @@
     "services": {
       "label": "Servicios"
     },
-    "technology": "Tecnología",
-    "digital": "Digital",
-    "advertising": "Publicidad",
-    "equipment": "Equipos",
+    "technology": "TI",
+    "digital": "Marketing Digital",
+    "equipment": "Soporte Técnico",
     "solutions": "Soluciones",
     "projects": "Proyectos",
     "about": "Nosotros",
@@ -17,8 +16,8 @@
     }
   },
   "hero": {
-    "headline": "Soluciones Tecnológicas, Digitales y Publicitarias",
-    "subheadline": "Integramos tecnología, marketing, publicidad y soluciones digitales para ayudar a las empresas a crear, operar y hacer crecer sus negocios.",
+    "headline": "TI, Marketing Digital y Soporte Técnico",
+    "subheadline": "Integramos TI, marketing digital y soporte técnico para ayudar a las empresas a crear, operar y hacer crecer sus negocios.",
     "primaryCta": "Solicitar una consulta",
     "secondaryCta": "Hablar con un especialista",
     "centerLabel": "Un socio",
@@ -28,10 +27,9 @@
       "grow": "Crecer"
     },
     "units": {
-      "technology": "Tecnología",
-      "digital": "Digital",
-      "advertising": "Publicidad",
-      "equipment": "Equipos"
+      "technology": "TI",
+      "digital": "Marketing Digital",
+      "equipment": "Soporte Técnico"
     },
     "carousel": {
       "previous": "Diapositiva anterior",
@@ -67,7 +65,7 @@
     "contact": "Contacto",
     "languages": "Idiomas",
     "copyright": "Derechos de autor",
-    "tagline": "Soluciones Tecnológicas, Digitales y Publicitarias",
+    "tagline": "TI, Marketing Digital y Soporte Técnico",
     "allRightsReserved": "Todos los derechos reservados. STDM es una marca comercial de SIS Technologies Digital Marketing S.R.L."
   },
   "cookies": {
@@ -77,32 +75,29 @@
     "dismiss": "Cerrar aviso"
   },
   "metadata": {
-    "title": "STDM | Soluciones Tecnológicas, Digitales y Publicitarias",
-    "description": "STDM integra tecnología, marketing digital, publicidad, señalización y equipamiento especializado para empresas en Costa Rica. Desarrollo de software, soluciones cloud, consultoría IT, marketing digital, publicidad exterior y pantallas digitales.",
+    "title": "STDM | TI, Marketing Digital y Soporte Técnico",
+    "description": "STDM integra TI, marketing digital y soporte técnico para empresas en Costa Rica. Desarrollo de software, soluciones cloud, consultoría IT, marketing digital, mesa de ayuda y mantenimiento.",
     "siteName": "STDM"
   },
   "sections": {
     "whatWeBuild": {
-      "title": "Soluciones integradas para su negocio",
-      "subtitle": "Cuatro unidades de negocio que trabajan juntas para entregar soluciones completas en tecnología, digital, publicidad y equipamiento.",
+      "title": "Soluciones integradas para tu negocio",
+      "subtitle": "Tres unidades de negocio que trabajan juntas para entregar TI, marketing digital y soporte técnico.",
       "focus": "Un solo socio. Múltiples capacidades. Valor a largo plazo."
     },
     "businessUnits": {
       "technology": {
-        "title": "Technology & IT",
+        "title": "TI",
         "description": "Desarrollo de software, soluciones cloud, consultoría IT, DevOps, infraestructura y ciberseguridad."
       },
       "digital": {
         "title": "Marketing Digital",
         "description": "Marketing digital, SEO, redes sociales, automatización de marketing y analítica."
       },
-      "advertising": {
-        "title": "Publicidad y Señalización",
-        "description": "Publicidad exterior e interior, señalización, proyectos personalizados y visibilidad de marca."
-      },
       "equipment": {
-        "title": "Equipos y Soporte",
-        "description": "Impresoras gran formato, equipos CNC, pantallas digitales, displays interactivos e instalación."
+        "title": "Soporte Técnico",
+        "description": "Mesa de ayuda, mantenimiento preventivo y correctivo, y soporte remoto o presencial en Costa Rica.",
+        "imageAlt": "Gabinetes de servidores y cableado de red en un centro de datos"
       }
     },
     "industriesWeServe": {
@@ -135,28 +130,28 @@
     "testimonials": "Testimonios",
     "testimonialsSubtitle": "No solo confíes en nuestra palabra — mira lo que dicen nuestros clientes.",
     "projects": "Proyectos y Casos de Éxito",
-    "projectsSubtitle": "Resultados reales en tecnología, marketing, publicidad y equipamiento.",
+    "projectsSubtitle": "Resultados reales en TI, marketing digital y soporte técnico.",
     "projectsAll": "Todos",
     "projectsEmpty": "Aún no hay proyectos en esta categoría.",
     "projectsViewAll": "Ver todos los proyectos",
     "aboutPreview": {
       "title": "Sobre STDM",
-      "subtitle": "Un socio integrador de soluciones tecnológicas, digitales y publicitarias.",
+      "subtitle": "Un socio para TI, marketing digital y soporte técnico.",
       "historyTitle": "Nuestra historia",
-      "historyBody": "STDM es la marca comercial de SIS Technologies Digital Marketing S.R.L., una empresa costarricense que evolucionó desde servicios tecnológicos y digitales hacia un integrador completo de IT, marketing, publicidad y equipamiento especializado.",
+      "historyBody": "STDM es la marca comercial de SIS Technologies Digital Marketing S.R.L., una empresa costarricense que evolucionó desde servicios tecnológicos y digitales hacia un socio de TI, marketing digital y soporte técnico.",
       "visionTitle": "Nuestra visión",
-      "visionBody": "Ser el socio en el que confían las empresas cuando necesitan que tecnología, marketing, publicidad y equipos trabajen juntos — no como proveedores desconectados.",
+      "visionBody": "Ser el socio en el que confían las empresas cuando necesitan que TI, marketing digital y soporte técnico trabajen juntos — no como proveedores desconectados.",
       "coverageTitle": "Cobertura regional",
       "coverageBody": "Atendemos empresas en Costa Rica con entrega bilingüe, presencia local y soluciones diseñadas para la realidad operativa de la región.",
       "viewAll": "Conocer más sobre STDM"
     },
     "clients": {
       "title": "Clientes que confían en nosotros",
-      "subtitle": "Organizaciones que acompañamos con soluciones tecnológicas, digitales y publicitarias."
+      "subtitle": "Organizaciones que acompañamos con TI, marketing digital y soporte técnico."
     },
     "homeCta": {
       "title": "¿Listo para trabajar con STDM?",
-      "description": "Solicite una consulta y cuéntenos cómo podemos ayudar a su empresa a crear, operar y crecer."
+      "description": "Solicita una consulta y cuéntanos cómo podemos ayudar a tu empresa a crear, operar y crecer."
     }
   },
   "projectCategories": {
@@ -164,9 +159,7 @@
     "infrastructure": "Infraestructura",
     "cloud": "Cloud",
     "marketing": "Marketing",
-    "signage": "Señalización",
-    "digitalDisplays": "Pantallas Digitales",
-    "equipment": "Equipamiento",
+    "equipment": "Soporte técnico",
     "automation": "Automatización"
   },
   "pages": {
@@ -175,12 +168,12 @@
         "title": "Soluciones de Tecnología e IT | STDM Costa Rica",
         "description": "Desarrollo de software, soluciones cloud, consultoría IT, DevOps, infraestructura, ciberseguridad y tecnología industrial para empresas en Costa Rica."
       },
-      "headline": "Soluciones de Tecnología e IT",
-      "subheadline": "Desde software a medida e infraestructura cloud hasta consultoría IT y ciberseguridad — construimos la base tecnológica que su empresa necesita para operar y crecer.",
+      "headline": "TI",
+      "subheadline": "Desde software a medida e infraestructura cloud hasta consultoría IT y ciberseguridad — construimos la base tecnológica que tu empresa necesita para operar y crecer.",
       "servicesTitle": "Servicios de Tecnología",
       "servicesSubtitle": "Capacidades tecnológicas integrales para empresas modernas.",
-      "ctaTitle": "¿Listo para fortalecer su tecnología?",
-      "ctaDescription": "Cuéntenos sobre su infraestructura, software o desafíos IT. Le ayudamos a diseñar la solución adecuada.",
+      "ctaTitle": "¿Listo para fortalecer tu tecnología?",
+      "ctaDescription": "Cuéntanos sobre tu infraestructura, software o desafíos de TI. Te ayudamos a diseñar la solución adecuada.",
       "services": {
         "softwareDevelopment": {
           "title": "Desarrollo de Software",
@@ -221,19 +214,19 @@
         "title": "Servicios de Marketing Digital | STDM Costa Rica",
         "description": "Marketing digital, SEO, redes sociales, automatización de marketing y analítica para empresas en Costa Rica."
       },
-      "headline": "Soluciones de Marketing Digital",
+      "headline": "Marketing Digital",
       "subheadline": "Ayudamos a las empresas a llegar a la audiencia correcta, generar leads y medir resultados mediante estrategias integradas de marketing digital.",
       "servicesTitle": "Servicios de Marketing Digital",
-      "servicesSubtitle": "Marketing basado en datos que conecta su marca con los clientes.",
-      "ctaTitle": "¿Listo para hacer crecer su presencia digital?",
-      "ctaDescription": "Conversemos sobre sus objetivos de marketing y construyamos una estrategia con resultados medibles.",
+      "servicesSubtitle": "Marketing basado en datos que conecta tu marca con los clientes.",
+      "ctaTitle": "¿Listo para hacer crecer tu presencia digital?",
+      "ctaDescription": "Conversemos sobre tus objetivos de marketing y construyamos una estrategia con resultados medibles.",
       "services": {
         "digitalMarketing": {
           "title": "Marketing Digital",
           "description": "Estrategias integradas de marketing digital que combinan canales y tácticas para generar awareness, engagement y conversiones."
         },
         "digitalAdvertising": {
-          "title": "Publicidad Digital",
+          "title": "Medios pagados",
           "description": "Campañas pagadas en búsqueda, redes sociales y display optimizadas para alcance, leads y retorno de inversión."
         },
         "seo": {
@@ -254,107 +247,83 @@
         }
       }
     },
-    "advertising": {
-      "metadata": {
-        "title": "Publicidad y Señalización | STDM Costa Rica",
-        "description": "Publicidad exterior e interior, señalización y proyectos personalizados para visibilidad de marca en Costa Rica."
-      },
-      "headline": "Publicidad y Señalización",
-      "subheadline": "Desde vallas exteriores hasta displays interiores y señalización personalizada — ayudamos a su marca a destacar y comunicar con impacto.",
-      "servicesTitle": "Servicios de Publicidad",
-      "servicesSubtitle": "Soluciones publicitarias físicas y visuales para cada entorno.",
-      "ctaTitle": "¿Necesita visibilidad para su marca?",
-      "ctaDescription": "Comparta los requerimientos de su proyecto y diseñaremos una solución publicitaria acorde a su espacio y objetivos.",
-      "services": {
-        "outdoorAdvertising": {
-          "title": "Publicidad Exterior",
-          "description": "Vallas, fachadas, banners y displays exteriores diseñados para máxima visibilidad en ubicaciones de alto tráfico."
-        },
-        "indoorAdvertising": {
-          "title": "Publicidad Interior",
-          "description": "Señalización interior, displays promocionales y ambientes de marca para retail, oficinas y espacios comerciales."
-        },
-        "signage": {
-          "title": "Señalización",
-          "description": "Rótulos corporativos, sistemas de wayfinding, letreros iluminados e identidad de marca para edificios e instalaciones."
-        },
-        "customProjects": {
-          "title": "Proyectos Personalizados",
-          "description": "Proyectos publicitarios y de señalización a medida para espacios únicos, eventos o activaciones de marca."
-        }
-      }
-    },
     "equipment": {
       "metadata": {
-        "title": "Equipos y Soporte | STDM Costa Rica",
-        "description": "Impresoras gran formato, equipos CNC, pantallas digitales, displays interactivos y equipos de señalización digital en Costa Rica."
+        "title": "Soporte Técnico para Empresas | STDM Costa Rica",
+        "description": "Mesa de ayuda, mantenimiento preventivo y correctivo, y soporte remoto o presencial en Costa Rica. El suministro de equipos de cómputo es un complemento, a cotizar."
       },
-      "headline": "Equipos y Soporte",
-      "subheadline": "Suministramos, instalamos y damos soporte a equipos especializados — desde impresoras gran formato y CNC hasta pantallas digitales e interactivas.",
-      "servicesTitle": "Equipos que Ofrecemos",
-      "servicesSubtitle": "Equipos profesionales de tecnología y publicidad para su negocio.",
-      "supportTitle": "Servicios Asociados",
-      "supportSubtitle": "Soporte completo desde la instalación hasta el mantenimiento continuo.",
-      "ctaTitle": "¿Busca equipos o una solución integral?",
-      "ctaDescription": "Contáctenos para discutir opciones de equipos, instalación y soporte para su proyecto.",
+      "headline": "Soporte Técnico",
+      "subheadline": "Mesa de ayuda, mantenimiento preventivo y correctivo, y soporte remoto o presencial para empresas en Costa Rica. Si lo necesitas, también cotizamos equipos de cómputo.",
+      "servicesTitle": "Servicios de soporte",
+      "servicesSubtitle": "Primero atendemos, mantenemos y resolvemos. El suministro de equipos queda como complemento.",
+      "supportTitle": "Cómo te damos soporte",
+      "supportSubtitle": "La mesa de ayuda y el mantenimiento se atienden en remoto o en tu empresa, en Costa Rica.",
+      "supplyTitle": "Equipos, solo si hacen falta",
+      "supplySubtitle": "El suministro no es el servicio. Si el diagnóstico lo pide, cotizamos laptops, computadoras o servidores y los dejamos dentro del soporte. Precio a cotizar.",
+      "ctaTitle": "¿Necesitas mesa de ayuda o mantenimiento?",
+      "ctaDescription": "Cuéntanos cómo opera tu empresa. Te proponemos soporte remoto, visitas en Costa Rica o un plan de mantenimiento. Precio a cotizar.",
       "services": {
-        "largeFormatPrinters": {
-          "title": "Impresoras Gran Formato",
-          "description": "Equipos profesionales de impresión gran formato para banners, señalización, rotulación vehicular y producción de alto volumen."
+        "helpDesk": {
+          "title": "Mesa de ayuda",
+          "description": "Un punto de contacto para las incidencias de tu empresa: dudas de usuario, fallas del día a día y seguimiento hasta el cierre. Atención remota y, cuando hace falta, presencial en Costa Rica."
         },
-        "cncEquipment": {
-          "title": "Equipos CNC",
-          "description": "Máquinas CNC de corte y grabado para fabricación de precisión de señalización, displays y materiales personalizados."
+        "preventiveMaintenance": {
+          "title": "Mantenimiento preventivo",
+          "description": "Revisiones programadas de equipos de cómputo, redes y servidores para reducir fallas antes de que detengan tu operación."
         },
-        "digitalDisplays": {
-          "title": "Pantallas Digitales",
-          "description": "Pantallas digitales comerciales para entornos retail, corporativos y públicos."
+        "correctiveMaintenance": {
+          "title": "Mantenimiento correctivo",
+          "description": "Diagnóstico y reparación cuando algo deja de funcionar, para que tu equipo vuelva a trabajar sin convertir cada falla en una compra."
         },
-        "interactiveDisplays": {
-          "title": "Pantallas Interactivas",
-          "description": "Pantallas táctiles interactivas para kioscos, presentaciones, wayfinding y engagement con clientes."
+        "infrastructureNetworks": {
+          "title": "Infraestructura y redes",
+          "description": "Soporte de conectividad, redes y equipos de comunicación. Atendemos fallas y damos mantenimiento para que tu empresa siga en línea."
         },
-        "digitalSignageEquipment": {
-          "title": "Equipos de Señalización Digital",
-          "description": "Sistemas completos de señalización digital incluyendo media players, hardware de montaje y soluciones de gestión de contenido."
+        "serversLicensing": {
+          "title": "Servidores y licenciamiento",
+          "description": "Acompañamiento de servidores, respaldos y licencias de software para que tu operación siga ordenada y en regla."
+        },
+        "computerEquipment": {
+          "title": "Equipos de cómputo",
+          "description": "Cuando el diagnóstico lo justifica, suministramos laptops, computadoras o servidores y los incorporamos al plan de soporte. Precio a cotizar."
         }
       },
       "support": {
+        "remoteSupport": {
+          "title": "Soporte remoto",
+          "description": "Te atendemos a distancia para diagnosticar, orientar y resolver incidencias sin esperar una visita."
+        },
+        "onsiteSupport": {
+          "title": "Soporte presencial",
+          "description": "Cuando el caso lo pide, vamos a tu empresa en Costa Rica para revisar equipos, red o servidores."
+        },
+        "diagnosis": {
+          "title": "Diagnóstico",
+          "description": "Identificamos la causa antes de proponerte una reparación o un reemplazo."
+        },
         "installation": {
-          "title": "Instalación",
-          "description": "Instalación profesional en sitio de pantallas, impresoras y equipos publicitarios."
-        },
-        "configuration": {
-          "title": "Configuración",
-          "description": "Configuración de sistemas, integración de red y software para un rendimiento óptimo."
-        },
-        "commissioning": {
-          "title": "Puesta en Marcha",
-          "description": "Pruebas completas y entrega para garantizar que el equipo esté listo para producción."
+          "title": "Instalación y configuración",
+          "description": "Dejamos listos usuarios, red y software cuando el soporte incluye un equipo o un cambio en tu infraestructura."
         },
         "training": {
           "title": "Capacitación",
-          "description": "Capacitación para operadores y administradores para que su equipo use el equipamiento con confianza."
+          "description": "Explicamos a tu equipo cómo reportar una incidencia y cómo usar lo que quedó instalado."
         },
-        "maintenance": {
-          "title": "Mantenimiento",
-          "description": "Planes de mantenimiento preventivo y correctivo para maximizar la vida útil y disponibilidad del equipo."
-        },
-        "technicalSupport": {
-          "title": "Soporte Técnico",
-          "description": "Soporte técnico ágil para resolución de problemas, actualizaciones y asistencia continua."
+        "followUp": {
+          "title": "Seguimiento",
+          "description": "Cerramos el caso contigo y quedamos disponibles para el siguiente mantenimiento o incidente."
         }
       }
     },
     "projects": {
       "metadata": {
         "title": "Proyectos y Casos de Éxito | STDM Costa Rica",
-        "description": "Explore casos de éxito de STDM en software, cloud, infraestructura, marketing, señalización, pantallas digitales, equipamiento y automatización."
+        "description": "Explora casos de éxito de STDM en software, cloud, infraestructura, marketing, soporte técnico y automatización."
       },
       "headline": "Proyectos y Casos de Éxito",
-      "subheadline": "Descubra cómo ayudamos a empresas en Costa Rica con soluciones integradas de tecnología, digital, publicidad y equipamiento.",
-      "ctaTitle": "¿Tiene un proyecto en mente?",
-      "ctaDescription": "Cuéntenos sus objetivos y le mostraremos lo que es posible."
+      "subheadline": "Descubre cómo ayudamos a empresas en Costa Rica con TI, marketing digital y soporte técnico.",
+      "ctaTitle": "¿Tienes un proyecto en mente?",
+      "ctaDescription": "Cuéntanos tus objetivos y te mostramos lo que es posible."
     },
     "industries": {
       "metadata": {
@@ -363,17 +332,17 @@
       },
       "headline": "Industrias que Atendemos",
       "subheadline": "Entregamos soluciones integradas adaptadas a las necesidades operativas y comerciales de cada sector.",
-      "ctaTitle": "¿Su industria necesita soluciones integradas?",
-      "ctaDescription": "Adaptamos nuestras capacidades en tecnología, marketing, publicidad y equipamiento a su sector.",
+      "ctaTitle": "¿Tu industria necesita soluciones integradas?",
+      "ctaDescription": "Adaptamos nuestras capacidades de TI, marketing digital y soporte técnico a tu sector.",
       "items": {
         "retail": {
-          "description": "Plataformas digitales, señalización en tienda, pantallas digitales y campañas de marketing que impulsan tráfico y ventas online."
+          "description": "Plataformas digitales, soporte técnico para la operación y campañas de marketing que impulsan tráfico y ventas online."
         },
         "manufacturing": {
           "description": "Tecnología industrial, infraestructura IT, automatización y software operativo para optimizar producción y logística."
         },
         "construction": {
-          "description": "Visibilidad de proyectos, señalización, branding y herramientas tecnológicas para firmas de construcción y desarrolladores."
+          "description": "Visibilidad de proyectos, branding y herramientas tecnológicas para firmas de construcción y desarrolladores."
         },
         "education": {
           "description": "Plataformas web, marketing digital y herramientas de comunicación para escuelas, academias e instituciones educativas."
@@ -382,7 +351,7 @@
           "description": "Infraestructura segura, presencia digital y soluciones de comunicación para clínicas y proveedores de salud."
         },
         "hospitality": {
-          "description": "Experiencias de marca, marketing digital, señalización y pantallas interactivas para hoteles y negocios de hospitalidad."
+          "description": "Experiencias de marca, marketing digital y soporte técnico para hoteles y negocios de hospitalidad."
         },
         "professionalServices": {
           "description": "Sitios web profesionales, soluciones cloud y marketing que generan credibilidad y leads calificados."
@@ -395,21 +364,20 @@
     "about": {
       "metadata": {
         "title": "Sobre STDM | SIS Technologies Digital Marketing S.R.L.",
-        "description": "Conozca STDM: historia, visión, capacidades, experiencia técnica, cobertura regional y metodología como integrador de soluciones tecnológicas, digitales y publicitarias en Costa Rica."
+        "description": "Conoce STDM: historia, visión, capacidades, experiencia técnica, cobertura regional y metodología como socio de TI, marketing digital y soporte técnico en Costa Rica."
       },
       "headline": "Sobre STDM",
-      "subheadline": "Integramos tecnología, marketing digital, publicidad y equipamiento especializado para que las empresas puedan crear, operar y crecer con un solo socio responsable.",
+      "subheadline": "Integramos TI, marketing digital y soporte técnico para que las empresas puedan crear, operar y crecer con un solo socio responsable.",
       "historyTitle": "Nuestra historia",
-      "historyBody": "STDM es la marca comercial de SIS Technologies Digital Marketing S.R.L. Lo que comenzó como capacidades en tecnología y servicios digitales evolucionó hacia un modelo de integrador: ayudar a las empresas a resolver necesidades de software, cloud, marketing, señalización y equipos sin depender de múltiples proveedores desconectados.",
+      "historyBody": "STDM es la marca comercial de SIS Technologies Digital Marketing S.R.L. Lo que comenzó como capacidades en tecnología y servicios digitales evolucionó hacia un modelo de socio: ayudar a las empresas a resolver necesidades de software, cloud, marketing y soporte técnico sin depender de múltiples proveedores desconectados.",
       "visionTitle": "Nuestra visión",
-      "visionBody": "Posicionar a STDM como el integrador de referencia para organizaciones que necesitan que las soluciones tecnológicas, digitales y publicitarias converjan — habilitando alianzas de largo plazo y valor transversal en lugar de proyectos aislados.",
+      "visionBody": "Posicionar a STDM como el socio de referencia para organizaciones que necesitan que TI, marketing digital y soporte técnico trabajen juntos — con alianzas de largo plazo y valor transversal en lugar de proyectos aislados.",
       "capabilitiesTitle": "Nuestras capacidades",
-      "capabilitiesSubtitle": "Cuatro unidades de negocio que trabajan juntas bajo un mismo modelo de entrega.",
+      "capabilitiesSubtitle": "Tres unidades de negocio que trabajan juntas bajo un mismo modelo de entrega.",
       "capabilities": {
         "technology": "Desarrollo de software, soluciones cloud, consultoría IT, DevOps, infraestructura, ciberseguridad y tecnología industrial — con instalación y soporte.",
         "digital": "Marketing digital, medios pagados, SEO, redes sociales, automatización y analítica orientados a resultados de negocio medibles.",
-        "advertising": "Publicidad exterior e interior, señalización corporativa y proyectos a medida que fortalecen la visibilidad de marca en espacios físicos.",
-        "equipment": "Impresoras gran formato, equipos CNC, pantallas digitales e interactivas, más instalación, capacitación, mantenimiento y soporte técnico."
+        "equipment": "Mesa de ayuda, mantenimiento preventivo y correctivo, y soporte remoto o presencial en Costa Rica. El suministro de equipos de cómputo es un complemento, a cotizar."
       },
       "experienceTitle": "Experiencia técnica",
       "experienceBody": "Nuestro equipo combina ingeniería de software, arquitectura de soluciones, estrategia digital, producción creativa y soporte operativo. Esa mezcla nos permite pasar de la estrategia a la implementación — y mantenernos responsables después del go-live.",
@@ -421,23 +389,23 @@
         "step1Title": "Descubrir",
         "step1Body": "Aclaramos objetivos, limitaciones, stakeholders y métricas de éxito antes de recomendar un camino.",
         "step2Title": "Diseñar la solución integrada",
-        "step2Body": "Definimos la mezcla adecuada entre tecnología, digital, publicidad y equipos para que cada pieza apoye el resultado de negocio.",
+        "step2Body": "Definimos la mezcla adecuada entre TI, marketing digital y soporte técnico para que cada pieza apoye el resultado de negocio.",
         "step3Title": "Entregar con responsabilidad",
-        "step3Body": "Implementamos con hitos claros, comunicación transparente y estándares de calidad en los que su equipo puede confiar.",
+        "step3Body": "Implementamos con hitos claros, comunicación transparente y estándares de calidad en los que tu equipo puede confiar.",
         "step4Title": "Acompañar y escalar",
-        "step4Body": "Permanecemos disponibles para capacitación, mantenimiento, iteración y expansión conforme crecen sus necesidades."
+        "step4Body": "Seguimos disponibles para capacitación, mantenimiento, iteración y expansión conforme crecen tus necesidades."
       },
       "viewProjects": "Ver nuestros proyectos y casos de éxito",
-      "ctaTitle": "¿Quiere trabajar con STDM?",
-      "ctaDescription": "Solicite una consulta y cuéntenos cómo podemos ayudar a su empresa."
+      "ctaTitle": "¿Quieres trabajar con STDM?",
+      "ctaDescription": "Solicita una consulta y cuéntanos cómo podemos ayudar a tu empresa."
     },
     "contact": {
       "metadata": {
         "title": "Contacto STDM | Solicitar una consulta",
-        "description": "Contacte a STDM en Costa Rica para solicitar una consulta sobre soluciones tecnológicas, de marketing digital, publicidad y equipos."
+        "description": "Contacta a STDM en Costa Rica para solicitar una consulta sobre TI, marketing digital y soporte técnico."
       },
-      "headline": "Solicite una consulta",
-      "subheadline": "Cuéntenos sobre su proyecto. Le ayudaremos a diseñar la solución integrada adecuada."
+      "headline": "Solicita una consulta",
+      "subheadline": "Cuéntanos sobre tu proyecto. Te ayudamos a diseñar la solución adecuada."
     }
   }
 }
