@@ -1,14 +1,16 @@
 // Data for portfolio
 import { businessUnitRoutes } from './services'
 import oscarImage from '../assets/images/team/oscar.jpeg'
+import marcoImage from '../assets/images/team/marco.jpg'
 import dianaImage from '../assets/images/team/diana.jpeg'
 import christopherImage from '../assets/images/team/christopher.jpeg'
-import hoImage from '../assets/images/team/ho.png'
+import gabrielImage from '../assets/images/team/gabriel.jpg'
 import martinImage from '../assets/images/team/martin.png'
+import hoImage from '../assets/images/team/ho.png'
+import luisDiegoImage from '../assets/images/team/avatar.png'
 import thaisImage from '../assets/images/team/thais.jpeg'
 import celesteImage from '../assets/images/team/avatar.png'
 import juanImage from '../assets/images/team/juan.jpeg'
-import josepabloImage from '../assets/images/team/avatar.png'
 
 // Business units (homepage)
 export const businessUnitsData = [
@@ -49,10 +51,10 @@ export const teamData = [
     order: 1,
   },
   {
-    name: 'Jose Pablo Carrillo',
+    name: 'Marco Aguilar de Lange',
     role: 'CCO',
-    image: josepabloImage,
-    linkedIn: 'https://www.linkedin.com/',
+    image: marcoImage,
+    linkedIn: 'https://www.linkedin.com/in/marco-aguilar-de-lange-b0741437a/',
     order: 2,
   },
   {
@@ -64,45 +66,58 @@ export const teamData = [
   },
   {
     name: 'Christopher Valerio',
-    role: 'Technical Lead & Solution Architect',
+    role: 'DevOps Engineer',
     image: christopherImage,
     linkedIn: 'https://www.linkedin.com/in/christopher-valerio/',
     order: 4,
+  },
+  {
+    name: 'Gabriel Dang',
+    role: 'Technical Lead',
+    image: gabrielImage,
+    linkedIn: 'https://www.linkedin.com/in/gabriel-dang-197b833b9/',
+    order: 5,
   },
   {
     name: 'Martin Tham',
     role: 'AI/ML Engineer',
     image: martinImage,
     linkedIn: 'https://www.linkedin.com/in/martin-tham/',
-    order: 5,
+    order: 6,
   },
   {
     name: 'Ho Bai',
     role: 'Full Stack Software Engineer',
     image: hoImage,
     linkedIn: 'https://www.linkedin.com/in/alex-han/',
-    order: 6,
+    order: 7,
+  },
+  {
+    name: 'Luis Diego Cruz',
+    role: 'Full Stack Software Engineer',
+    image: luisDiegoImage,
+    linkedIn: 'https://www.linkedin.com/in/luis-diego-cruz-m-5282b19b/',
+    order: 8,
   },
   {
     name: 'Thais Rodríguez',
     role: 'Senior Software Engineer & UI/UX Designer',
-    image:
-      thaisImage,
+    image: thaisImage,
     linkedIn: 'https://www.linkedin.com/in/thaís-rodríguez-lópez/',
-    order: 7,
+    order: 9,
   },
   {
     name: 'Celeste Herrera',
     role: 'Graphic Designer',
     image: celesteImage,
     linkedIn: 'https://www.linkedin.com/in/celeste-herrera/',
-    order: 8,
+    order: 10,
   },
   {
     name: 'Juan Marín',
     role: 'QA Engineer',
     image: juanImage,
     linkedIn: 'https://www.linkedin.com/in/juan-camilo-marín-bayer-364420186',
-    order: 9,
+    order: 11,
   },
 ]
